@@ -408,53 +408,6 @@ section {
     margin: 1.5rem auto;
 }
 
-.filter-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 3rem;
-}
-
-.filter-btn {
-    background: transparent;
-    border: 1px solid var(--border-subtle);
-    color: var(--text-secondary);
-    padding: 0.6rem 1.5rem;
-    border-radius: 50px;
-    font-family: var(--font-ui);
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-    cursor: pointer;
-    transition: var(--transition-smooth);
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(135deg, var(--accent-gold), var(--accent-rose));
-        opacity: 0;
-        transition: opacity 0.4s ease;
-        z-index: -1;
-    }
-
-    &:hover {
-        border-color: var(--accent-gold);
-        color: var(--text-primary);
-    }
-
-    &.active {
-        border-color: transparent;
-        color: var(--bg-deep);
-
-        &::before {
-            opacity: 1;
-        }
-    }
-}
-
 .poems-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -551,20 +504,27 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--border-subtle);
     font-family: var(--font-ui);
     font-size: 0.7rem;
     color: var(--text-muted);
-    text-transform: uppercase;
     letter-spacing: 0.1em;
 
     .tag {
-        padding: 0.3rem 0.8rem;
-        background: rgba(196, 168, 124, 0.1);
+        padding: 0.2rem 0.8rem;
+        background: transparent;
+        border: 1px solid var(--border-subtle);
         border-radius: 20px;
         color: var(--accent-gold);
+        font-size: 0.65rem;
+        transition: var(--transition-smooth);
+
+        &:hover {
+            border-color: var(--accent-gold);
+            background: rgba(196, 168, 124, 0.05);
+        }
     }
 }
 
@@ -622,89 +582,7 @@ section {
     }
 }
 
-.archive-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
 
-.archive-item {
-    background: var(--bg-card);
-    border: 1px solid var(--border-subtle);
-    border-radius: 10px;
-    padding: 1.5rem;
-    transition: var(--transition-smooth);
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 3px;
-        background: var(--accent-sage);
-        transform: scaleY(0);
-        transition: transform 0.4s var(--ease-elegant);
-    }
-
-    &:hover {
-        transform: translateY(-5px);
-        border-color: var(--border-glow);
-        box-shadow: var(--shadow-soft);
-
-        &::before {
-            transform: scaleY(1);
-        }
-    }
-
-    &.ghazal::before {
-        background: var(--accent-gold);
-    }
-
-    &.devotion::before {
-        background: var(--accent-lavender);
-    }
-
-    &.love::before {
-        background: var(--accent-rose);
-    }
-
-    &.nature::before {
-        background: var(--accent-sage);
-    }
-}
-
-.archive-title {
-    font-family: var(--font-devanagari);
-    font-size: 1.2rem;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-
-    &.en {
-        font-family: var(--font-display);
-        font-style: italic;
-    }
-}
-
-.archive-excerpt {
-    font-family: var(--font-devanagari);
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.archive-meta {
-    display: flex;
-    justify-content: space-between;
-    font-family: var(--font-ui);
-    font-size: 0.7rem;
-    color: var(--text-muted);
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-subtle);
-}
 
 .about-section {
     background: linear-gradient(180deg, var(--bg-deep), var(--bg-elevated));
@@ -779,12 +657,40 @@ footer {
 
 
 @media (max-width: 900px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: var(--bg-elevated);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 5rem 2rem 2rem;
+        transition: right 0.4s var(--ease-elegant);
+        z-index: 99;
+        border-left: 1px solid var(--border-subtle);
+    }
+
+    nav.mobile-open {
+        right: 0;
+    }
+
     .nav-links {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .lang-switcher {
+        flex-direction: column;
+        gap: 0.75rem;
     }
 
     .menu-toggle {
         display: block;
+        z-index: 101;
     }
 
     .hero-quote::before,
@@ -799,6 +705,145 @@ footer {
     .hero-quote::after {
         right: 0;
     }
+}
+
+.filter-controls {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: var(--transition-smooth);
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-header h3 {
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.filter-toggle-btn,
+.filter-reset-btn {
+    background: transparent;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-muted);
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.filter-toggle-btn:hover,
+.filter-reset-btn:hover {
+    border-color: var(--accent-gold);
+    color: var(--text-primary);
+}
+
+.filter-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    opacity: 1;
+    max-height: 1000px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.filter-body.hidden {
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-section h4 {
+    font-family: var(--font-script);
+    font-size: 1.4rem;
+    color: var(--accent-gold);
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed var(--border-subtle);
+    padding-bottom: 0.5rem;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+/* Custom Scrollbar for options */
+.filter-options::-webkit-scrollbar {
+    width: 4px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.checkbox-label:hover {
+    color: var(--text-primary);
+}
+
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--text-muted);
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+    background: var(--accent-gold);
+    border-color: var(--accent-gold);
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    color: var(--bg-deep);
+    font-size: 0.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: var(--font-ui);
+    color: var(--text-muted);
+    padding: 3rem;
+    font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -868,7 +913,6 @@ footer {
     }
 
     header,
-    .filter-container,
     footer,
     .scroll-indicator {
         display: none;

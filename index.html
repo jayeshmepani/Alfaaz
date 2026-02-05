@@ -30,7 +30,6 @@
                 <div class="nav-links">
                     <a href="#home" class="active">Home</a>
                     <a href="#collection">Collection</a>
-                    <a href="#archive">Archive</a>
                     <a href="#about">About</a>
                 </div>
 
@@ -47,16 +46,12 @@
 
     <section class="hero" id="home">
         <div class="hero-content">
-            <blockquote class="hero-quote" lang="hi">
-                शब्दों में ढली वो खामोशियाँ,<br>
-                जो दिल में बसी थीं सालों से।<br>
-                ये अल्फ़ाज़ मेरे, ये जज़्बात मेरे,<br>
-                जो बुने हैं रातों की तन्हाइयों से।
+            <blockquote class="hero-quote" lang="hi" id="heroQuote">
             </blockquote>
 
             <div class="hero-divider"><span>✦</span></div>
 
-            <p class="hero-attribution">— Your Name Here</p>
+            <p class="hero-attribution" id="heroAttribution"></p>
         </div>
 
         <div class="scroll-indicator">
@@ -75,115 +70,18 @@
                 <p class="section-subtitle">Words woven with soul</p>
             </div>
 
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All Writings</button>
-                <button class="filter-btn" data-filter="ghazal">Ghazals</button>
-                <button class="filter-btn" data-filter="poem">Poems</button>
-                <button class="filter-btn" data-filter="quote">Quotes</button>
-                <button class="filter-btn" data-filter="devotion">Devotional</button>
-                <button class="filter-btn" data-filter="love">Love</button>
+            <!-- Advanced Filter Container -->
+            <div id="filterControls" class="filter-controls">
+                <div class="filter-header">
+                    <h3>Refine Collection</h3>
+                    <button id="resetFilters" class="filter-reset-btn">Reset All</button>
+                    <button id="toggleFilters" class="filter-toggle-btn">Filters <span>▼</span></button>
+                </div>
+                <div class="filter-body hidden" id="filterBody">
+                </div>
             </div>
 
             <div class="poems-grid" id="poemsGrid">
-                <!-- Poem Card 1 - Hindi Placeholder -->
-                <article class="poem-card fade-in" data-lang="devanagari" data-type="ghazal">
-                    <header class="card-header">
-                        <h3 class="card-title">रात की तन्हाई</h3>
-                        <div class="card-meta">Your Ghazal</div>
-                    </header>
-                    <div class="card-body hi" lang="hi">रात की तन्हाई में जब चाँद निकलता है,
-                        तुम्हारी याद का एक दरिया सा बहता है।
-
-                        ये दिल के टुकड़े, ये बिखरी हुई यादें,
-                        इन्हीं से अब तो मेरा ये जहाँ चलता है।</div>
-                    <footer class="card-footer">
-                        <span class="tag">Ghazal</span>
-                        <span>Hindi</span>
-                    </footer>
-                </article>
-
-                <!-- Poem Card 2 - English Placeholder -->
-                <article class="poem-card fade-in" data-lang="english" data-type="poem">
-                    <header class="card-header">
-                        <h3 class="card-title en">Whispers of Twilight</h3>
-                        <div class="card-meta">Your Poem</div>
-                    </header>
-                    <div class="card-body en" lang="en">Between the fading light and rising stars,
-                        lies a moment that belongs to us alone.
-                        Where silence speaks louder than words,
-                        and hearts find their way back home.
-
-                        The evening hums a lullaby so sweet,
-                        as shadows dance upon the wall.</div>
-                    <footer class="card-footer">
-                        <span class="tag">Poem</span>
-                        <span>English</span>
-                    </footer>
-                </article>
-
-                <!-- Poem Card 3 - Hindi Placeholder -->
-                <article class="poem-card fade-in" data-lang="devanagari" data-type="quote">
-                    <header class="card-header">
-                        <h3 class="card-title">खामोश लम्हे</h3>
-                        <div class="card-meta">Your Quote</div>
-                    </header>
-                    <div class="card-body hi" lang="hi">कुछ लम्हे ऐसे होते हैं,
-                        जो शब्दों में नहीं ढलते।
-                        बस दिल में ही रह जाते हैं,
-                        और खामोशी में पलते।</div>
-                    <footer class="card-footer">
-                        <span class="tag">Quote</span>
-                        <span>Hindi</span>
-                    </footer>
-                </article>
-
-                <!-- Poem Card 4 - English Placeholder -->
-                <article class="poem-card fade-in" data-lang="english" data-type="love">
-                    <header class="card-header">
-                        <h3 class="card-title en">Letters Unsent</h3>
-                        <div class="card-meta">Your Words</div>
-                    </header>
-                    <div class="card-body en" lang="en">I wrote you letters that never left my drawer,
-                        words that trembled on the edge of being said.
-                        Each page a garden of unspoken truths,
-                        blooming in the silence of my head.</div>
-                    <footer class="card-footer">
-                        <span class="tag">Love</span>
-                        <span>English</span>
-                    </footer>
-                </article>
-
-                <!-- Poem Card 5 - Hindi Placeholder -->
-                <article class="poem-card fade-in" data-lang="devanagari" data-type="devotion">
-                    <header class="card-header">
-                        <h3 class="card-title">प्रार्थना</h3>
-                        <div class="card-meta">Your Devotional</div>
-                    </header>
-                    <div class="card-body hi" lang="hi">मंदिर की घंटी, मस्जिद की अज़ान,
-                        सब में एक ही सच है छुपा।
-                        प्रेम का वो अनंत सागर,
-                        जो हर दिल में बसा।</div>
-                    <footer class="card-footer">
-                        <span class="tag">Devotional</span>
-                        <span>Hindi</span>
-                    </footer>
-                </article>
-
-                <!-- Poem Card 6 - English Placeholder -->
-                <article class="poem-card fade-in" data-lang="english" data-type="poem">
-                    <header class="card-header">
-                        <h3 class="card-title en">Morning Rain</h3>
-                        <div class="card-meta">Your Poetry</div>
-                    </header>
-                    <div class="card-body en" lang="en">The rain arrived at dawn today,
-                        gentle as a forgotten song.
-                        It washed the world in silver light,
-                        making everything feel less wrong.</div>
-                    <footer class="card-footer">
-                        <span class="tag">Nature</span>
-                        <span>English</span>
-                    </footer>
-                </article>
             </div>
         </div>
     </section>
@@ -195,96 +93,12 @@
                 <div class="elegant-divider"></div>
             </div>
 
-            <div class="featured-poem fade-in">
-                <h3 class="poem-title">आज की रात</h3>
-                <p class="poem-author">— Your Featured Work</p>
-
-                <div class="poem-text" lang="hi">
-                    <div class="stanza">
-                        आज की रात कुछ अलग है,
-                        चाँद भी मद्धम सा है।
-                        दिल में कोई गीत अधूरा,
-                        और आँखों में सफ़र का नाम।
-                    </div>
-                    <div class="stanza">
-                        बीती रातों की यादें हैं,
-                        जो अब भी ताज़ा हैं।
-                        ये अल्फ़ाज़ उन्हीं की परछाइयाँ,
-                        जो दिल में बस गई हैं।
-                    </div>
-                </div>
+            <div class="featured-poem fade-in" id="featuredPoem">
             </div>
         </div>
     </section>
 
-    <section id="archive">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Archive</h2>
-                <div class="elegant-divider"></div>
-                <p class="section-subtitle">Browse the complete collection</p>
-            </div>
-
-            <div class="archive-grid">
-                <article class="archive-item ghazal fade-in" data-lang="devanagari">
-                    <h4 class="archive-title">वक़्त की गर्द</h4>
-                    <p class="archive-excerpt">वक़्त की गर्द में दबी कहानियाँ,<br>जो कभी किसी ने न सुनीं...</p>
-                    <div class="archive-meta">
-                        <span>Ghazal</span>
-                        <span>Hindi</span>
-                    </div>
-                </article>
-
-                <article class="archive-item love fade-in" data-lang="english">
-                    <h4 class="archive-title en">Fading Photographs</h4>
-                    <p class="archive-excerpt">Old photographs yellow with time,<br>but memories stay vivid and true...
-                    </p>
-                    <div class="archive-meta">
-                        <span>Reflection</span>
-                        <span>English</span>
-                    </div>
-                </article>
-
-                <article class="archive-item devotion fade-in" data-lang="devanagari">
-                    <h4 class="archive-title">समर्पण</h4>
-                    <p class="archive-excerpt">जीवन का हर पल समर्पित,<br>उस अनंत को जो सब में बसा...</p>
-                    <div class="archive-meta">
-                        <span>Devotional</span>
-                        <span>Hindi</span>
-                    </div>
-                </article>
-
-                <article class="archive-item nature fade-in" data-lang="english">
-                    <h4 class="archive-title en">Mountain Echoes</h4>
-                    <p class="archive-excerpt">The mountains stand in silent guard,<br>keeping secrets of a thousand
-                        years...</p>
-                    <div class="archive-meta">
-                        <span>Nature</span>
-                        <span>English</span>
-                    </div>
-                </article>
-
-                <article class="archive-item fade-in" data-lang="devanagari">
-                    <h4 class="archive-title">बचपन की गलियाँ</h4>
-                    <p class="archive-excerpt">वो गलियाँ अब भी याद हैं,<br>जहाँ खेलते थे बेफ़िक्र...</p>
-                    <div class="archive-meta">
-                        <span>Nostalgia</span>
-                        <span>Hindi</span>
-                    </div>
-                </article>
-
-                <article class="archive-item fade-in" data-lang="english">
-                    <h4 class="archive-title en">City Lights</h4>
-                    <p class="archive-excerpt">Beneath the city's neon glow,<br>a thousand stories unfold each night...
-                    </p>
-                    <div class="archive-meta">
-                        <span>Urban</span>
-                        <span>English</span>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+    <!-- Archive Section Removed as per request -->
 
     <section class="about-section" id="about">
         <div class="container">

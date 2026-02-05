@@ -1,0 +1,1483 @@
+[
+  {
+    "id": 1,
+    "content": "The gray did soften 'neath golden flame;\nthe rainbow lean'd in tender arc;\n& sky became a poet's heart, undone.",
+    "type": "Haiku-esque",
+    "mood": "Ethereal, Soft",
+    "theme": "Nature's Beauty",
+    "tags": [
+      "rainbow",
+      "sky",
+      "poet",
+      "heart",
+      "gold"
+    ],
+    "imagery": "Golden flame, rainbow arc, poet's heart",
+    "language": "English"
+  },
+  {
+    "id": 2,
+    "content": "नसीम-ए-सुबह का एहसास तो होने दो,\nशम्स की किरणों में अरमाँ पिघलने दो यार।\n\nथोड़ी देर उड़ान का सुरूर जी लेने दो,\nख़्वाबों के सैलाब में दिल डूब जाने दो यार।\n\nअभी तो शाह-परों ने हौसला पाया है,\nफ़लक की वुसअतों में खो जाने दो यार।\n\nक़फ़स-ए-ज़माना से लड़ते रहे हैं बरसों,\nअब अपनी फ़िज़ा में पर फैलाने दो यार।\n\nनिगाहों पे आसमाँ का जादू उतरने दो,\nइस परवाज़ में साँसों को महक जाने दो यार।\n\nफिर लौट आऊँगा ज़मीं की बाँहों में किस दिन,\nबस इक लम्हा अबरों से गुफ़्तगू करने दो यार।\n\nजो ख़्वाब सफ़र-ए-हयात में राख हो चुके थे,\nउनकी सरगोशी से नई दास्ताँ बुनने दो यार।\n\nथक जाऊँगा तो साया-ए-दरख़्तों में ढल जाऊँगा,\nतेरी महफ़िल में सुबह का नूर फिर लाऊँगा।\n\nमंज़िल तो मुक़द्दर की किताब में लिखी है,\nबस सफ़र के तराने में ज़रा खो जाने दो यार।\n\nधीरे-धीरे शाम-ए-ग़ुरूब में ढलने दो,\nख़ामोशियों के साज़ में मुझको घुलने दो यार।\n\nथोड़ी देर तो उड़ान का रंग-ओ-आहंग चखने दो यार,\nआसमाँ की दस्तक पर इक हसरत फिर छोड़ जाऊँगा।",
+    "type": "Ghazal",
+    "mood": "Longing, Hopeful, Romantic",
+    "theme": "Love, Freedom, Aspiration",
+    "tags": [
+      "flight",
+      "sky",
+      "dreams",
+      "love",
+      "freedom",
+      "journey"
+    ],
+    "imagery": "Morning breeze, melting sun, soaring flight, cage, sky's magic",
+    "language": "Hindi"
+  },
+  {
+    "id": 3,
+    "content": "इमतहा के लम्हे वक़्त ज़ाया नहीं करते\nज़िंदगी की हसरतें ख़ुद से अदा नहीं करते\nशख़्सियत से ज्यदा ख़ूबसूरत  की सिफ़ारिश नहीं करते\nदास्तान-ए-ज़िंदगी ख़ुद से ख़फ़ा नहीं करते",
+    "type": "Nazm",
+    "mood": "Reflective, Resilient",
+    "theme": "Self-Worth, Life's Trials",
+    "tags": [
+      "life",
+      "exams",
+      "self-respect",
+      "destiny"
+    ],
+    "imagery": "Moments of testing, beauty of character",
+    "language": "Hindi"
+  },
+  {
+    "id": 4,
+    "content": "The shadows of the past whisper of a future where causality bends, creating loops of self-reference. These echoes, akin to already sensed, may not be mere premonitions, but glimpses of a reality shaped by our own actions.",
+    "type": "Philosophical Thought",
+    "mood": "Contemplative, Mystical",
+    "theme": "Time, Causality, Reality",
+    "tags": [
+      "time",
+      "causality",
+      "future",
+      "past",
+      "reality loops"
+    ],
+    "imagery": "Shadows of past, loops of self-reference",
+    "language": "English"
+  },
+  {
+    "id": 5,
+    "content": "One should live in the will to have earn the totality, only subsequently will be able to achieve set one's life on.",
+    "type": "Aphorism",
+    "mood": "Determined, Serious",
+    "theme": "Ambition, Willpower",
+    "tags": [
+      "will",
+      "success",
+      "life goals",
+      "totality"
+    ],
+    "imagery": "Earning the totality",
+    "language": "English"
+  },
+  {
+    "id": 6,
+    "content": "Most beautiful things happen in vicissitude of life;\nMost abhorrent things happen in perpetuity of life.",
+    "type": "Aphorism",
+    "mood": "Philosophical, Contrasting",
+    "theme": "Duality of Life",
+    "tags": [
+      "vicissitude",
+      "perpetuity",
+      "beauty",
+      "abhorrence"
+    ],
+    "imagery": "Vicissitude vs Perpetuity",
+    "language": "English"
+  },
+  {
+    "id": 7,
+    "content": "Have had expectations with exceptions.",
+    "type": "Quote",
+    "mood": "Witty, Realist",
+    "theme": "Expectations",
+    "tags": [
+      "expectations",
+      "exceptions",
+      "wordplay"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 8,
+    "content": "अगर यादें कमजोर होने लगे तो भूला देना वो यादें ;\nअगर भूला न पाए तो जता देना यादें;\nअगर जता न पाए तो गिला समझ कर बता देना यादें;\nअगर कोई गिला न हो तो मीटा देना यादें;\nअगर मीटा न पाए तो लुटा देना यादें;\nअगर लुटा न पाए तो एकरार कर देना अपने दिल्लगी ;\n\nयादें भले कमज़ोर हो;\nफ़ितरतें लाज़मी होगी उस एकरार के लिए..",
+    "type": "Nazm",
+    "mood": "Melancholic, Bargaining",
+    "theme": "Memory, Letting Go, Love",
+    "tags": [
+      "memories",
+      "forgetting",
+      "love",
+      "complaint",
+      "confession"
+    ],
+    "imagery": "Weakening memories, erasing memories, confessing love",
+    "language": "Hindi"
+  },
+  {
+    "id": 9,
+    "content": "वक़्त ने ही वक़्त को वक़्त से मिलाया\nवरना आज ये वक़्त वक़्त का न होता",
+    "type": "Sher",
+    "mood": "Fatalistic, Ironical",
+    "theme": "Time, Destiny",
+    "tags": [
+      "time",
+      "fate",
+      "meeting"
+    ],
+    "imagery": "Time meeting time",
+    "language": "Hindi"
+  },
+  {
+    "id": 10,
+    "content": "‘..Seldom,\nIn admiration of ‘em..;\nHwæt thou’ve in thy mind,\ndunno see in thy eyes;\nHwæt thou’re saying,\ndunno see in thy mind..’",
+    "type": "Poem (Archaic Style)",
+    "mood": "Confused, Searching",
+    "theme": "Misunderstanding, Communication",
+    "tags": [
+      "mind",
+      "eyes",
+      "words",
+      "perception",
+      "archaic"
+    ],
+    "imagery": "Seeing in eyes vs mind",
+    "language": "English"
+  },
+  {
+    "id": 11,
+    "content": "रातें तकती है कोई रास्ता\nजुगनू दिखते नहीं हैं अब\nशमा जलती रही रात भर\nपरवाने मिलते नहीं हैं अब\n\nसफ़र फ़लक तक का\nउन सितारों में खो गया\nअब सितम परवाने का\nउन रातों से जुड़ गया\n\nअफ़साने भी दीदार होने लगे\nचाँद के फ़ितूर में\nइश्क़ भी लूटने लगे\nचाँद के ऐतबार में",
+    "type": "Nazm",
+    "mood": "Lonely, Dark, Romantic",
+    "theme": "Night, Longing, Separation",
+    "tags": [
+      "night",
+      "fireflies",
+      "moth",
+      "stars",
+      "moon",
+      "ishq"
+    ],
+    "imagery": "Waiting nights, missing fireflies, moth and flame, journey to stars",
+    "language": "Hindi"
+  },
+  {
+    "id": 12,
+    "content": "Though hard to being understood\nyet should have to express.",
+    "type": "Quote",
+    "mood": "Resolute",
+    "theme": "Expression",
+    "tags": [
+      "understanding",
+      "expression",
+      "communication"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 13,
+    "content": "The most idyllic aeonian is with love;\nThe most antagonistic stygian is with hate;\nSo be philophile & xenophobic.",
+    "type": "Aphorism",
+    "mood": "Analytical",
+    "theme": "Love vs Hate",
+    "tags": [
+      "love",
+      "hate",
+      "aeonian",
+      "stygian",
+      "philophile"
+    ],
+    "imagery": "Idyllic aeonian vs antagonistic stygian",
+    "language": "English"
+  },
+  {
+    "id": 14,
+    "content": "कुछ लम्हे गुज़रने दो\nवक़्त न हो तो फ़िज़ूल ही सही\nकुछ गुफ्तगू हैरते होने दो",
+    "type": "Haiku-esque",
+    "mood": "Patient, Calm",
+    "theme": "Patience, Conversation",
+    "tags": [
+      "moments",
+      "time",
+      "conversation",
+      "waiting"
+    ],
+    "imagery": "Passing moments",
+    "language": "Hindi"
+  },
+  {
+    "id": 15,
+    "content": "Thou dunno what thou’re sensing\nbut whatever this feeling’s,\nit’s right..;\nThou ain’t saying\nwhatever thou sensing\nso whatever thou’re sensing;\nindeterminately please accept..!",
+    "type": "Poem",
+    "mood": "Reassuring, Intuitive",
+    "theme": "Intuition, Feelings",
+    "tags": [
+      "sensing",
+      "feelings",
+      "acceptance",
+      "intuition"
+    ],
+    "imagery": "Indeterminate sensing",
+    "language": "English"
+  },
+  {
+    "id": 16,
+    "content": "Tale might be wrong\nBut\nAmbience tells the vibe",
+    "type": "Quote",
+    "mood": "Observational",
+    "theme": "Atmosphere vs Facts",
+    "tags": [
+      "vibe",
+      "ambience",
+      "truth",
+      "tale"
+    ],
+    "imagery": "Ambience telling the vibe",
+    "language": "English"
+  },
+  {
+    "id": 17,
+    "content": "If it's possible then it's\nrelativistic\n\nIf it's impossible then it's\nparadoxic\n\nIf it's possibly impossible then it's\nproblematic\n\nIf it's impossibly possible then it's\nharmonic",
+    "type": "Wordplay Poem",
+    "mood": "Logical, Playful",
+    "theme": "Possibility vs Impossibility",
+    "tags": [
+      "logic",
+      "paradox",
+      "harmonic",
+      "problamatic"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 18,
+    "content": "\"In the realm of 'dreams,'\nquantum realities converge,\nwhere the strings of possibility vibrate in symphony,\nwhile 'nightmares' unravel\nthe fabric of our mind's quantum entanglement.\"",
+    "type": "Philosophical Thought",
+    "mood": "Surreal, Scientific",
+    "theme": "Dreams, Quantum Reality",
+    "tags": [
+      "dreams",
+      "quantum",
+      "reality",
+      "strings",
+      "nightmares"
+    ],
+    "imagery": "Strings of possibility vibrating",
+    "language": "English"
+  },
+  {
+    "id": 19,
+    "content": "People change,\n& how well they've changed's evident to others\nthose aren't closest.\nHowever, how poorly they've changed affects us,\nas they should still treat those who don't know\n'em well with benevolence.",
+    "type": "Thought",
+    "mood": "Reflective, Social",
+    "theme": "Change, Social Masks",
+    "tags": [
+      "change",
+      "people",
+      "behavior",
+      "benevolence"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 20,
+    "content": "खोये थे हम राहों में, अधूरी यादों की बस्ती,\nआज शब-ए-महताबी में, हैं पूरी दास्तानों की मस्ती।",
+    "type": "Sher",
+    "mood": "Nostalgic, Complete",
+    "theme": "Memories, Night",
+    "tags": [
+      "lost",
+      "path",
+      "memories",
+      "moonlit night",
+      "stories"
+    ],
+    "imagery": "Moonlit night (Shab-e-Mahtabi)",
+    "language": "Hindi"
+  },
+  {
+    "id": 21,
+    "content": "‘Some’ & ‘any’\nforge qualms betwixt\n‘no’ & ‘every’",
+    "type": "Aphorism",
+    "mood": "Analytical",
+    "theme": "Semantics, Logic",
+    "tags": [
+      "some",
+      "any",
+      "no",
+      "every",
+      "qualms"
+    ],
+    "imagery": "Forging qualms",
+    "language": "English"
+  },
+  {
+    "id": 22,
+    "content": "φ :\nA ballad of allure, where being and beauty\nsympathetically entwine.",
+    "type": "Definition",
+    "mood": "Aesthetic",
+    "theme": "Golden Ratio, Beauty",
+    "tags": [
+      "phi",
+      "beauty",
+      "allure",
+      "math"
+    ],
+    "imagery": "Ballad of allure",
+    "language": "English"
+  },
+  {
+    "id": 23,
+    "content": "Sunset's palette, birds' ballet,\na fleeting moment of beauty in the evening sky.",
+    "type": "Haiku",
+    "mood": "Serene, Visual",
+    "theme": "Nature, Sunset",
+    "tags": [
+      "sunset",
+      "birds",
+      "beauty",
+      "evening"
+    ],
+    "imagery": "Sunset's palette, birds' ballet",
+    "language": "English"
+  },
+  {
+    "id": 24,
+    "content": "At night\nthe ragged clouds and wind have only one companion ...\nthe moon",
+    "type": "Haiku",
+    "mood": "Lonely, Atmospheric",
+    "theme": "Night, Companionship",
+    "tags": [
+      "night",
+      "clouds",
+      "wind",
+      "moon"
+    ],
+    "imagery": "Ragged clouds, wind, moon",
+    "language": "English"
+  },
+  {
+    "id": 25,
+    "content": "The year changed yet\nmemories & moments'll've been\nconnate.",
+    "type": "Quote",
+    "mood": "Reflective",
+    "theme": "Time, Consistency",
+    "tags": [
+      "new year",
+      "memories",
+      "moments",
+      "connate"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 26,
+    "content": "खोये थे हम राहों में, अधूरी यादों की बस्ती,\nआज शब-ए-महताबी में, हैं पूरी दास्तानों की मस्ती।",
+    "type": "Sher",
+    "mood": "Nostalgic",
+    "theme": "Memories",
+    "tags": [
+      "memories",
+      "night"
+    ],
+    "language": "Hindi"
+  },
+  {
+    "id": 27,
+    "content": "‘Some’ & ‘any’\nforge qualms betwixt\n‘no’ & ‘every’",
+    "type": "Quote",
+    "mood": "Analytical",
+    "theme": "Logic",
+    "tags": [
+      "logic",
+      "words"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 28,
+    "content": "φ :\nA ballad of allure, where being and beauty\nsympathetically entwine.",
+    "type": "Definition",
+    "mood": "Aesthetic",
+    "theme": "Beauty",
+    "tags": [
+      "phi",
+      "beauty"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 29,
+    "content": "Sunset's palette, birds' ballet,\na fleeting moment of beauty in the evening sky.",
+    "type": "Haiku",
+    "mood": "Visual",
+    "theme": "Nature",
+    "tags": [
+      "sunset"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 30,
+    "content": "C'est la vie:\nHow things change within years",
+    "type": "Quote",
+    "mood": "Accepting",
+    "theme": "Life, Change",
+    "tags": [
+      "cest la vie",
+      "change",
+      "years"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 31,
+    "content": "हम ने ये इत्तेफ़ाक़ समझा था पर वो तकदीर थी\nऔर जिसे तकदीर में समझा था वो कोई इत्तेफ़ाक़ था\nपर ये फिजुल है की तकदीर और इत्तेफ़ाक़ एक नहीं है कुछ के नियति में",
+    "type": "Thought",
+    "mood": "Contemplative",
+    "theme": "Fate vs Coincidence",
+    "tags": [
+      "fate",
+      "destiny",
+      "coincidence",
+      "takdeer"
+    ],
+    "imagery": "None",
+    "language": "Hindi"
+  },
+  {
+    "id": 32,
+    "content": "एक ख़त्म हो तो दूसरी रात आ जाती है,\nहोठों पर फिर भूली हुई बात आ जाती है।\n\nचाँदनी रात में भी है एक ख़ास बात,\nसितारों से तेरी मुलाकात आ जाती है।\n\nसरगम में गुल गई है तेरी यादों की रात,\nसुरों में बसी है तेरी मुस्कुराहट आ जाती है।\n\nचाँद जैसी तेरी चाहत की कश्मकश रातों को उलझा जाती है,\nसराब-ए-इश्क़ तख़्लीक़ कर, हर एक रात ख़ुमार में आ जाती है।",
+    "type": "Ghazal",
+    "mood": "Romantic, Dreamy",
+    "theme": "Night, Moon, Memory",
+    "tags": [
+      "night",
+      "moon",
+      "stars",
+      "memories",
+      "music"
+    ],
+    "imagery": "Moonlit night, stars meeting poetry, melody of memories, mirage of love",
+    "language": "Hindi"
+  },
+  {
+    "id": 33,
+    "content": "∞\nThe Exaggeration of the\nLife",
+    "type": "Quote",
+    "mood": "Philosophical",
+    "theme": "Life, Infinity",
+    "tags": [
+      "infinity",
+      "life",
+      "exaggeration"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 34,
+    "content": "कंधा दे अवलंबन प्यारी, राधे सुधि बिसराई हो।\nनैन मूँदि, सुनि तान मनोहर, पिय उर माँहिं समाई हो॥\n\nकैसो जादू भरी मुरलिया, सुध-बुध लेत छिनाई।\nराधा वारि गयीं तन-मन सब, प्रीत की रीत निभाई॥",
+    "type": "Devotional Dohas",
+    "mood": "Devotional, Surrender",
+    "theme": "Radha-Krishna, Love",
+    "tags": [
+      "radha",
+      "krishna",
+      "flute",
+      "devotion",
+      "surrender"
+    ],
+    "imagery": "Flute's magic, closing eyes, shoulder support",
+    "language": "Hindi"
+  },
+  {
+    "id": 35,
+    "content": "\"A nexus, might 'ey be?\nIf 'ey could've been,\nwhat're the chances 'ey would be one?\nAnd if 'ey do,\nshould it matter to be entangled?\"",
+    "type": "Poem",
+    "mood": "Inquisitive",
+    "theme": "Connection, Destiny",
+    "tags": [
+      "nexus",
+      "entanglement",
+      "chance",
+      "destiny"
+    ],
+    "imagery": "Nexus, entanglement",
+    "language": "English"
+  },
+  {
+    "id": 36,
+    "content": "\"Might they be a nexus?\nIf they could be,\nwhat're the chances they would be one?\nAnd if they do,\nshould it matter to be entangled?\"",
+    "type": "Poem",
+    "mood": "Inquisitive",
+    "theme": "Connection",
+    "tags": [
+      "nexus"
+    ],
+    "language": "English"
+  },
+  {
+    "id": 37,
+    "content": "शिव-उर को अवलंबन प्यारी, गिरिजा सुधि बिसराई हो।\nनैन मूँदि, प्रिय-स्पर्श-सुख में, जोगन आपु गँवाई हो॥\n\nकैसो नेह-अनंत को बंधन, जोग-ध्यान बिसरायो।\nगौरी-हित वैरागी शिव ने, प्रेम-रूप अपनायो॥",
+    "type": "Devotional Dohas",
+    "mood": "Devotional, Divine Love",
+    "theme": "Shiva-Parvati, Asceticism",
+    "tags": [
+      "shiva",
+      "parvati",
+      "gauri",
+      "love",
+      "ascetic"
+    ],
+    "imagery": "Shiva becoming loving, Parvati losing senses",
+    "language": "Hindi"
+  },
+  {
+    "id": 38,
+    "content": "In a world bereft of hues to paint my existence,\nI cradle the subtleties of monochrome,\nunraveling their depths with an intimacy that\neclipses the vibrant mosaic of any spectrum.",
+    "type": "Poem",
+    "mood": "Melancholic, Deep",
+    "theme": "Monochrome, Depth",
+    "tags": [
+      "monochrome",
+      "colors",
+      "existence",
+      "intimacy"
+    ],
+    "imagery": "World bereft of hues, weaving subtleties of monochrome",
+    "language": "English"
+  },
+  {
+    "id": 39,
+    "content": "नज़र से जो नज़र करती है बातें, गुस्ताखियाँ हैं,\nजो नींदें छीन लें, वो काली रातें, गुस्ताखियाँ हैं।\nज़ुबाँ ख़ामोश थी, बस पलकें झपकीं और उठ गईं,\nजो तय होकर हुई वो मुलाक़ातें, गुस्ताखियाँ हैं।\nकभी शबनम, कभी शोला, कभी सावन की ये झड़ियाँ,\nजो बिन मौसम हुईं, वो सब बरसातें, गुस्ताखियाँ हैं।\nसुकून-ए-क़ल्ब पर बरपा करें जो आफ़तें हर दम,\nउठाती हैं जो सीने में कई क़यामतें, गुस्ताखियाँ हैं।\nमेरी सल्तनत-ए-दिल पर, जो चुपके से किए जाएँ,\nबिना तेग़-ओ-सिपर वाली, ये सारी ग़ज़वातें, गुस्ताखियाँ हैं।\nकिताबों में नहीं मिलती हैं जो इश्क़ की दलीलें,\nनज़र से जो लिखी जाएँ, वही इबारतें, गुस्ताखियाँ हैं।\nउन्हें देखा तो दिल हारा, ज़माना भूल बैठे हम,\nमिली हैं इश्क़ की जो ये सौग़ातें, गुस्ताखियाँ हैं।\nजहाँ तहज़ीब का, दुनिया के डर का, पहरा था दिल पर,\nवहीं क़ब्ज़ा करें जो ये रियासतें, गुस्ताखियाँ हैं।\n‘ज़फ़र’, हर जंग जीती थी बड़ी ही शान से तुमने,\nये बिन लड़े जो दे जाती हैं मातें, गुस्ताखियाँ हैं।",
+    "type": "Ghazal",
+    "mood": "Passionate, Bold",
+    "theme": "Transgression (Gustakhiyan), Love",
+    "tags": [
+      "eyes",
+      "gustakhiyan",
+      "audacity",
+      "love",
+      "battle"
+    ],
+    "imagery": "Eyes talking, stealing sleep, sudden rain, silent battles of heart",
+    "language": "Hindi"
+  },
+  {
+    "id": 40,
+    "content": "छुपा जो एहसास में, उसे ज़ुबां क्या करें,\nजो कह न सके दिल, वो बयां क्या करें।\n\nनिगाहें जो कह दें, वो बातें नहीं होतीं,\nहर राज़-ए-दिल को कहानी क्या करें।\n\nसन्नाटों में छुपा है मोहब्बत का जहां,\nउस गूंज को अशआरों से बयान क्या करें।\n\nजिनके लफ़्ज़ों में ज़िंदा हैं मायने,\nउन खोखले अल्फ़ाज़ों से गिला क्या करें।\n\nमिलते नहीं वो हमदम, जो हर बात समझें,\nफिर इस ख़ामोशी से गुफ़्तगू क्या करें।\n\nजो एक झलक में रूह तक उतर जाए,\nउस एहसास को सूरत-ए-कलाम क्या करें।\n\nमोहब्बत की तहरीर को क़लम न बाँध सके,\nदिल के दर्द को कोई जहाँ क्या करें।\n\nशेर-ओ-गज़ल में छुपा है फ़साना सारा,\nइससे आगे के सफ़र का इम्तिहान क्या करें।",
+    "type": "Ghazal",
+    "mood": "Inexpressible, Silent",
+    "theme": "Silence, Unspoken Love",
+    "tags": [
+      "silence",
+      "expression",
+      "words",
+      "feeling"
+    ],
+    "imagery": "Silence hiding a world of love, hollow words, soul connection",
+    "language": "Hindi"
+  },
+  {
+    "id": 41,
+    "content": "आज मेहरीन दिन हैं\nउस दिल-ख़्वाह साहिर के लिए\n\nमुसाहिब हुए कमबख़्त\nउस ज़ेबा के लिए\n\nउश्शाक़ तो हम नहि थे\nपर हुस्न-ए-तमाम ने एजाज़ किया\n\nमशकूर रहेंगे अरसा-ए-हयात\nइस आश्नाई के लिए\n\nक़ल्ब को लम्स कर\nसदा-ए-क़ल्ब एहसास के लिए",
+    "type": "Nazm",
+    "mood": "Admiring, Grateful",
+    "theme": "Beauty, First Meeting",
+    "tags": [
+      "beauty",
+      "sahir",
+      "magic",
+      "gratitude",
+      "heart"
+    ],
+    "imagery": "Magician of heart, touching the soul",
+    "language": "Hindi"
+  },
+  {
+    "id": 42,
+    "content": "Yet the irony’s the moon\n& my crush’s same\nEither can we’ve ‘em\nnor can we forget ‘em;\nYe seems phasing into\nloop\n& us too...",
+    "type": "Poem",
+    "mood": "Wistful, Ironical",
+    "theme": "Moon, Crush, Distance",
+    "tags": [
+      "moon",
+      "crush",
+      "loop",
+      "irony"
+    ],
+    "imagery": "Phasing into loop",
+    "language": "English"
+  },
+  {
+    "id": 43,
+    "content": "Every beautiful moment isn't\nnecessary to be complete;\njust as incomplete moon!",
+    "type": "Quote",
+    "mood": "Accepting",
+    "theme": "Imperfection, Beauty",
+    "tags": [
+      "moon",
+      "incomplete",
+      "beauty"
+    ],
+    "imagery": "Incomplete moon",
+    "language": "English"
+  },
+  {
+    "id": 44,
+    "content": "Golden hour silhouettes grace dusk's canvas with\nfleeting elegance.",
+    "type": "Haiku",
+    "mood": "Visual, serene",
+    "theme": "Golden Hour",
+    "tags": [
+      "golden hour",
+      "dusk",
+      "silhouette",
+      "elegance"
+    ],
+    "imagery": "Golden hour silhouettes",
+    "language": "English"
+  },
+  {
+    "id": 45,
+    "content": "\"..In spite of her face wasn't behold yet;\nThe moon being phased her face..",
+    "type": "Quote",
+    "mood": "Mysterious",
+    "theme": "Moon, Face, Mystery",
+    "tags": [
+      "moon",
+      "face",
+      "unseen"
+    ],
+    "imagery": "Moon phrasing her face",
+    "language": "English"
+  },
+  {
+    "id": 46,
+    "content": "गुज़ारे हैं हर लम्हे तेरे साथ उसे मिटाने दे\nअश्क बहाए हैं हर रैन उने फिर कमाने दे\nसआदत-ए तेरे मन्नत में वो किस्मत मे आज़माई हैं\nलफ़्ज़ थमे थे उने आज फिर बहाने दे",
+    "type": "Sher",
+    "mood": "Melancholic, Healing",
+    "theme": "Tears, Memories, Fate",
+    "tags": [
+      "tears",
+      "memories",
+      "rain",
+      "fate"
+    ],
+    "imagery": "Washing away moments, earning tears back",
+    "language": "Hindi"
+  },
+  {
+    "id": 47,
+    "content": "मूसलसल होती है गर्दिश-ए-दौरा के सफ़र में\nकुछ कश्तियों के मुक़दर में; साहिल नहीं होता\n\nकुछ मुनासिब मुख्तलिफ़ मुख़्तसर जुस्तजू ही\nज़िंदगी के मूसलसल मुंतज़िर मुकम्मल का वज़ुद होती है",
+    "type": "Sher",
+    "mood": "Philosophical, Resigned",
+    "theme": "Journey, Destiny, Incompleteness",
+    "tags": [
+      "search",
+      "incomplete",
+      "destiny",
+      "shore"
+    ],
+    "imagery": "Boats without shores, continual search",
+    "language": "Hindi"
+  },
+  {
+    "id": 48,
+    "content": "Not yet dusk, but the world glowed in\nhoneyed hues, like a fading memory.\nPinpricks of light flickered, a quiet\npromise of what's to come.",
+    "type": "Prose Poetry",
+    "mood": "Atmospheric, Warm",
+    "theme": "Dusk, Anticipation",
+    "tags": [
+      "dusk",
+      "honeyed hues",
+      "light",
+      "promise"
+    ],
+    "imagery": "Honeyed hues, pinpricks of light",
+    "language": "English"
+  },
+  {
+    "id": 49,
+    "content": "Why do I find you so appealing? If I get time, I'll ponder.\nWhat've I seen in you? If I get time, I'll ponder.\n\nThe whole city claims acquaintance, but\nWho is truly mine? If I get time, I'll ponder.\n\nI asked you to make some time to meet,\nYou wrote back saying, \"If I get time, I'll ponder.\"\n\nIn the weather, fragrance, morning breeze, moon, twilight, and stars,\nWho is like you? If I get time, I'll ponder.\n\nEither follow your heart or heed the world's advice,\nYour suggestion is good, but if I get time, I'll ponder.\n\nWhy do I find you so appealing? If I get time, I'll ponder.",
+    "type": "Ghazal-style Poem",
+    "mood": "Procrastinating, Pondering",
+    "theme": "Love, Time, Hesitation",
+    "tags": [
+      "pondering",
+      "time",
+      "love",
+      "questions"
+    ],
+    "imagery": "City claims acquaintance, weather, fragrance",
+    "language": "English"
+  },
+  {
+    "id": 50,
+    "content": "Beneath the stillness where whispers grow,\nDost thou sigh, as the night sets aglow?\nThy gaze, like glass, holdeth shadows deep,\nWhile stars above in silence keep.\n\nThe air hums faint, a chilled embrace,\nAs time itself forgets its pace.\nThine eyes, they shimmer, yet truths they hide,\nA quiet tempest by the lake's cold tide.\n\nI see not in thy touch what thou dost mean,\nYet feel thy heart in the spaces between.\nThy silence hums with echoes unspoken,\nA bond eternal, though words lay broken.\n\nOh, thou dost set my soul alight,\nA flame that danceth with the night.\nWilt thou, dear heart, cast shadows away,\nOr let the moon guard truths we can't say?",
+    "type": "Poem (Archaic)",
+    "mood": "Gothic, Romantic",
+    "theme": "Night, Silence, Connection",
+    "tags": [
+      "night",
+      "silence",
+      "lake",
+      "moon",
+      "bond"
+    ],
+    "imagery": "Lake's cold tide, quiet tempest, moon guarding truths",
+    "language": "English"
+  },
+  {
+    "id": 51,
+    "content": "Tale of love is settled in the moon;\nBeauty is evenly fictionalised with the moon;\nEvery phase has their even zestful sway of the moon\nTo make us fond of the moon...",
+    "type": "Poem",
+    "mood": "Romantic",
+    "theme": "Moon, Love Stories",
+    "tags": [
+      "moon",
+      "love",
+      "fiction",
+      "phases"
+    ],
+    "imagery": "Love settled in moon",
+    "language": "English"
+  },
+  {
+    "id": 52,
+    "content": "Every all what we see\nisn't what it's be.",
+    "type": "Aphorism",
+    "mood": "Skeptical",
+    "theme": "Perception vs Reality",
+    "tags": [
+      "illusion",
+      "reality",
+      "sight"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 53,
+    "content": "Nothing seems to be perfect\nwhile acknowledging after while\nyou right although wrong",
+    "type": "Quote",
+    "mood": "Conflicted",
+    "theme": "Imperfection, Right/Wrong",
+    "tags": [
+      "perfect",
+      "wrong",
+      "right",
+      "paradox"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 54,
+    "content": "Sometimes time repeats itself for your deeds\nto make you realize what you did.",
+    "type": "Quote",
+    "mood": "Warning",
+    "theme": "Karma, Time",
+    "tags": [
+      "karma",
+      "time",
+      "regret"
+    ],
+    "imagery": "Time repeating itself",
+    "language": "English"
+  },
+  {
+    "id": 55,
+    "content": "Tranquility of night\nalong gazing the\nmoon & stars brings\nplacidity of heart.",
+    "type": "Quote",
+    "mood": "Peaceful",
+    "theme": "Night, Peace",
+    "tags": [
+      "night",
+      "moon",
+      "stars",
+      "tranquility"
+    ],
+    "imagery": "Gazing moon and stars",
+    "language": "English"
+  },
+  {
+    "id": 56,
+    "content": "वफ़ा कभी ग़ैरो या अपनो मैं नहीं होती,\nवफ़ा तो फ़ितरत और तरबियत मैं होती है;\nऔर जब वफ़ा का अंदाज़ शिकन और ग़ारत होने लगे, तब बेवफ़ाई होती है।",
+    "type": "Sher",
+    "mood": "Philosophical, Bitter",
+    "theme": "Loyalty (Wafa)",
+    "tags": [
+      "loyalty",
+      "betrayal",
+      "character"
+    ],
+    "imagery": "Wafa as nature/upbringing",
+    "language": "Hindi"
+  },
+  {
+    "id": 57,
+    "content": "Sometimes having no reason for reasoning is,\nbetter than having some reason(s) for that;\nsuch a unconditional state.",
+    "type": "Quote",
+    "mood": "Free-spirited",
+    "theme": "Reasoning, Spontaneity",
+    "tags": [
+      "reason",
+      "unconditional"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 58,
+    "content": "It's gravitic\nto have an\nadvercity\nfor a while\nto deem\nprosperous\nfor zest life.",
+    "type": "Poem",
+    "mood": "Stoic",
+    "theme": "Adversity, Growth",
+    "tags": [
+      "gravity",
+      "adversity",
+      "zest",
+      "growth"
+    ],
+    "imagery": "Gravitic adversity",
+    "language": "English"
+  },
+  {
+    "id": 59,
+    "content": "SEARCHING THE AMBIENCE\nTO FIT THE VIBE",
+    "type": "Caption",
+    "mood": "Casual",
+    "theme": "Vibe",
+    "tags": [
+      "ambience",
+      "vibe",
+      "search"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 60,
+    "content": "चाँद ख़ामोश है, किस राज़ में डूबा होगा,\nरात ठहरी हुई, क्या ख़्वाब सा गुज़रा होगा।\n\nसितारे गिनती में उलझे हुए से लगते हैं,\nजैसे हर नूर का कोई हिसाब लिखा होगा।\n\nआसमान अपनी चादर में समेटे बातें,\nहर किनारे पे कोई नक़्श छुपा होगा।\n\nये फ़लक, ये रातें, ये जलते हुए सितारे,\nहर क़दम में कोई अफ़साना बयाँ करता है।\n\nहर झलक में छुपा है कोई पैग़ाम शायद,\nये फ़लक भी किसी का इंतज़ार करता होगा।",
+    "type": "Ghazal",
+    "mood": "Mystical, Waiting",
+    "theme": "Night, Moon, Stars, Mystery",
+    "tags": [
+      "moon",
+      "stars",
+      "sky",
+      "mystery",
+      "waiting"
+    ],
+    "imagery": "Silent moon, tangled stars, sky's blanket, hidden stories",
+    "language": "Hindi"
+  },
+  {
+    "id": 61,
+    "content": "Since night'll lovely.\nFor sake of beauty; feel love behovely.\nRealm of passions might aeonian\nBut idyllically elysian.\nStill awaiting for ‘em\nDespite the fondness is as same.",
+    "type": "Poem",
+    "mood": "Romantic, Dreamy",
+    "theme": "Night, Beauty, Passion",
+    "tags": [
+      "night",
+      "beauty",
+      "passion",
+      "elysian"
+    ],
+    "imagery": "Idyllically elysian realm",
+    "language": "English"
+  },
+  {
+    "id": 62,
+    "content": "In the clouds of love, we soar above the ordinary.",
+    "type": "Quote",
+    "mood": "Uplifting",
+    "theme": "Love",
+    "tags": [
+      "love",
+      "clouds",
+      "flight"
+    ],
+    "imagery": "Clouds of love",
+    "language": "English"
+  },
+  {
+    "id": 63,
+    "content": "Should recite the rhythm's variances\nof the self to entitle the character\nfor the next chapter.",
+    "type": "Quote",
+    "mood": "Reflective",
+    "theme": "Self-growth",
+    "tags": [
+      "rhythm",
+      "character",
+      "life chapters"
+    ],
+    "imagery": "Reciting rhythm's variances",
+    "language": "English"
+  },
+  {
+    "id": 64,
+    "content": "\" 's in the heart, yet doesn't come over lips;! \"",
+    "type": "Fragment",
+    "mood": "Silent",
+    "theme": "Unspoken",
+    "tags": [
+      "heart",
+      "silence",
+      "lips"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 65,
+    "content": "शाम का आसमान, तनहा और गहरा हैं,\nअब्रों की घनी छाँव, रुख़सार और अंधेरा हैं।\nपरिंदों की सरगोशियाँ; ख़्वाहिशों का बसेरा हैं,\nख़्वाबों की परवाज़, जश्नों की उलुव्व; और ग़ज़िशों का डेरा हैं।",
+    "type": "Nazm",
+    "mood": "Somber, Atmospheric",
+    "theme": "Evening, Solitude",
+    "tags": [
+      "evening",
+      "shadows",
+      "birds",
+      "dreams"
+    ],
+    "imagery": "Dark evening sky, dense clouds, birds whispering",
+    "language": "Hindi"
+  },
+  {
+    "id": 66,
+    "content": "In the twilight's embrace, love takes flight,\nas the sky weaves its secrets in delicate\ntendrils of radiant beauty.",
+    "type": "Quote",
+    "mood": "Romantic",
+    "theme": "Twilight, Love",
+    "tags": [
+      "twilight",
+      "love",
+      "beauty"
+    ],
+    "imagery": "Sky weaving secrets",
+    "language": "English"
+  },
+  {
+    "id": 67,
+    "content": "Jubilant sway of\nlife among with\nfervour of love\nis the only\navidity:",
+    "type": "Poem",
+    "mood": "Passionate",
+    "theme": "Life, Love",
+    "tags": [
+      "life",
+      "love",
+      "fervour",
+      "avidity"
+    ],
+    "imagery": "Jubilant sway",
+    "language": "English"
+  },
+  {
+    "id": 68,
+    "content": "Chand hain pr jamaal nhi",
+    "type": "Quote",
+    "mood": "Critical",
+    "theme": "Beauty vs Charisma",
+    "tags": [
+      "moon",
+      "beauty",
+      "jamaal"
+    ],
+    "imagery": "None",
+    "language": "Hinglish"
+  },
+  {
+    "id": 69,
+    "content": "क्या कहिये इनकी चाँदनी का अंदाज़,\nहर रात नए रंग में दिखाती है;\nचांद भी हैरान है\nतेरी हुस्न-ए-सादगी और सादगी-ए-हुस्न से,\nउसने देखा है तुझको शाम-ओ-सहर;\nतेरी जैसी वज़ूदगी पाने की,\nअब चांद को भी ऐसी चाँदनी की तलब है।",
+    "type": "Nazm",
+    "mood": "Romantic, Praising",
+    "theme": "Moon, Beauty, Personification",
+    "tags": [
+      "moon",
+      "simplicity",
+      "beauty",
+      "envy"
+    ],
+    "imagery": "Moon surprised by your simplicity, moon craving your light",
+    "language": "Hindi"
+  },
+  {
+    "id": 70,
+    "content": "z(θ) = e^(iθ) + e^(iφθ)\nFrame = 000\nθ = 0.10\nφ = 1.6180340\n\nq(θ) = e^(iθ) + e^(iφθ)\nFrame: 0/900\nθ = 1.6180340\nφ = 1.5652717\n\nWe were ne'er meant to meet;\nyet in our never-being together\nwe traced a year-and-distance,\nan unfinished curve\nthat seem'd perfect from afar,\nwhole in its incompletion.\n\nBut draw nigh,\nand the threads begin to whisper:\nnot harmony but the hush of chaos,\na tangle of starts and nevers,\nwhere each near-meeting\npulls the string taut\nand knots our infinite almost.",
+    "type": "Poem",
+    "mood": "Melancholic, Mathematical",
+    "theme": "Asymptotic Love, Separation",
+    "tags": [
+      "math",
+      "curves",
+      "chaos",
+      "separation",
+      "threads"
+    ],
+    "imagery": "Unfinished curve, knots, taut strings, infinite almost",
+    "language": "English"
+  },
+  {
+    "id": 71,
+    "content": "रात का अफसाना, परिंदों की सैर-ए-शाम,\nआसमान के मुसव्विरों के साथ।\nशाम की ढलते हुए सूरज से परिंदों की दास्ताँ,\nदिल में एक तार की गूंज, तन्हाई में साथ।",
+    "type": "Poem",
+    "mood": "Quiet, Solitary",
+    "theme": "Night, Nature",
+    "tags": [
+      "night",
+      "birds",
+      "sunset",
+      "solitude"
+    ],
+    "imagery": "Painters of the sky, echo in heart",
+    "language": "Hindi"
+  },
+  {
+    "id": 72,
+    "content": "The deepest agony of life is\ntrusting the lies that you apprise.",
+    "type": "Couplet",
+    "mood": "Cynical",
+    "theme": "betrayal, Trust",
+    "tags": [
+      "lies",
+      "trust",
+      "agony"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 73,
+    "content": "What would've been; if we were together?\nA world unbroken, bound forever —\nDefying the chaos of chance's sway,\nChoosing destiny's path, come what may.\n\nThe stars would weave dreams in the velvet sky —\nA testament to a love that cannot die;\nNo accidental meeting — a destined tie,\nWoven in the fabric of you and I.\n\nOur laughter would echo through endless streams,\nLife a rhapsody, born of shared dreams;\nNo fleeting moment, no serendipitous gleam —\nBut an unyielding flame, an eternal bond, it seems.\n\nWith every moment, love would bloom anew,\nIn a world shaped by just me and you —\nWhere destiny triumphs, forever true.",
+    "type": "Poem",
+    "mood": "Wishful, Idealistic",
+    "theme": "Destiny, What-If",
+    "tags": [
+      "destiny",
+      "stars",
+      "love",
+      "dreams"
+    ],
+    "imagery": "World unbroken, stars weaving dreams, velvet sky",
+    "language": "English"
+  },
+  {
+    "id": 74,
+    "content": "एक दिलकश से हमें ये उलफ़त की ख़्वाहिश हैं\nतसव्वुर में हि सहि तुमसे रफ़ाक़त की फ़रमाइश हैं\nगुम-शुदा न होना हमसे ज़ीस्त में ये गुंजाइश हैं\nसआदत-ए-क़ुर्बत के लिए ये ज़िंदगी की आज़माइश हैं",
+    "type": "Sher",
+    "mood": "Longing, Devotional",
+    "theme": "Desire, Life",
+    "tags": [
+      "ulfat",
+      "company",
+      "life test",
+      "closeness"
+    ],
+    "imagery": "Life's test for closeness",
+    "language": "Hindi"
+  },
+  {
+    "id": 75,
+    "content": "Amidst the stars, where dreams in thousands bloom,\nIn cosmic waltz, our hearts find ample room.\n\nThe wandering soul, in starlit love, does rest,\nIn endless light, our bond stands every test.",
+    "type": "Poem",
+    "mood": "Cosmic, Romantic",
+    "theme": "Stars, Cosmic Love",
+    "tags": [
+      "stars",
+      "cosmos",
+      "waltz",
+      "love"
+    ],
+    "imagery": "Cosmic waltz, blooming dreams",
+    "language": "English"
+  },
+  {
+    "id": 76,
+    "content": "Among the cotton candy clouds, love weaves its tapestry",
+    "type": "Quote",
+    "mood": "Soft, Sweet",
+    "theme": "Love",
+    "tags": [
+      "clouds",
+      "cotton candy",
+      "love"
+    ],
+    "imagery": "Cotton candy clouds",
+    "language": "English"
+  },
+  {
+    "id": 77,
+    "content": "चांदनी रात में, तारों का जहां है कुछ,\nरात की आगोश में, खोना है कुछ।\n\nरात के अंधेरे में, खुशबू की हवा है कुछ,\nउनकी यादों की, महफ़िल फ़िज़ा है कुछ।\n\nचांद के साथ, ख्वाबों का सफर है कुछ,\nरात की गहराई में, बरसती प्यास है कुछ।\n\nरात अनजानी, उनकी बात है कुछ,\nचांद की रोशनी में, छुपी एक रात है कुछ।\n\nचांदनी की परछाई में, छुपी ताबीर है कुछ,\nचांद तेरी रोशनी में, क्या राज़ है कुछ?!",
+    "type": "Nazm",
+    "mood": "Mysterious, Romantic",
+    "theme": "Night, Moon, Secrets",
+    "tags": [
+      "moon",
+      "night",
+      "fragrance",
+      "secrets"
+    ],
+    "imagery": "scented wind in darkness, journey of dreams with moon",
+    "language": "Hindi"
+  },
+  {
+    "id": 78,
+    "content": "Chasing sunset & capturing the cosmic magic of the horizon,\nwithin & beyond.",
+    "type": "Quote",
+    "mood": "Adventurous",
+    "theme": "Horizon, Magic",
+    "tags": [
+      "sunset",
+      "horizon",
+      "cosmic"
+    ],
+    "imagery": "Cosmic magic of horizon",
+    "language": "English"
+  },
+  {
+    "id": 79,
+    "content": "हसरतें ख़्वाबों में रंगीन हैं,\nहयातों में मुख़्तलिफ़;\nज़िंदगी गुजारना तरीक़ों में मुनासिब हैं,\nनसीबों में संगीन..",
+    "type": "Quote",
+    "mood": "Realist",
+    "theme": "Dreams vs Life",
+    "tags": [
+      "dreams",
+      "life",
+      "destiny",
+      "hardship"
+    ],
+    "imagery": "None",
+    "language": "Hindi"
+  },
+  {
+    "id": 80,
+    "content": "Relativistic has to be realistic.",
+    "type": "Aphorism",
+    "mood": "Logical",
+    "theme": "Physics/Philosophy",
+    "tags": [
+      "relativity",
+      "reality"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 81,
+    "content": "The twilight's gentle veil, in calm's sweet embrace,\nIs all I yearn for on life's winding trace.",
+    "type": "Couplet",
+    "mood": "Peaceful",
+    "theme": "Twilight, Peace",
+    "tags": [
+      "twilight",
+      "calm",
+      "life"
+    ],
+    "imagery": "Twilight's gentle veil",
+    "language": "English"
+  },
+  {
+    "id": 82,
+    "content": "A thoughtful glance back often reveals the hidden paths forward",
+    "type": "Quote",
+    "mood": "Wisdom",
+    "theme": "Reflection",
+    "tags": [
+      "past",
+      "future",
+      "reflection"
+    ],
+    "imagery": "Hidden paths forward",
+    "language": "English"
+  },
+  {
+    "id": 83,
+    "content": "Love's elixir flows through the veins in the moon's glow",
+    "type": "Quote",
+    "mood": "Romantic",
+    "theme": "Love, Moon",
+    "tags": [
+      "love",
+      "moon",
+      "elixir"
+    ],
+    "imagery": "Love's elixir flowing",
+    "language": "English"
+  },
+  {
+    "id": 84,
+    "content": "फलक से जो टूटा वो तारा तो था, पर\nक़ुबूलियत का इस जनम, इशारा नहीं था\n\nवो मंज़र जो देखा था आँखों ने मेरी\nहक़ीक़त में ऐसा, नज़ारा नहीं था\n\nहमें इश्क़ ले ही गया उस गली में\nजहाँ कोई अपना, हमारा नहीं था\n\nमैं ही था वो जलता हुआ एक सैयारा\nकिसी की नज़र का, उजारा नहीं था\n\nसमंदर के दिल में भी साहिल मिले हैं\nमगर मेरी क़िस्मत में, किनारा नहीं था\n\nये तन्हाई ओढ़े हुए सोचता हूँ\nमैं हारा नहीं था, हराया गया था",
+    "type": "Ghazal",
+    "mood": "Tragic, Heartbroken",
+    "theme": "Loss, Unrequited Love, Fate",
+    "tags": [
+      "falling star",
+      "fate",
+      "defeat",
+      "loneliness",
+      "shore"
+    ],
+    "imagery": "Broken star, burning planet, ocean without shore",
+    "language": "Hindi"
+  },
+  {
+    "id": 85,
+    "content": "आज दिल भले ही नेक है\nपर रूह की क़राबत अनेक से थी\nदिल फ़रेबी भले ही था\nपर आज ताल्लुक़ रूह की रूहानियत से है",
+    "type": "Quote",
+    "mood": "Spiritual, Honest",
+    "theme": "Soul vs Heart",
+    "tags": [
+      "heart",
+      "soul",
+      "deceit",
+      "spirituality"
+    ],
+    "imagery": "None",
+    "language": "Hindi"
+  },
+  {
+    "id": 86,
+    "content": "\"Under the spell of the starry night, every\nheartbeat is a promise of forever, with aurora-lit\nclouds painting our love in the sky.\"",
+    "type": "Poem",
+    "mood": "Romantic, Magical",
+    "theme": "Starry Night, Love",
+    "tags": [
+      "aurora",
+      "clouds",
+      "sky",
+      "promise"
+    ],
+    "imagery": "Aurora-lit clouds painting love",
+    "language": "English"
+  },
+  {
+    "id": 87,
+    "content": "बादल में डूबा हुआ था चाँद उस शाम का,\nकुछ और गहरा गया था रंग भी जाम का।\n\nख़ामोश लम्हों में कहीं बज उठी थी सदा,\nसाया कोई मिल गया था दिल के मुक़ाम का।\n\nतनहाई की राह में इक नर्म सी हवा चली,\nमहसूस होने लगा था वक़्त भी ख़्वाब का।\n\nफिर रेत सी बह गईं उम्मीद की कश्तियाँ,\nदरिया था आँखों में या मौसम था शाम का।\n\nइक बेज़ुबान सी चाहत, इक नामुराद सी आस,\nकुछ रंग बिखर गया था रोज़-ओ-शाम का।\n\nएक बेख़बर सी ख़ुशी, इक बेचैन सी क़लम,\nलिखती रही फ़स्ल कोई तन्हा ग़ुलाम का।\n\nमैं देखता रह गया फिर इन फ़लक की तरफ़,\nक्या राज़ था चाँद में, इन तारों के नाम का।",
+    "type": "Ghazal",
+    "mood": "Melancholic, Atmospheric",
+    "theme": "Evening, Moon, Loss",
+    "tags": [
+      "moon",
+      "clouds",
+      "evening",
+      "silence",
+      "sand",
+      "river"
+    ],
+    "imagery": "Moon drowned in clouds, boats of hope washing away like sand, silent wish",
+    "language": "Hindi"
+  },
+  {
+    "id": 88,
+    "content": "Forge a nexus to alter the canon,\nWhere the string of destiny breaks into threads of will.\n\nI went back—\ninto the quiet corridors of yesters,\nwhence the present I knew dissolved like mist.\nIt slid into the archives of memory,\nbecoming just another “was.”\n\nAnd that past?\nPerhaps another “will,” from another string.\nThe future—\nforged from what I sow:\nwaiting, watching,\nready to be revised by this rewritten craft.\n\n‘Ey call it canon—\nthe anchor of the universe,\na singularity where the tale feels surreal.\nYet when I touched it with my subconscious,\nthe anchor wrecked—\nand a new river spilled forth.\n\nA nexus bloomed.\nA fracture, yes—\nbut also a possibility.\n\nWhere one tale ended with qualm,\na zillion new verses began,\neach warblin’ in their own strange meter.\n\nAnd so I walk,\nbetwixt opposites,\ncarrying the unveils,\nTo revise the narrative\nis to write a poem upon the bones of time—\nhalf prose, half poesy,\nand wholly unleashed.",
+    "type": "Epic/Philosophical Poem",
+    "mood": "Grand, Metaphysical",
+    "theme": "Time Travel, Destiny, Nexus",
+    "tags": [
+      "nexus",
+      "canon",
+      "time travel",
+      "destiny",
+      "writing"
+    ],
+    "imagery": "Threads of will, archives of memory, anchor of universe wrecking, poem upon bones of time",
+    "language": "English"
+  },
+  {
+    "id": 89,
+    "content": "ख़ामोशी से मुसीबत भी संगीन है\nदिल की तड़पन से ज़रा तस्कीन है\nकिसी की पूरी तो किसी की अधूरी\nज़िंदगी की दास्तानें भी रंगीन है\n\nसोचते कुछ और है\nलिखते कुछ और है\nकमबख़्त ये ही ज़िंदगी की आरज़ू है\nनग़मों में बयां करते कुछ और है",
+    "type": "Nazm",
+    "mood": "Ironical, Reflective",
+    "theme": "Silence, Pain, Writing",
+    "tags": [
+      "silence",
+      "pain",
+      "writing",
+      "stories"
+    ],
+    "imagery": "Irony of life desires",
+    "language": "Hindi"
+  },
+  {
+    "id": 90,
+    "content": "Will to have some with passion\nTo get some with passion,\nYet received some with spite at all\nFate ain't look for..\nNonetheless fondness owed for one's some till.",
+    "type": "Poem",
+    "mood": "Accepting, Gratified",
+    "theme": "Passion, Fate",
+    "tags": [
+      "passion",
+      "spite",
+      "fate",
+      "fondness"
+    ],
+    "imagery": "None",
+    "language": "English"
+  },
+  {
+    "id": 91,
+    "content": "बहुत हसीन पल था वो\nक्या करे कल था वो\n\nजिंदगी-ए-लम्हे कुछ पल में बीती\nख़्वाहिशें आज भी सपनो में लिपटी\nनज़ाकतें ख़्वाबों में तकती\nरातें आज भी उम्मीदों ने गुज़रती\n\nक्या अजीब पल था वो",
+    "type": "Poem",
+    "mood": "Nostalgic, Dreamy",
+    "theme": "Past Moments, Memories",
+    "tags": [
+      "past",
+      "dreams",
+      "night",
+      "hope"
+    ],
+    "imagery": "Dreams wrapped in wishes",
+    "language": "Hindi"
+  },
+  {
+    "id": 92,
+    "content": "तुम्हारा रूप देख कर हम दीवाने हो जाये,\nइस कदर हम मस्ताने हो जाये;\nसाये में तेरे, मेरे आशियाने हो जाये,\nतकदीर में ही सही पर, उन ख़्वाबों के अफ़साने हो जाये।",
+    "type": "Sher",
+    "mood": "Romantic, Devoted",
+    "theme": "Beauty, Obsession",
+    "tags": [
+      "beauty",
+      "madness",
+      "shade",
+      "destiny"
+    ],
+    "imagery": "Home in your shadow",
+    "language": "Hindi"
+  },
+  {
+    "id": 93,
+    "content": "चाँद की रौशनी में खुद को छुपा के,\nरात की गहराइयों में खो गया।\nआँखों में बसी वो तस्वीर,\nचाँद से अपनी दास्तान कह गया।",
+    "type": "Sher",
+    "mood": "Secretive, Romantic",
+    "theme": "Moon, Secret",
+    "tags": [
+      "moon",
+      "eyes",
+      "story",
+      "hiding"
+    ],
+    "imagery": "Image narrated to moon",
+    "language": "Hindi"
+  },
+  {
+    "id": 94,
+    "content": "Mine craving for carving Moon\nseems same for thee too",
+    "type": "Quote",
+    "mood": "Connected",
+    "theme": "Shared Feeling",
+    "tags": [
+      "moon",
+      "craving",
+      "carving"
+    ],
+    "imagery": "Carving moon",
+    "language": "English"
+  },
+  {
+    "id": 95,
+    "content": "Enfolded in night's aura, the moon's gentle\ncrescent graces nature's symphony",
+    "type": "Haiku",
+    "mood": "Serene",
+    "theme": "Night, Moon",
+    "tags": [
+      "night",
+      "crescent",
+      "symphony"
+    ],
+    "imagery": "Night's aura, crescent",
+    "language": "English"
+  },
+  {
+    "id": 96,
+    "content": "Appreciation of love should be expressed;\nBecause love reflects in tears,\nDon't shed them unnecessarily.",
+    "type": "Advice",
+    "mood": "Practical, Emotional",
+    "theme": "Love, Tears",
+    "tags": [
+      "tears",
+      "appreciation",
+      "love"
+    ],
+    "imagery": "Love reflecting in tears",
+    "language": "English"
+  },
+  {
+    "id": 97,
+    "content": "एक था राजा, एक थी रानी,\nदोनों की थी हसीं कहानी।\nइश्क़ के रंगों से सजी थी दुनिया,\nआँखों में थी सपनों की रवानी।\n\nमोहब्बत की लौ थी जलती,\nफिर भी थी दिलों में खलिश कहीं।\nतमन्नाओं के परदे में छुपी,\nएक अनकही सदा थी वहीं।\n\nचांदनी रातों में चलती थी बातों की बहार,\nलेकिन कदमों में बिछती रही वीरानी।\nमिलने की चाहत में बढ़ते रहे कदम,\nमगर फासलों में ही गुम हो गई निशानी।\n\nदिलों में थी बातों की बरसात,\nफिर भी खामोशी थी जिंदा,\nजाने कैसे बीत गए वो पल,\nजो कभी लौटकर ना आएंगे, सिंधा।\n\nजो नहीं होना था, वो हो रहा है,\nदिल की गलियों में जोर हो रहा है।\nइश्क़ का मौसम आया भी नहीं,\nऔर रुखसत का दौर हो रहा है।\n\nरात की चादर में थे सपने,\nसुबह की किरणें धुंधला गईं।\nदिल की हसरतें न बुझ सकीं,\nज़िन्दगी कहीं और जा बसी।\n\nएक था राजा, एक थी रानी,\nदोनों बिछड़े, खत्म हुई कहानी।\nजो होना था, वो कभी ना हुआ,\nफिर भी, वो यादें बनी रहेंगी जवानी।",
+    "type": "Ballad",
+    "mood": "Tragic, Storytelling",
+    "theme": "Lost Love, Separation",
+    "tags": [
+      "king",
+      "queen",
+      "story",
+      "separation",
+      "memories"
+    ],
+    "imagery": "World decorated with love colors, rainy words in hearts, fading morning rays",
+    "language": "Hindi"
+  },
+  {
+    "id": 98,
+    "content": "The Scenic Ballad of Our Stars\n\nMethinks this love feels surreal, like a dream,\nDriftin' upon the universe's stream.\nI stand here gazing at the night sky deep,\nWhile memories of thee, my heart doth keep.\nThe gentle breeze whispers a sensual tune,\nBeneath the silver watch of stars & moon;\nNo cloud can hide, nor shadows ever conceal,\nThe beauty of this scenic truth I feel.\n\nThou hast that magic in thy hazel green,\nThe fairest sight my soul hath ever seen.\nThy fringe doth fall softly upon thy face,\nLike flowers bloomin' in a sunlit place.\nI see thy hazelnut mocha brown hairs flow,\nWith essence of those sweet citrus flowering pheromones aglow—\nA scent that pulls me in, wild and devine,\nTo make me wish that thou were wholly mine.\n\nOur yesters melt & slowly start to fade,\nLike ripples on a lake within the shade.\nBut nexts await, glorious and bright,\nTurning the cold into the warm sunlight.\nThe blues're banished when I see thy smile,\nWhich makes the steepest mountains worth the mile.\n\nThy touches of your softness calm the sea,\nAn ocean vast where I just wanna be.\nThou art the apple of my eye, it's clear,\nDispelling every doubt & every fear.\nThere ain't no would, nor could, nor should imply,\nThat I would leave thee 'neath the open sky.\nThy vibrance shines thru yellows & the grey,\nTurning the darkest night to bright of day.\n\nSo grant me, love, yet one distinct embrace,\nTo hold forever in this sacred space.\nLet nature sing in rhythm with my plea,\nFor thou art all the world, and more, to me.\nNo longer need I gaze on stars afar,\nFor thou, my lovely Chica, art the star.",
+    "type": "Romantic Ballad",
+    "mood": "Passionate, Adoring",
+    "theme": "Love, Nature, Beauty",
+    "tags": [
+      "nature",
+      "hazel eyes",
+      "scent",
+      "universe",
+      "star"
+    ],
+    "imagery": "Silver watch of stars, hazelnut mocha hair, citrus pheromones, ocean vast",
+    "language": "English"
+  },
+  {
+    "id": 99,
+    "content": "Hark, what audacity the moon doth show,\nOn this lonely, starry, hazy night, y'know?\nIt hangeth there, a ghostly, silver gleam,\nJust watchin' o'en this wild and fleeting dream.\n\nThis whole mishmash of life, this fated game,\nIt sees the love, the beauty, and the flame.\nForsooth, 'tis nature's law, a grand design,\nA witness to it all, a silent sign.\n\nSo one looks up, a soul beneath the vast,\nThinkin' on the die that has been cast.\nIt's kinda beautiful, this cosmic stuff,\nAnd for this moment, 'tis more than enough.",
+    "type": "Poem",
+    "mood": "Contemplative, Awestruck",
+    "theme": "Moon, Existence",
+    "tags": [
+      "moon",
+      "audacity",
+      "cosmic",
+      "life"
+    ],
+    "imagery": "Ghostly silver gleam, cosmic stuff",
+    "language": "English"
+  },
+  {
+    "id": 100,
+    "content": "तुम्हारी वो पहली झलक, जैसे नए दिन की आज़ हो तुम\nतुम्हारी वो पहली मुलाकात, जैसे खुशियों का साज़ हो तुम\nतुम्हारी वो पहली हंसी, बहारों की जीत हो तुम\nप्रेम की वो पहली बौछार में, जीवन की नई रीत हो तुम\n\nजीवन की राहों में हसरतों का सफर हो तुम\nबिखरी ज़िंदगी में उम्मीदों का असर हो तुम\nमुस्कुराहटों की लहरों में खुशी का इज़हार हो तुम\nख्वाबों के आलम में हक़ीक़त का हयात हो तुम\n\nइन ज़ुल्फ़ों की छाँव में दिल का आशियाना हो तुम\nरात की गहराई में चाँद की रोशनी हो तुम\nदिल की हर धड़कन में प्यार की सरगम हो तुम\nदर्द की गहराई में आहट का एहसास हो तुम\n\nहर सूफ़ियाना राग में प्रेम की बात हो तुम\nसोर भरी दुनिया में सुकून का लम्हा हो तुम\nज़िंदगी के पेचीदगियों में सादगी की सौगात हो तुम\nजीवन के महकते फूलों में खुशबू की बरसात हो तुम\n\nजीवन की इस धारा में, ख्वाबों की कश्ती हो तुम\nअनगिनत यादों के झरोखे से, बीते पलों की हस्ती हो तुम\nबारिश की बूँदों में छुपी, धरती की प्यास हो तुम\nसूरज की पहली किरण में, नई सुबह की आस हो तुम\n\nगुलशन की नाजुक डालियों में, फूलों की मुस्कान हो तुम\nचाँदनी रातों में तारों की, चमकती जुबान हो तुम\nदिल के जज़्बातों में बसी, प्रेम की गहरी धार हो तुम\nज़िंदगी के हर मोड़ पर, मेरे साथ की राहबर हो तुम\n\nसंगीत के हर सुर में, गीतों की रवानी हो तुम\nशोर की इस दुनिया में, दिल की खामोशी हो तुम\nउलझनों के चक्रव्यूह में, समझ की सरलता हो तुम\nजीवन के सूने पलों में, यादों की बरसात हो तुम\n\nहर दुख में, हर सुख में, साथ अबाद हो तुम\nजीवन के हर मोड़ पर, वफ़ा का साया हो तुम\nचाहे जो भी हो बाधा, अनंत काल तक साथ का वादा हो तुम",
+    "type": "Nazm (Ode)",
+    "mood": "Worshipping, Romantic",
+    "theme": "You are Everything",
+    "tags": [
+      "praise",
+      "life",
+      "love",
+      "light",
+      "nature"
+    ],
+    "imagery": "First glimpse like new day, shelter of hair, moonlight in depth of night, boat of dreams",
+    "language": "Hindi"
+  }
+]
