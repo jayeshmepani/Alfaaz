@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         const displayTag = (item.tags[0] || item.mood).toLowerCase();
 
         article.innerHTML = `
-            <header class="card-header">
+            <header class="card-header art-head" id="n${item.id}">
                 <h3 class="card-title ${langClass}">#${item.id}</h3>
                 <div class="card-meta">${item.type}</div>
             </header>
             <div class="card-body ${langClass}" lang="${langClass === 'hi' ? 'hi' : 'en'}">${previewText.replace(/\n/g, '<br>')}</div>
             <footer class="card-footer">
                 <span class="tag">${displayTag}</span>
-                <span>${item.language}</span>
+                <span class="lang">${item.language}</span>
             </footer>
         `;
         return article;
@@ -306,22 +306,81 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     });
 
-    const header = document.querySelector('header');
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 100) {
-            header.style.padding = '1rem 0';
-        } else {
-            header.style.padding = '1.5rem 0';
-        }
-    });
+    // const header = document.querySelector('header');
+    // window.addEventListener('scroll', () => {
+    //     if (window.pageYOffset > 100) {
+    //         header.style.padding = '1rem 0';
+    //     } else {
+    //         header.style.padding = '1.5rem 0';
+    //     }
+    // });
 
-    // Mobile menu toggle
+    // Mobile menu toggle with backdrop
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
+
+    // Create backdrop element
+    let backdrop = document.querySelector('.mobile-menu-backdrop');
+    if (!backdrop) {
+        backdrop = document.createElement('div');
+        backdrop.className = 'mobile-menu-backdrop';
+        document.body.appendChild(backdrop);
+    }
+
+    // Create mobile nav header with close button
+    let mobileNavHeader = nav.querySelector('.mobile-nav-header');
+    if (!mobileNavHeader && nav) {
+        mobileNavHeader = document.createElement('div');
+        mobileNavHeader.className = 'mobile-nav-header';
+        mobileNavHeader.innerHTML = `
+            <span class="mobile-nav-brand">Kalam</span>
+            <button class="mobile-nav-close" aria-label="Close menu">‹</button>
+        `;
+        nav.insertBefore(mobileNavHeader, nav.firstChild);
+    }
+
+    const mobileNavClose = nav.querySelector('.mobile-nav-close');
+
+    function openMobileMenu() {
+        nav.classList.add('mobile-open');
+        menuToggle.classList.add('active');
+        backdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+        nav.classList.remove('mobile-open');
+        menuToggle.classList.remove('active');
+        backdrop.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
     if (menuToggle && nav) {
+        // Hamburger opens menu
         menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('mobile-open');
-            menuToggle.textContent = nav.classList.contains('mobile-open') ? '✕' : '☰';
+            if (!nav.classList.contains('mobile-open')) {
+                openMobileMenu();
+            }
+        });
+
+        // Close button inside nav
+        if (mobileNavClose) {
+            mobileNavClose.addEventListener('click', closeMobileMenu);
+        }
+
+        // Close menu when clicking backdrop
+        backdrop.addEventListener('click', closeMobileMenu);
+
+        // Close menu when clicking nav links
+        nav.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && nav.classList.contains('mobile-open')) {
+                closeMobileMenu();
+            }
         });
     }
 
