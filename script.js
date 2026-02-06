@@ -67,24 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
     }
 
-    const heroQuoteEl = document.getElementById('heroQuote');
-    const heroAttrEl = document.getElementById('heroAttribution');
 
-    if (heroQuoteEl) {
-        const quotes = writings.filter(w =>
-            (w.type.includes('Quote') || w.type.includes('Sher') || w.type.includes('Intro')) &&
-            w.content.length < 200
-        );
-
-        const specificHero = writings.find(w => w.id === 'html_hero_quote');
-        const heroItem = specificHero || (quotes.length > 0 ? quotes[Math.floor(Math.random() * quotes.length)] : writings[0]);
-
-        if (heroItem) {
-            heroQuoteEl.innerHTML = heroItem.content.replace(/\n/g, '<br>');
-            heroQuoteEl.setAttribute('lang', heroItem.language.toLowerCase() === 'hindi' ? 'hi' : 'en');
-            if (heroAttrEl) heroAttrEl.textContent = `— ${heroItem.type}`;
-        }
-    }
 
     const gridItems = writings.filter(w => w.id !== featuredItem.id);
 
