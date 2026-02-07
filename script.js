@@ -27,15 +27,26 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Format common tags to be lowercase for style
         const displayTag = (item.tags[0] || item.mood).toLowerCase();
 
+        let devicesHtml = '';
+        if (item.literary_devices && Array.isArray(item.literary_devices) && item.literary_devices.length > 0) {
+            devicesHtml = item.literary_devices.slice(0, 5).map(d => `<span class="device-tag">${d}</span>`).join('');
+        }
+
         article.innerHTML = `
             <header class="card-header art-head" id="n${item.id}">
                 <h3 class="card-title ${langClass}">#${item.id}</h3>
-                <div class="card-meta">${item.type}</div>
+                <div class="card-meta">
+                    <span class="meta-type">${item.type}</span>
+                    ${item.structure ? `<span class="meta-separator">•</span><span class="meta-structure">${item.structure}</span>` : ''}
+                </div>
             </header>
             <div class="card-body ${langClass}" lang="${langClass === 'hi' ? 'hi' : 'en'}">${previewText.replace(/\n/g, '<br>')}</div>
             <footer class="card-footer">
-                <span class="tag">${displayTag}</span>
-                <span class="lang">${item.language}</span>
+                <div class="footer-primary">
+                    <span class="tag">${displayTag}</span>
+                    <span class="lang">${item.language}</span>
+                </div>
+                ${devicesHtml ? `<div class="footer-secondary">${devicesHtml}</div>` : ''}
             </footer>
         `;
         return article;
@@ -85,6 +96,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 theme: new Set(),
                 type: new Set(),
                 tags: new Set(),
+                structure: new Set(),
+                devices: new Set(),
                 lang: 'all'
             };
             this.metadata = this.extractMetadata(data);
@@ -108,7 +121,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 mood: new Set(),
                 theme: new Set(),
                 type: new Set(),
-                tags: new Set()
+                tags: new Set(),
+                structure: new Set(),
+                devices: new Set()
             };
 
             data.forEach(item => {
@@ -124,13 +139,21 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (item.tags && Array.isArray(item.tags)) {
                     item.tags.forEach(t => meta.tags.add(t));
                 }
+                if (item.structure) {
+                    meta.structure.add(item.structure);
+                }
+                if (item.literary_devices && Array.isArray(item.literary_devices)) {
+                    item.literary_devices.forEach(d => meta.devices.add(d));
+                }
             });
 
             return {
                 mood: Array.from(meta.mood).sort(),
                 theme: Array.from(meta.theme).sort(),
                 type: Array.from(meta.type).sort(),
-                tags: Array.from(meta.tags).sort()
+                tags: Array.from(meta.tags).sort(),
+                structure: Array.from(meta.structure).sort(),
+                devices: Array.from(meta.devices).sort()
             };
         }
 
@@ -139,8 +162,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             if (!filterBody) return;
 
             this.createFilterSection(filterBody, 'Mood', this.metadata.mood, 'mood');
+            this.createFilterSection(filterBody, 'Structure', this.metadata.structure, 'structure');
             this.createFilterSection(filterBody, 'Theme', this.metadata.theme, 'theme');
             this.createFilterSection(filterBody, 'Type', this.metadata.type, 'type');
+            this.createFilterSection(filterBody, 'Literary Devices', this.metadata.devices, 'devices');
             this.createFilterSection(filterBody, 'Tags', this.metadata.tags, 'tags');
 
             document.getElementById('toggleFilters')?.addEventListener('click', () => {
@@ -206,6 +231,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 theme: new Set(),
                 type: new Set(),
                 tags: new Set(),
+                structure: new Set(),
+                devices: new Set(),
                 lang: 'all'
             };
 
@@ -242,6 +269,16 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (this.state.tags.size > 0) {
                     const itemTags = item.tags || [];
                     const hasMatch = itemTags.some(t => this.state.tags.has(t));
+                    if (!hasMatch) return false;
+                }
+
+                if (this.state.structure.size > 0) {
+                    if (!this.state.structure.has(item.structure)) return false;
+                }
+
+                if (this.state.devices.size > 0) {
+                    const itemDevices = item.literary_devices || [];
+                    const hasMatch = itemDevices.some(d => this.state.devices.has(d));
                     if (!hasMatch) return false;
                 }
 

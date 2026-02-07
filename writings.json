@@ -2,7 +2,7 @@
   {
     "id": 1,
     "content": "The gray did soften 'neath golden flame;\nthe rainbow lean'd in tender arc;\n& sky became a poet's heart, undone.",
-    "type": "Haiku-esque",
+    "type": "Short Poem",
     "mood": "Ethereal, Soft",
     "theme": "Nature's Beauty",
     "tags": [
@@ -13,7 +13,13 @@
       "gold"
     ],
     "imagery": "Golden flame, rainbow arc, poet's heart",
-    "language": "English"
+    "language": "English",
+    "structure": "Haiku-style Free Verse",
+    "literary_devices": [
+      "Imagery",
+      "Metaphor",
+      "Personification"
+    ]
   },
   {
     "id": 2,
@@ -30,7 +36,14 @@
       "journey"
     ],
     "imagery": "Morning breeze, melting sun, soaring flight, cage, sky's magic",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Metaphor",
+      "Symbolism",
+      "Personification",
+      "Imagery"
+    ]
   },
   {
     "id": 3,
@@ -45,7 +58,13 @@
       "destiny"
     ],
     "imagery": "Moments of testing, beauty of character",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Free Verse)",
+    "literary_devices": [
+      "Anaphora",
+      "Metaphor",
+      "Reflective Tone"
+    ]
   },
   {
     "id": 4,
@@ -61,7 +80,13 @@
       "reality loops"
     ],
     "imagery": "Shadows of past, loops of self-reference",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Metaphor",
+      "Paradox",
+      "Visual Imagery"
+    ]
   },
   {
     "id": 5,
@@ -76,7 +101,12 @@
       "totality"
     ],
     "imagery": "Earning the totality",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Parallelism",
+      "Didactic Tone"
+    ]
   },
   {
     "id": 6,
@@ -91,12 +121,17 @@
       "abhorrence"
     ],
     "imagery": "Vicissitude vs Perpetuity",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Antithesis",
+      "Juxtaposition"
+    ]
   },
   {
-    "id": 8,
+    "id": 7,
     "content": "‘..Seldom,\nIn admiration of ‘em..;\nHwæt thou’ve in thy mind,\ndunno see in thy eyes;\nHwæt thou’re saying,\ndunno see in thy mind..’",
-    "type": "Poem (Archaic Style)",
+    "type": "Poem",
     "mood": "Confused, Searching",
     "theme": "Misunderstanding, Communication",
     "tags": [
@@ -107,10 +142,16 @@
       "archaic"
     ],
     "imagery": "Seeing in eyes vs mind",
-    "language": "English"
+    "language": "English",
+    "structure": "Rhymed Verse",
+    "literary_devices": [
+      "Archaic Diction",
+      "Repetition",
+      "Dialogue"
+    ]
   },
   {
-    "id": 9,
+    "id": 8,
     "content": "रातें तकती है कोई रास्ता\nजुगनू दिखते नहीं हैं अब\nशमा जलती रही रात भर\nपरवाने मिलते नहीं हैं अब\n\nसफ़र फ़लक तक का\nउन सितारों में खो गया\nअब सितम परवाने का\nउन रातों से जुड़ गया\n\nअफ़साने भी दीदार होने लगे\nचाँद के फ़ितूर में\nइश्क़ भी लूटने लगे\nचाँद के ऐतबार में",
     "type": "Nazm",
     "mood": "Lonely, Dark, Romantic",
@@ -124,10 +165,17 @@
       "ishq"
     ],
     "imagery": "Waiting nights, missing fireflies, moth and flame, journey to stars",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Quatrains)",
+    "literary_devices": [
+      "Personification",
+      "Imagery",
+      "Metaphor",
+      "Internal Rhyme"
+    ]
   },
   {
-    "id": 10,
+    "id": 9,
     "content": "Though it is hard to be understood,\nyet one must express.",
     "type": "Quote",
     "mood": "Resolute",
@@ -138,10 +186,15 @@
       "communication"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Aphorism",
+    "literary_devices": [
+      "Paradox",
+      "Imperative Tone"
+    ]
   },
   {
-    "id": 11,
+    "id": 10,
     "content": "The most idyllic aeon is with love;\nThe most antagonistic abyss is with hate;\nSo be a philophile & a xenophobic.",
     "type": "Aphorism",
     "mood": "Analytical",
@@ -151,15 +204,22 @@
       "hate",
       "aeonian",
       "stygian",
-      "philophile"
+      "philophile",
+      "xenophobia"
     ],
     "imagery": "Idyllic aeonian vs antagonistic stygian",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Juxtaposition",
+      "Alliteration",
+      "Irony"
+    ]
   },
   {
-    "id": 12,
+    "id": 11,
     "content": "कुछ लम्हे गुज़रने दो\nवक़्त न हो तो इंतज़ार ही सही\nकुछ गुफ़्तगू हैरत-अंगेज़ होने दो",
-    "type": "Haiku-esque",
+    "type": "Short Poem",
     "mood": "Patient, Calm",
     "theme": "Patience, Conversation",
     "tags": [
@@ -169,10 +229,15 @@
       "waiting"
     ],
     "imagery": "Passing moments",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Tercet (Haiku-style)",
+    "literary_devices": [
+      "Imagery",
+      "Imperative Mood"
+    ]
   },
   {
-    "id": 13,
+    "id": 12,
     "content": "Thou knowest not what thou sensest\nbut whatever this feeling is,\nit is right...;\nThou sayest not\nwhat thou sensest\nso whatever thou sensest;\nindeterminately please accept..!",
     "type": "Poem",
     "mood": "Reassuring, Intuitive",
@@ -184,10 +249,16 @@
       "intuition"
     ],
     "imagery": "Indeterminate sensing",
-    "language": "English"
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Archaic Diction",
+      "Repetition",
+      "Enjambment"
+    ]
   },
   {
-    "id": 14,
+    "id": 13,
     "content": "The tale might be wrong\nBut\nthe Ambience tells the vibe",
     "type": "Quote",
     "mood": "Observational",
@@ -199,25 +270,37 @@
       "tale"
     ],
     "imagery": "Ambience telling the vibe",
-    "language": "English"
+    "language": "English",
+    "structure": "Aphorism",
+    "literary_devices": [
+      "Metaphor",
+      "Personification"
+    ]
   },
   {
-    "id": 15,
+    "id": 14,
     "content": "If it's possible then it's relativistic\nIf it's relativistic then it's realistic\nIf it's realistic then it's materialistic\nIf it's materialistic then it's naturalistic\nIf it's naturalistic then it's problematic\nIf it's problematic then it's idealistic\nIf it's idealistic then it's fantastic\nIf it's fantastic then it's enthusiastic\nIf it's enthusiastic then it's optimistic\nIf it's optimistic then it's energetic\nIf it's energetic then it's electric\nIf it's electric then it's magnetic\nIf it's magnetic then it's charismatic\nIf it's charismatic then it's diplomatic\nIf it's diplomatic then it's democratic\nIf it's democratic then it's republic\nIf it's republic then it's public\nIf it's public then it's specific\nIf it's specific then it's oceanic\nIf it's oceanic then it's pacific\nIf it's pacific/specific then it's terrific\nIf it's terrific then it's traffic\nIf it's traffic then it's tragic\nIf it's tragic then it's magic\nIf it's magic then it's logic\nIf it's logic then it's static\nIf it's static then it's statistic\nIf it's statistic then it's mathematics\nIf it's mathematics then it's systematic\nIf it's systematic then it's automatic\nIf it's automatic then it's acrobatic\nIf it's acrobatic then it's cinematic\nIf it's cinematic then it's dramatic\nIf it's dramatic then it's traumatic\nIf it's traumatic then it's panic\nIf it's panic then it's manic\nIf it's manic then it's toxic\nIf it's toxic then it's septic\nIf it's septic then it's antibiotic\nIf it's antibiotic then it's genetic\nIf it's genetic then it's organic\nIf it's organic then it's botanical\nIf it's botanical then it's chemical\nIf it's chemical then it's atomic\nIf it's atomic then it's dynamic\nIf it's dynamic then it's volcanic\nIf it's volcanic then it's titanic\nIf it's titanic then it's gigantic\nIf it's gigantic then it's historic\nIf it's historic then it's prehistoric\nIf it's prehistoric then it's Jurassic\nIf it's Jurassic then it's classic\nIf it's classic then it's basic\nIf it's basic then it's music\nIf it's music then it's acoustic\nIf it's acoustic then it's physics\nIf it's physics then it's metaphysics\nIf it's metaphysics then it's mystic\nIf it's mystic then it's holistic\nIf it's holistic then it's artistic\nIf it's artistic then it's majestic\nIf it's majestic then it's possible\nIf it's possibly impossible then it's problematic\nIf it's impossibly possible then it's miraculous",
-    "type": "Wordplay Poem",
+    "type": "Wordplay",
     "mood": "Logical, Playful",
     "theme": "Possibility vs Impossibility",
     "tags": [
       "logic",
       "paradox",
       "harmonic",
-      "problamatic"
+      "problematic"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Chain Verse (Anadiplosis)",
+    "literary_devices": [
+      "Anadiplosis",
+      "Rhyme",
+      "Enumeration",
+      "Parallelism"
+    ]
   },
   {
-    "id": 16,
+    "id": 15,
     "content": "\"In the realm of dreams,\nquantum realities converge,\nwhere the strings of possibility vibrate in symphony,\nwhile nightmares unravel\nthe fabric of our mind's entanglement.\"",
     "type": "Philosophical Thought",
     "mood": "Surreal, Scientific",
@@ -230,10 +313,16 @@
       "nightmares"
     ],
     "imagery": "Strings of possibility vibrating",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose Poetry",
+    "literary_devices": [
+      "Metaphor",
+      "Scientific Imagery",
+      "Alliteration"
+    ]
   },
   {
-    "id": 17,
+    "id": 16,
     "content": "People change,\n& how well they've changed is evident to those\nwho aren't closest.\nHowever, how poorly they've changed affects us,\nfor they should still treat those who don't know\nthem well with benevolence.",
     "type": "Thought",
     "mood": "Reflective, Social",
@@ -245,10 +334,15 @@
       "benevolence"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Antithesis",
+      "Didactic Tone"
+    ]
   },
   {
-    "id": 18,
+    "id": 17,
     "content": "खोये थे हम राहों में, अधूरी यादों की बस्ती,\nआज शब-ए-महताबी में, है मुकम्मल दास्ताँ की मस्ती।",
     "type": "Sher",
     "mood": "Nostalgic, Complete",
@@ -261,10 +355,16 @@
       "stories"
     ],
     "imagery": "Moonlit night (Shab-e-Mahtabi)",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Couplet",
+    "literary_devices": [
+      "Metaphor",
+      "Imagery",
+      "Rhyme"
+    ]
   },
   {
-    "id": 19,
+    "id": 18,
     "content": "‘Some’ & ‘any’\nforge qualms betwixt\n‘no’ & ‘every’",
     "type": "Aphorism",
     "mood": "Analytical",
@@ -277,10 +377,15 @@
       "qualms"
     ],
     "imagery": "Forging qualms",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Personification",
+      "Metaphor"
+    ]
   },
   {
-    "id": 20,
+    "id": 19,
     "content": "φ:\nA ballad of allure, where being and beauty\nsympathetically entwine.",
     "type": "Definition",
     "mood": "Aesthetic",
@@ -292,12 +397,18 @@
       "math"
     ],
     "imagery": "Ballad of allure",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose Poetry",
+    "literary_devices": [
+      "Metaphor",
+      "Personification",
+      "Alliteration"
+    ]
   },
   {
-    "id": 21,
+    "id": 20,
     "content": "Sunset's palette, birds' ballet,\na fleeting moment of beauty in the evening sky.",
-    "type": "Haiku",
+    "type": "Short Poem",
     "mood": "Serene, Visual",
     "theme": "Nature, Sunset",
     "tags": [
@@ -307,10 +418,16 @@
       "evening"
     ],
     "imagery": "Sunset's palette, birds' ballet",
-    "language": "English"
+    "language": "English",
+    "structure": "Couplet",
+    "literary_devices": [
+      "Visual Imagery",
+      "Metaphor",
+      "Alliteration"
+    ]
   },
   {
-    "id": 22,
+    "id": 21,
     "content": "Night's ragged wind blows,\nClouds find their only comrade,\nThe silent white moon.",
     "type": "Haiku",
     "mood": "Lonely, Atmospheric",
@@ -322,10 +439,15 @@
       "moon"
     ],
     "imagery": "Ragged clouds, wind, moon",
-    "language": "English"
+    "language": "English",
+    "structure": "Haiku (5-7-5)",
+    "literary_devices": [
+      "Nature Imagery",
+      "Personification"
+    ]
   },
   {
-    "id": 23,
+    "id": 22,
     "content": "The year changed yet\nmemories & moments'll've been\nconnate.",
     "type": "Quote",
     "mood": "Reflective",
@@ -337,10 +459,15 @@
       "connate"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Alliteration",
+      "Reflection"
+    ]
   },
   {
-    "id": 24,
+    "id": 23,
     "content": "C'est la vie:\nHow things change over the years.",
     "type": "Quote",
     "mood": "Accepting",
@@ -351,10 +478,14 @@
       "years"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Aphorism",
+    "literary_devices": [
+      "Irony"
+    ]
   },
   {
-    "id": 25,
+    "id": 24,
     "content": "एक ख़त्म हो तो दूसरी रात आ जाती है,\nहोठों पर फिर भूली हुई बात आ जाती है।\n\nचाँदनी रात में भी है एक ख़ास बात,\nसितारों से तेरी मुलाकात आ जाती है।\n\nसरगम में घुल गई है तेरी यादों की रात,\nसुरों में बसी तेरी मुस्कुराहट याद आ जाती है।\n\nचाँद जैसी तेरी चाहत की कश्मकश रातों को उलझा जाती है,\nसराब-ए-इश्क़ तख़्लीक़ कर, हर एक रात ख़ुमार में आ जाती है।",
     "type": "Ghazal",
     "mood": "Romantic, Dreamy",
@@ -367,10 +498,17 @@
       "music"
     ],
     "imagery": "Moonlit night, stars meeting poetry, melody of memories, mirage of love",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Personification",
+      "Imagery",
+      "Metaphor",
+      "Synesthesia"
+    ]
   },
   {
-    "id": 26,
+    "id": 25,
     "content": "∞ :\nThe exaggeration of life",
     "type": "Quote",
     "mood": "Philosophical",
@@ -381,12 +519,17 @@
       "exaggeration"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Definition",
+    "literary_devices": [
+      "Metaphor",
+      "Symbolism"
+    ]
   },
   {
-    "id": 27,
+    "id": 26,
     "content": "कंधा दे अवलंबन प्यारी, राधे सुधि बिसराई हो।\nनैन मूँदि, सुनि तान मनोहर, पिय उर माँहिं समाई हो॥\n\nकैसो जादू भरी मुरलिया, सुध-बुध लेत छिनाई।\nराधा वारि गयीं तन-मन सब, प्रीत की रीत निभाई॥",
-    "type": "Devotional Dohas",
+    "type": "Doha",
     "mood": "Devotional, Surrender",
     "theme": "Radha-Krishna, Love",
     "tags": [
@@ -397,10 +540,16 @@
       "surrender"
     ],
     "imagery": "Flute's magic, closing eyes, shoulder support",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Couplet (Doha)",
+    "literary_devices": [
+      "Bhakti Rass",
+      "Imagery",
+      "Rhyme"
+    ]
   },
   {
-    "id": 28,
+    "id": 27,
     "content": "\"A nexus, might 'ey be?\nIf 'ey could've been,\nwhat're the chances 'ey would be one?\nAnd if 'ey do,\nshould it matter to be entangled?\"",
     "type": "Poem",
     "mood": "Inquisitive",
@@ -412,12 +561,18 @@
       "destiny"
     ],
     "imagery": "Nexus, entanglement",
-    "language": "English"
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Rhetorical Question",
+      "Metaphor",
+      "Enjambment"
+    ]
   },
   {
-    "id": 30,
+    "id": 28,
     "content": "शिव-उर को अवलंबन प्यारी, गिरिजा सुधि बिसराई हो।\nनैन मूँदि, प्रिय-स्पर्श-सुख में, जोगन आपु गँवाई हो॥\n\nकैसो नेह-अनंत को बंधन, जोग-ध्यान बिसरायो।\nगौरी-हित वैरागी शिव ने, प्रेम-रूप अपनायो॥",
-    "type": "Devotional Dohas",
+    "type": "Doha",
     "mood": "Devotional, Divine Love",
     "theme": "Shiva-Parvati, Asceticism",
     "tags": [
@@ -428,10 +583,16 @@
       "ascetic"
     ],
     "imagery": "Shiva becoming loving, Parvati losing senses",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Couplet (Doha)",
+    "literary_devices": [
+      "Bhakti Rass",
+      "Imagery",
+      "Devotional Tone"
+    ]
   },
   {
-    "id": 31,
+    "id": 29,
     "content": "In a world bereft of hues to paint my existence,\nI cradle the subtleties of monochrome,\nunraveling their depths with an intimacy\nthat eclipses the vibrant mosaic of any spectrum.",
     "type": "Poem",
     "mood": "Melancholic, Deep",
@@ -443,10 +604,16 @@
       "intimacy"
     ],
     "imagery": "World bereft of hues, weaving subtleties of monochrome",
-    "language": "English"
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Visual Imagery",
+      "Metaphor",
+      "Contrast"
+    ]
   },
   {
-    "id": 32,
+    "id": 30,
     "content": "नज़र से जो नज़र करती है बातें, गुस्ताख़ियाँ हैं,\nजो नींदें छीन लें, वो काली रातें, गुस्ताख़ियाँ हैं।\nज़ुबाँ ख़ामोश थी, बस पलकें झपकीं और उठ गईं,\nजो तय होकर हुई वो मुलाक़ातें, गुस्ताख़ियाँ हैं।\nकभी शबनम, कभी शोला, कभी सावन की ये झड़ियाँ,\nजो बिन मौसम हुईं, वो सब बरसातें, गुस्ताख़ियाँ हैं।\nसुकून-ए-क़ल्ब पर बरपा करें जो आफ़तें हर दम,\nउठाती हैं जो सीने में कई क़यामतें, गुस्ताख़ियाँ हैं।\nमेरी सल्तनत-ए-दिल पर, जो चुपके से किए जाएँ,\nबिना तेग़-ओ-सिपर की, ये सारी ग़ज़वातें, गुस्ताख़ियाँ हैं।\nकिताबों में नहीं मिलती हैं जो इश्क़ की दलीलें,\nनज़र से जो लिखी जाएँ, वही इबारतें, गुस्ताख़ियाँ हैं।\nउन्हें देखा तो दिल हारा, ज़माना भूल बैठे हम,\nमिली हैं इश्क़ की जो ये सौग़ातें, गुस्ताख़ियाँ हैं।\nजहाँ तहज़ीब का, दुनिया के डर का, पहरा था दिल पर,\nवहीं क़ब्ज़ा करें जो ये रियासतें, गुस्ताख़ियाँ हैं।\n‘ज़फ़र’, हर जंग जीती थी बड़ी ही शान से तुमने,\nये बिन लड़े जो दे जाती हैं मातें, गुस्ताख़ियाँ हैं।",
     "type": "Ghazal",
     "mood": "Passionate, Bold",
@@ -459,10 +626,17 @@
       "battle"
     ],
     "imagery": "Eyes talking, stealing sleep, sudden rain, silent battles of heart",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Refrain (Radif)",
+      "Metaphor",
+      "Personification",
+      "Hyperbole"
+    ]
   },
   {
-    "id": 33,
+    "id": 31,
     "content": "छुपा जो एहसास में, उसे ज़ुबां क्या करें,\nजो कह न सके दिल, वो बयां क्या करें।\n\nनिगाहें जो कह दें, वो बातें नहीं होतीं,\nहर राज़-ए-दिल को कहानी क्या करें।\n\nसन्नाटों में छुपा है मोहब्बत का जहाँ,\nउस गूंज को अशआरों से बयान क्या करें।\n\nजिनके लफ़्ज़ों में ज़िंदा हैं मायने,\nउन खोखले अल्फ़ाज़ों से गिला क्या करें।\n\nमिलते नहीं वो हमदम, जो हर बात समझें,\nफिर इस ख़ामोशी से गुफ़्तगू क्या करें?\n\nजो एक झलक में रूह तक उतर जाए,\nउस एहसास को सूरत-ए-कलाम क्या करें।\n\nमोहब्बत की तहरीर को क़लम न बाँध सके,\nदिल के दर्द को कोई जहाँ क्या करें।\n\nशेर-ओ-गज़ल में छुपा है फ़साना सारा,\nइससे आगे के सफ़र का इम्तिहान क्या करें।",
     "type": "Ghazal",
     "mood": "Inexpressible, Silent",
@@ -474,10 +648,16 @@
       "feeling"
     ],
     "imagery": "Silence hiding a world of love, hollow words, soul connection",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Rhetorical Question",
+      "Metaphor",
+      "Personification"
+    ]
   },
   {
-    "id": 34,
+    "id": 32,
     "content": "आज मेहरीन दिन हैं\nउस दिल-ख़्वाह साहिर के लिए\n\nमुसाहिब हुए कमबख़्त\nउस ज़ेबा के लिए\n\nउश्शाक़ तो हम नहि थे\nपर हुस्न-ए-तमाम ने एजाज़ किया\n\nमशकूर रहेंगे अरसा-ए-हयात\nइस आश्नाई के लिए\n\nक़ल्ब को लम्स कर\nसदा-ए-क़ल्ब एहसास के लिए",
     "type": "Nazm",
     "mood": "Admiring, Grateful",
@@ -490,10 +670,16 @@
       "heart"
     ],
     "imagery": "Magician of heart, touching the soul",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Free Verse)",
+    "literary_devices": [
+      "Urdu Diction",
+      "Metaphor",
+      "Praise"
+    ]
   },
   {
-    "id": 35,
+    "id": 33,
     "content": "Yet the irony is: the moon\nand my crush are the same.\nWe can neither have them\nnor can we forget them;\nThey seem to be phasing into\na loop\n...",
     "type": "Poem",
     "mood": "Wistful, Ironical",
@@ -505,10 +691,16 @@
       "irony"
     ],
     "imagery": "Phasing into loop",
-    "language": "English"
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Irony",
+      "Comparison",
+      "Metaphor"
+    ]
   },
   {
-    "id": 36,
+    "id": 34,
     "content": "Golden silhouettes\ngrace the canvas of the dusk\nfleeting elegance.",
     "type": "Haiku",
     "mood": "Visual, serene",
@@ -520,10 +712,15 @@
       "elegance"
     ],
     "imagery": "Golden hour silhouettes",
-    "language": "English"
+    "language": "English",
+    "structure": "Haiku (5-7-5)",
+    "literary_devices": [
+      "Visual Imagery",
+      "Metaphor"
+    ]
   },
   {
-    "id": 37,
+    "id": 35,
     "content": "\"..In spite of her face wasn't behold yet;\nThe moon being phased her face..",
     "type": "Quote",
     "mood": "Mysterious",
@@ -534,10 +731,15 @@
       "unseen"
     ],
     "imagery": "Moon phrasing her face",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Metaphor",
+      "Grammatical Play"
+    ]
   },
   {
-    "id": 38,
+    "id": 36,
     "content": "गुज़ारे हैं जो लम्हे तेरे साथ, उन्हें मिटाने दे\nअश्क बहाए हैं हर रैन उन्हें फिर कमाने दे\nसआदत तेरी मन्नत में वो किस्मत ने आज़माई है",
     "type": "Sher",
     "mood": "Melancholic, Healing",
@@ -549,10 +751,16 @@
       "fate"
     ],
     "imagery": "Washing away moments, earning tears back",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Tercet",
+    "literary_devices": [
+      "Metaphor",
+      "Personification",
+      "Rhyme"
+    ]
   },
   {
-    "id": 39,
+    "id": 37,
     "content": "मुसलसल होती है गर्दिश-ए-दौरा के सफ़र में\nकुछ कश्तियों के मुकद्दर में साहिल नहीं होता\nमुंतज़िर मुकम्मल का वजूद होती है",
     "type": "Sher",
     "mood": "Philosophical, Resigned",
@@ -564,10 +772,15 @@
       "shore"
     ],
     "imagery": "Boats without shores, continual search",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Tercet",
+    "literary_devices": [
+      "Metaphor",
+      "Allegory"
+    ]
   },
   {
-    "id": 40,
+    "id": 38,
     "content": "Not yet dusk, but the world glowed in\nhoneyed hues, like a fading memory.\nPinpricks of light flickered, a quiet\npromise of what's to come.",
     "type": "Prose Poetry",
     "mood": "Atmospheric, Warm",
@@ -579,10 +792,16 @@
       "promise"
     ],
     "imagery": "Honeyed hues, pinpricks of light",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Sensory Imagery",
+      "Simile",
+      "Metaphor"
+    ]
   },
   {
-    "id": 41,
+    "id": 39,
     "content": "Why do I find you so appealing? If I get time, I'll ponder.\nWhat've I seen in you? If I get time, I'll ponder.\n\nThe whole city claims acquaintance, but\nWho is truly mine? If I get time, I'll ponder.\n\nI asked you to make some time to meet,\nYou wrote back saying, \"If I get time, I'll ponder.\"\n\nIn the weather, fragrance, morning breeze, moon, twilight, and stars,\nWho is like you? If I get time, I'll ponder.\n\nEither follow your heart or heed the world's advice,\nYour suggestion is good, but if I get time, I'll ponder.\n\nWhy do I find you so appealing? If I get time, I'll ponder.",
     "type": "Ghazal-style Poem",
     "mood": "Procrastinating, Pondering",
@@ -594,12 +813,18 @@
       "questions"
     ],
     "imagery": "City claims acquaintance, weather, fragrance",
-    "language": "English"
+    "language": "English",
+    "structure": "Ghazal-style (Refrain)",
+    "literary_devices": [
+      "Repetition (Radif)",
+      "Rhetorical Question",
+      "Imagery"
+    ]
   },
   {
-    "id": 42,
+    "id": 40,
     "content": "Beneath the stillness where whispers grow,\nDost thou sigh, as the night sets aglow?\nThy gaze, like glass, holdeth shadows deep,\nWhile stars above in silence keep.\n\nThe air hums faint, a chilled embrace,\nAs time itself forgets its pace.\nThine eyes, they shimmer, yet truths they hide,\nA quiet tempest by the lake's cold tide.\n\nI see not in thy touch what thou dost mean,\nYet feel thy heart in the spaces between.\nThy silence hums with echoes unspoken,\nA bond eternal, though words lay broken.\n\nOh, thou dost set my soul alight,\nA flame that danceth with the night.\nWilt thou, dear heart, cast shadows away,\nOr let the moon guard truths we can't say?",
-    "type": "Poem (Archaic)",
+    "type": "Poem",
     "mood": "Gothic, Romantic",
     "theme": "Night, Silence, Connection",
     "tags": [
@@ -610,10 +835,17 @@
       "bond"
     ],
     "imagery": "Lake's cold tide, quiet tempest, moon guarding truths",
-    "language": "English"
+    "language": "English",
+    "structure": "Quatrains (AABB/ABAB)",
+    "literary_devices": [
+      "Archaic Diction",
+      "Personification",
+      "Metaphor",
+      "Imagery"
+    ]
   },
   {
-    "id": 43,
+    "id": 41,
     "content": "Tale of love is settled in the moon;\nBeauty is equally fictionalised with the moon;\nEvery phase has its zestful sway of the moon\nTo make us fond of the moon...",
     "type": "Poem",
     "mood": "Romantic",
@@ -625,10 +857,16 @@
       "phases"
     ],
     "imagery": "Love settled in moon",
-    "language": "English"
+    "language": "English",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Repetition",
+      "Metaphor",
+      "Personification"
+    ]
   },
   {
-    "id": 44,
+    "id": 42,
     "content": "All that we see\nisn't what it seems to be.",
     "type": "Aphorism",
     "mood": "Skeptical",
@@ -639,10 +877,15 @@
       "sight"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Couplet-style Prose",
+    "literary_devices": [
+      "Paradox",
+      "Rhyme"
+    ]
   },
   {
-    "id": 45,
+    "id": 43,
     "content": "Nothing seems to be perfect,\nbut acknowledging it after a while,\nyou might be right although wrong",
     "type": "Quote",
     "mood": "Conflicted",
@@ -654,10 +897,15 @@
       "paradox"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Paradox",
+      "Oxymoron"
+    ]
   },
   {
-    "id": 46,
+    "id": 44,
     "content": "Sometimes time repeats itself for your deeds\nto make you realize what you did.",
     "type": "Quote",
     "mood": "Warning",
@@ -668,10 +916,15 @@
       "regret"
     ],
     "imagery": "Time repeating itself",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Personification",
+      "Didactic Tone"
+    ]
   },
   {
-    "id": 47,
+    "id": 45,
     "content": "The tranquility of night,\nwhile gazing at the moon and stars,\nbrings placidity to the heart.",
     "type": "Quote",
     "mood": "Peaceful",
@@ -683,10 +936,15 @@
       "tranquility"
     ],
     "imagery": "Gazing moon and stars",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose (Tercet)",
+    "literary_devices": [
+      "Imagery",
+      "Personification"
+    ]
   },
   {
-    "id": 48,
+    "id": 46,
     "content": "Sometimes having no reason for reasoning is\nbetter than having some reasons;\nsuch an unconditional state.",
     "type": "Quote",
     "mood": "Free-spirited",
@@ -696,10 +954,15 @@
       "unconditional"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Wordplay",
+      "Paradox"
+    ]
   },
   {
-    "id": 49,
+    "id": 47,
     "content": "It's grave\nto have\nadversity\nfor a while,\nto deem it\nprosperous\nfor the zest of life.",
     "type": "Poem",
     "mood": "Stoic",
@@ -711,10 +974,15 @@
       "growth"
     ],
     "imagery": "Gravitic adversity",
-    "language": "English"
+    "language": "English",
+    "structure": "Short Verse",
+    "literary_devices": [
+      "Enjambment",
+      "Juxtaposition"
+    ]
   },
   {
-    "id": 50,
+    "id": 48,
     "content": "Searching the Ambience\nto fit the Vibe",
     "type": "Caption",
     "mood": "Casual",
@@ -725,10 +993,14 @@
       "search"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Phrase",
+    "literary_devices": [
+      "Metaphor"
+    ]
   },
   {
-    "id": 51,
+    "id": 49,
     "content": "चाँद ख़ामोश है, किस राज़ में डूबा होगा,\nरात ठहरी हुई, क्या ख़्वाब सा गुज़रा होगा।\n\nसितारे गिनती में उलझे हुए से लगते हैं,\nजैसे हर नूर का कोई हिसाब लिखा होगा।\n\nआसमान अपनी चादर में समेटे बातें,\nहर किनारे पे कोई नक़्श छुपा होगा।\n\nये फ़लक, ये रातें, ये जलते हुए सितारे,\nहर क़दम में कोई अफ़साना बयाँ करते हैं।\n\nहर झलक में छुपा है कोई पैग़ाम शायद,\nये फ़लक भी किसी का इंतज़ार करता होगा।",
     "type": "Ghazal",
     "mood": "Mystical, Waiting",
@@ -741,10 +1013,16 @@
       "waiting"
     ],
     "imagery": "Silent moon, tangled stars, sky's blanket, hidden stories",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Personification",
+      "Metaphor",
+      "Visual Imagery"
+    ]
   },
   {
-    "id": 52,
+    "id": 50,
     "content": "Since night will be lovely.\nFor sake of beauty; feel love behovely.\nRealm of passions might be aeonian\nBut idyllically elysian.\nStill awaiting them\nDespite the fondness is the same.",
     "type": "Poem",
     "mood": "Romantic, Dreamy",
@@ -756,10 +1034,16 @@
       "elysian"
     ],
     "imagery": "Idyllically elysian realm",
-    "language": "English"
+    "language": "English",
+    "structure": "Rhymed Verse",
+    "literary_devices": [
+      "Archaic Diction",
+      "Rhyme",
+      "Imagery"
+    ]
   },
   {
-    "id": 53,
+    "id": 51,
     "content": "In the clouds of love, we soar above the ordinary.",
     "type": "Quote",
     "mood": "Uplifting",
@@ -770,10 +1054,14 @@
       "flight"
     ],
     "imagery": "Clouds of love",
-    "language": "English"
+    "language": "English",
+    "structure": "Statement",
+    "literary_devices": [
+      "Metaphor"
+    ]
   },
   {
-    "id": 54,
+    "id": 52,
     "content": "One should recite the rhythmic variations\nof the self, to prepare the character\nfor the next chapter.",
     "type": "Quote",
     "mood": "Reflective",
@@ -784,10 +1072,15 @@
       "life chapters"
     ],
     "imagery": "Reciting rhythm's variances",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose",
+    "literary_devices": [
+      "Metaphor",
+      "Rhyme"
+    ]
   },
   {
-    "id": 55,
+    "id": 53,
     "content": "\" 's in the heart, yet doesn't come over lips;! \"",
     "type": "Fragment",
     "mood": "Silent",
@@ -798,10 +1091,15 @@
       "lips"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Sentence Fragment",
+    "literary_devices": [
+      "Ellipsis",
+      "Metaphor"
+    ]
   },
   {
-    "id": 56,
+    "id": 54,
     "content": "शाम का आसमान, तनहा और गहरा है,\nअब्रों की घनी छाँव, रुख़सार और अंधेरा है।\nपरिंदों की सरगोशियाँ; ख़्वाहिशों का बसेरा हैं,\nख़्वाबों की परवाज़, जश्नों की उलुव्व; और ग़ज़िशों का डेरा हैं।",
     "type": "Nazm",
     "mood": "Somber, Atmospheric",
@@ -813,10 +1111,16 @@
       "dreams"
     ],
     "imagery": "Dark evening sky, dense clouds, birds whispering",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Rhymed Quatrain",
+    "literary_devices": [
+      "Personification",
+      "Visual Imagery",
+      "Metaphor"
+    ]
   },
   {
-    "id": 57,
+    "id": 55,
     "content": "In the twilight's embrace, love takes flight,\nas the sky weaves its secrets in delicate\ntendrils of radiant beauty.",
     "type": "Quote",
     "mood": "Romantic",
@@ -827,10 +1131,16 @@
       "beauty"
     ],
     "imagery": "Sky weaving secrets",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose Poetry",
+    "literary_devices": [
+      "Personification",
+      "Metaphor",
+      "Imagery"
+    ]
   },
   {
-    "id": 58,
+    "id": 56,
     "content": "Jubilant sway of\nlife along with\nthe fervour of love\nis the only\navidity:",
     "type": "Poem",
     "mood": "Passionate",
@@ -842,10 +1152,15 @@
       "avidity"
     ],
     "imagery": "Jubilant sway",
-    "language": "English"
+    "language": "English",
+    "structure": "Short Verse",
+    "literary_devices": [
+      "Enjambment",
+      "High Vocabulary"
+    ]
   },
   {
-    "id": 59,
+    "id": 57,
     "content": "चाँद है पर जमाल नहीं",
     "type": "Quote",
     "mood": "Critical",
@@ -856,10 +1171,15 @@
       "jamaal"
     ],
     "imagery": "None",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Phrase",
+    "literary_devices": [
+      "Contrast",
+      "Metaphor"
+    ]
   },
   {
-    "id": 60,
+    "id": 58,
     "content": "क्या कहिये इनकी चाँदनी का अंदाज़,\nहर रात नए रंग में दिखाती है;\nचांद भी हैरान है\nतेरी हुस्न-ए-सादगी और सादगी-ए-हुस्न से,\nउसने देखा है तुझको शाम-ओ-सहर;\nतेरी जैसी वज़ूदगी पाने की,\nअब चांद को भी ऐसी चाँदनी की तलब है।",
     "type": "Nazm",
     "mood": "Romantic, Praising",
@@ -871,10 +1191,16 @@
       "envy"
     ],
     "imagery": "Moon surprised by your simplicity, moon craving your light",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Free Verse)",
+    "literary_devices": [
+      "Personification",
+      "Hyperbole",
+      "Chiasmus"
+    ]
   },
   {
-    "id": 61,
+    "id": 59,
     "content": "We were ne'er meant to meet;\nyet in our never-being together\nwe traced a year-and-distance,\nan unfinished curve\nthat seem'd perfect from afar,\nwhole in its incompletion.\n\nBut draw nigh,\nand the threads begin to whisper:\nnot harmony but the hush of chaos,\na tangle of starts and nevers,\nwhere each near-meeting\npulls the string taut\nand knots our infinite almost.",
     "type": "Poem",
     "mood": "Melancholic, Mathematical",
@@ -887,10 +1213,17 @@
       "threads"
     ],
     "imagery": "Unfinished curve, knots, taut strings, infinite almost",
-    "language": "English"
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Metaphor",
+      "Mathematical Imagery",
+      "Oxymoron",
+      "Personification"
+    ]
   },
   {
-    "id": 62,
+    "id": 60,
     "content": "रात का अफसाना, परिंदों की सैर-ए-शाम,\nआसमान के मुसव्विरों के साथ।\nशाम के ढलते हुए सूरज से परिंदों की दास्ताँ,\nदिल में एक तार की गूंज, तन्हाई में साथ।",
     "type": "Poem",
     "mood": "Quiet, Solitary",
@@ -902,10 +1235,16 @@
       "solitude"
     ],
     "imagery": "Painters of the sky, echo in heart",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Personification",
+      "Imagery",
+      "Metaphor"
+    ]
   },
   {
-    "id": 63,
+    "id": 61,
     "content": "The deepest agony of life is\ntrusting the lies that you apprise.",
     "type": "Couplet",
     "mood": "Cynical",
@@ -916,10 +1255,15 @@
       "agony"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Rhymed Couplet",
+    "literary_devices": [
+      "Rhyme",
+      "Irony"
+    ]
   },
   {
-    "id": 64,
+    "id": 62,
     "content": "What would've been; if we were together?\nA world unbroken, bound forever —\nDefying the chaos of chance's sway,\nChoosing destiny's path, come what may.\n\nThe stars would weave dreams in the velvet sky —\nA testament to a love that cannot die;\nNo accidental meeting — a destined tie,\nWoven in the fabric of you and I.\n\nOur laughter would echo through endless streams,\nLife a rhapsody, born of shared dreams;\nNo fleeting moment, no serendipitous gleam —\nBut an unyielding flame, an eternal bond, it seems.\n\nWith every moment, love would bloom anew,\nIn a world shaped by just me and you —\nWhere destiny triumphs, forever true.",
     "type": "Poem",
     "mood": "Wishful, Idealistic",
@@ -931,10 +1275,17 @@
       "dreams"
     ],
     "imagery": "World unbroken, stars weaving dreams, velvet sky",
-    "language": "English"
+    "language": "English",
+    "structure": "Rhymed Quatrains",
+    "literary_devices": [
+      "Rhyme (AABB)",
+      "Metaphor",
+      "Imagery",
+      "Anaphora"
+    ]
   },
   {
-    "id": 65,
+    "id": 63,
     "content": "एक दिलकश से हमें ये उलफ़त की ख़्वाहिश हैं\nतसव्वुर में हि सहि तुमसे रफ़ाक़त की फ़रमाइश हैं\nगुम-शुदा न होना हमसे ज़ीस्त में ये गुंजाइश हैं\nसआदत-ए-क़ुर्बत के लिए ये ज़िंदगी की आज़माइश हैं",
     "type": "Sher",
     "mood": "Longing, Devotional",
@@ -946,10 +1297,16 @@
       "closeness"
     ],
     "imagery": "Life's test for closeness",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Rhyme",
+      "Metaphor",
+      "Devotional Tone"
+    ]
   },
   {
-    "id": 66,
+    "id": 64,
     "content": "Amidst the stars, where dreams in thousands bloom,\nIn cosmic waltz, our hearts find ample room.\n\nThe wandering soul, in starlit love, does rest,\nIn endless light, our bond stands every test.",
     "type": "Poem",
     "mood": "Cosmic, Romantic",
@@ -961,10 +1318,16 @@
       "love"
     ],
     "imagery": "Cosmic waltz, blooming dreams",
-    "language": "English"
+    "language": "English",
+    "structure": "Rhymed Quatrain",
+    "literary_devices": [
+      "Metaphor",
+      "Cosmic Imagery",
+      "Rhyme"
+    ]
   },
   {
-    "id": 67,
+    "id": 65,
     "content": "Among the cotton candy clouds, love weaves its tapestry",
     "type": "Quote",
     "mood": "Soft, Sweet",
@@ -975,10 +1338,15 @@
       "love"
     ],
     "imagery": "Cotton candy clouds",
-    "language": "English"
+    "language": "English",
+    "structure": "Statement",
+    "literary_devices": [
+      "Metaphor",
+      "Imagery"
+    ]
   },
   {
-    "id": 68,
+    "id": 66,
     "content": "चांदनी रात में, तारों का जहां है कुछ,\nरात की आगोश में, खोना है कुछ।\n\nरात के अंधेरे में, खुशबू की हवा है कुछ,\nउनकी यादों की, महफ़िल फ़िज़ा है कुछ।\n\nचांद के साथ, ख्वाबों का सफर है कुछ,\nरात की गहराई में, बरसती प्यास है कुछ।\n\nरात अनजानी, उनकी बात है कुछ,\nचांद की रोशनी में, छुपी एक रात है कुछ।\n\nचांदनी की परछाई में, छुपी ताबीर है कुछ,\nचांद तेरी रोशनी में, क्या राज़ है कुछ?!",
     "type": "Nazm",
     "mood": "Mysterious, Romantic",
@@ -990,10 +1358,17 @@
       "secrets"
     ],
     "imagery": "scented wind in darkness, journey of dreams with moon",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Couplets)",
+    "literary_devices": [
+      "Repetition (Radif)",
+      "Personification",
+      "Imagery",
+      "Rhetorical Question"
+    ]
   },
   {
-    "id": 69,
+    "id": 67,
     "content": "Chasing the sunset & capturing the cosmic magic of the horizon,\nwithin & beyond.",
     "type": "Quote",
     "mood": "Adventurous",
@@ -1004,10 +1379,15 @@
       "cosmic"
     ],
     "imagery": "Cosmic magic of horizon",
-    "language": "English"
+    "language": "English",
+    "structure": "Statement",
+    "literary_devices": [
+      "Metaphor",
+      "Imagery"
+    ]
   },
   {
-    "id": 70,
+    "id": 68,
     "content": "हसरतें ख़्वाबों में रंगीन हैं,\nहयात में मुख़्तलिफ़;\nज़िंदगी गुजारना तरीक़ों में मुनासिब है,\nनसीबों में संगीन..",
     "type": "Quote",
     "mood": "Realist",
@@ -1019,10 +1399,15 @@
       "hardship"
     ],
     "imagery": "None",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Contrast",
+      "Rhyme"
+    ]
   },
   {
-    "id": 71,
+    "id": 69,
     "content": "Relativism has to be realistic.",
     "type": "Aphorism",
     "mood": "Logical",
@@ -1032,10 +1417,15 @@
       "reality"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Statement",
+    "literary_devices": [
+      "Pun",
+      "Alliteration"
+    ]
   },
   {
-    "id": 72,
+    "id": 70,
     "content": "The twilight's gentle veil, in calm's sweet embrace,\nIs all I yearn for on life's winding trace.",
     "type": "Couplet",
     "mood": "Peaceful",
@@ -1046,10 +1436,16 @@
       "life"
     ],
     "imagery": "Twilight's gentle veil",
-    "language": "English"
+    "language": "English",
+    "structure": "Rhymed Couplet",
+    "literary_devices": [
+      "Personification",
+      "Metaphor",
+      "Rhyme"
+    ]
   },
   {
-    "id": 73,
+    "id": 71,
     "content": "A thoughtful glance back often reveals the hidden paths forward.",
     "type": "Quote",
     "mood": "Wisdom",
@@ -1060,10 +1456,14 @@
       "reflection"
     ],
     "imagery": "Hidden paths forward",
-    "language": "English"
+    "language": "English",
+    "structure": "Statement",
+    "literary_devices": [
+      "Metaphor"
+    ]
   },
   {
-    "id": 74,
+    "id": 72,
     "content": "Love's elixir flows through the veins under the moon's glow",
     "type": "Quote",
     "mood": "Romantic",
@@ -1074,10 +1474,15 @@
       "elixir"
     ],
     "imagery": "Love's elixir flowing",
-    "language": "English"
+    "language": "English",
+    "structure": "Statement",
+    "literary_devices": [
+      "Metaphor",
+      "Imagery"
+    ]
   },
   {
-    "id": 75,
+    "id": 73,
     "content": "फलक से जो टूटा वो तारा तो था, पर\nक़ुबूलियत का इस जनम, इशारा नहीं था\n\nवो मंज़र जो देखा था आँखों ने मेरी\nहक़ीक़त में ऐसा, नज़ारा नहीं था\n\nहमें इश्क़ ले ही गया उस गली में\nजहाँ कोई अपना, हमारा नहीं था\n\nमैं ही था वो जलता हुआ एक सैयारा\nकिसी की नज़र का, उजारा नहीं था\n\nसमंदर के दिल में भी साहिल मिले हैं\nमगर मेरी क़िस्मत में, किनारा नहीं था\n\nये तन्हाई ओढ़े हुए सोचता हूँ\nमैं हारा नहीं था, हराया गया था",
     "type": "Ghazal",
     "mood": "Tragic, Heartbroken",
@@ -1090,10 +1495,17 @@
       "shore"
     ],
     "imagery": "Broken star, burning planet, ocean without shore",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Metaphor",
+      "Personification",
+      "Imagery",
+      "Paradox"
+    ]
   },
   {
-    "id": 76,
+    "id": 74,
     "content": "आज दिल भले ही नेक है\nपर रूह की क़राबत अनेक से थी\nदिल फ़रेबी भले ही था\nपर आज ताल्लुक़ रूह की रूहानियत से है",
     "type": "Quote",
     "mood": "Spiritual, Honest",
@@ -1105,10 +1517,15 @@
       "spirituality"
     ],
     "imagery": "None",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Contrast",
+      "Antithesis"
+    ]
   },
   {
-    "id": 77,
+    "id": 75,
     "content": "\"Under the spell of the starry night, every\nheartbeat is a promise of forever, with aurora-lit\nclouds painting our love in the sky.\"",
     "type": "Poem",
     "mood": "Romantic, Magical",
@@ -1120,10 +1537,16 @@
       "promise"
     ],
     "imagery": "Aurora-lit clouds painting love",
-    "language": "English"
+    "language": "English",
+    "structure": "Prose Poetry",
+    "literary_devices": [
+      "Personification",
+      "Imagery",
+      "Metaphor"
+    ]
   },
   {
-    "id": 78,
+    "id": 76,
     "content": "बादल में डूबा हुआ था चाँद उस शाम का,\nकुछ और गहरा गया था रंग भी जाम का।\n\nख़ामोश लम्हों में कहीं बज उठी थी सदा,\nसाया कोई मिल गया था दिल के मुक़ाम का।\n\nतनहाई की राह में इक नर्म सी हवा चली,\nमहसूस होने लगा था वक़्त भी ख़्वाब का।\n\nफिर रेत सी बह गईं उम्मीद की कश्तियाँ,\nदरिया था आँखों में या मौसम था शाम का।\n\nइक बेज़ुबान सी चाहत, इक नामुराद सी आस,\nकुछ रंग बिखर गया था रोज़-ओ-शाम का।\n\nएक बेख़बर सी ख़ुशी, इक बेचैन सी क़लम,\nलिखती रही फ़साना कोई तन्हा ग़ुलाम का।\n\nमैं देखता रह गया फिर इन फ़लक की तरफ़,\nक्या राज़ था चाँद में, इन तारों के नाम का।",
     "type": "Ghazal",
     "mood": "Melancholic, Atmospheric",
@@ -1137,10 +1560,17 @@
       "river"
     ],
     "imagery": "Moon drowned in clouds, boats of hope washing away like sand, silent wish",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Personification",
+      "Pathetic Fallacy",
+      "Imagery",
+      "Metaphor"
+    ]
   },
   {
-    "id": 79,
+    "id": 77,
     "content": "Forge a nexus to alter the canon,\nWhere the string of destiny breaks into threads of will.\n\nI went back—\ninto the quiet corridors of yesters,\nwhence the present I knew dissolved like mist.\nIt slid into the archives of memory,\nbecoming just another “was.”\n\nAnd that past?\nPerhaps another “will,” from another string.\nThe future—\nforged from what I sow:\nwaiting, watching,\nready to be revised by this rewritten craft.\n\n‘Ey call it canon—\nthe anchor of the universe,\na singularity where the tale feels surreal.\nYet when I touched it with my subconscious,\nthe anchor wrecked—\nand a new river spilled forth.\n\nA nexus bloomed.\nA fracture, yes—\nbut also a possibility.\n\nWhere one tale ended with qualm,\na zillion new verses began,\neach warblin’ in their own strange meter.\n\nAnd so I walk,\nbetwixt opposites,\ncarrying the unveils,\nTo revise the narrative\nis to write a poem upon the bones of time—\nhalf prose, half poesy,\nand wholly unleashed.",
     "type": "Epic/Philosophical Poem",
     "mood": "Grand, Metaphysical",
@@ -1153,10 +1583,18 @@
       "writing"
     ],
     "imagery": "Threads of will, archives of memory, anchor of universe wrecking, poem upon bones of time",
-    "language": "English"
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Extended Metaphor",
+      "Allegory",
+      "Dialect",
+      "Neologisms",
+      "Imagery"
+    ]
   },
   {
-    "id": 80,
+    "id": 78,
     "content": "ख़ामोशी से मुसीबत भी संगीन है\nदिल की तड़पन से ज़रा तस्कीन है\nकिसी की पूरी तो किसी की अधूरी\nज़िंदगी की दास्तानें भी रंगीन हैं\n\nसोचते कुछ और हैं\nलिखते कुछ और हैं\nकमबख़्त ये ही ज़िंदगी की आरज़ू है\nनग़मों में बयां करते कुछ और हैं",
     "type": "Nazm",
     "mood": "Ironical, Reflective",
@@ -1168,10 +1606,16 @@
       "stories"
     ],
     "imagery": "Irony of life desires",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Quatrains)",
+    "literary_devices": [
+      "Rhyme",
+      "Irony",
+      "Contrast"
+    ]
   },
   {
-    "id": 81,
+    "id": 79,
     "content": "Will to have some with passion\nTo get some with passion,\nYet received some with spite at all\nFate ain't look for..\nNonetheless fondness owed for one's some till.",
     "type": "Poem",
     "mood": "Accepting, Gratified",
@@ -1183,10 +1627,15 @@
       "fondness"
     ],
     "imagery": "None",
-    "language": "English"
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Repetition",
+      "Dialect"
+    ]
   },
   {
-    "id": 82,
+    "id": 80,
     "content": "तुम्हारा रूप देख कर हम दीवाने हो जाएं,\nइस कदर हम मस्ताने हो जाएं;\nसाये में तेरे, मेरे आशियाने हो जाएं,\nतकदीर में ही सही पर, उन ख़्वाबों के अफ़साने हो जाएं।",
     "type": "Sher",
     "mood": "Romantic, Devoted",
@@ -1198,10 +1647,16 @@
       "destiny"
     ],
     "imagery": "Home in your shadow",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Rhyme",
+      "Hyperbole",
+      "Metaphor"
+    ]
   },
   {
-    "id": 83,
+    "id": 81,
     "content": "चाँद की रौशनी में खुद को छुपा के,\nरात की गहराइयों में खो गया।\nआँखों में बसी वो तस्वीर,\nचाँद से अपनी दास्तान कह गई।",
     "type": "Sher",
     "mood": "Secretive, Romantic",
@@ -1213,10 +1668,15 @@
       "hiding"
     ],
     "imagery": "Image narrated to moon",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Personification",
+      "Imagery"
+    ]
   },
   {
-    "id": 84,
+    "id": 82,
     "content": "My craving for carving the Moon\nseems the same for you too",
     "type": "Quote",
     "mood": "Connected",
@@ -1227,10 +1687,15 @@
       "carving"
     ],
     "imagery": "Carving moon",
-    "language": "English"
+    "language": "English",
+    "structure": "Couplet",
+    "literary_devices": [
+      "Pun",
+      "Rhyme"
+    ]
   },
   {
-    "id": 85,
+    "id": 83,
     "content": "Night's aura unfolds,\nCrescent moon graces the sky,\nNature's symphony.",
     "type": "Haiku",
     "mood": "Serene",
@@ -1241,10 +1706,15 @@
       "symphony"
     ],
     "imagery": "Night's aura, crescent",
-    "language": "English"
+    "language": "English",
+    "structure": "Haiku (5-7-5)",
+    "literary_devices": [
+      "Nature Imagery",
+      "Personification"
+    ]
   },
   {
-    "id": 86,
+    "id": 84,
     "content": "एक था राजा, एक थी रानी,\nदोनों की थी हसीं कहानी।\nइश्क़ के रंगों से सजी थी दुनिया,\nआँखों में थी सपनों की रवानी।\n\nमोहब्बत की लौ थी जलती,\nफिर भी थी दिलों में खलिश कहीं।\nतमन्नाओं के परदे में छुपी,\nएक अनकही सदा थी वहीं।\n\nचांदनी रातों में चलती थी बातों की बहार,\nलेकिन कदमों में बिछती रही वीरानी।\nमिलने की चाहत में बढ़ते रहे कदम,\nमगर फासलों में ही गुम हो गई निशानी।\n\nदिलों में थी बातों की बरसात,\nफिर भी खामोशी थी जिंदा,\nजाने कैसे बीत गए वो पल,\nजो कभी लौटकर ना आएंगे, सिंधा।\n\nजो नहीं होना था, वो हो रहा है,\nदिल की गलियों में जोर हो रहा है।\nइश्क़ का मौसम आया भी नहीं,\nऔर रुखसत का दौर हो रहा है।\n\nरात की चादर में थे सपने,\nसुबह की किरणें धुंधला गईं।\nदिल की हसरतें न बुझ सकीं,\nज़िन्दगी कहीं और जा बसी।\n\nएक था राजा, एक थी रानी,\nदोनों बिछड़े, खत्म हुई कहानी।\nजो होना था, वो कभी ना हुआ,\nफिर भी, वो यादें बनी रहेंगी जवानी।",
     "type": "Ballad",
     "mood": "Tragic, Storytelling",
@@ -1257,10 +1727,18 @@
       "memories"
     ],
     "imagery": "World decorated with love colors, rainy words in hearts, fading morning rays",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ballad (Quatrains/Couplets)",
+    "literary_devices": [
+      "Storytelling",
+      "Rhyme",
+      "Imagery",
+      "Metaphor",
+      "Refrain"
+    ]
   },
   {
-    "id": 87,
+    "id": 85,
     "content": "The Scenic Ballad of Our Stars\n\nMethinks this love feels surreal, like a dream,\nDriftin' upon the universe's stream.\nI stand here gazing at the night sky deep,\nWhile memories of thee, my heart doth keep.\nThe gentle breeze whispers a sensual tune,\nBeneath the silver watch of stars & moon;\nNo cloud can hide, nor shadows ever conceal,\nThe beauty of this scenic truth I feel.\n\nThou hast that magic in thy hazel green,\nThe fairest sight my soul hath ever seen.\nThy fringe doth fall softly upon thy face,\nLike flowers bloomin' in a sunlit place.\nI see thy hazelnut mocha brown hairs flow,\nWith essence of those sweet citrus flowering pheromones aglow—\nA scent that pulls me in, wild and devine,\nTo make me wish that thou were wholly mine.\n\nOur yesters melt & slowly start to fade,\nLike ripples on a lake within the shade.\nBut nexts await, glorious and bright,\nTurning the cold into the warm sunlight.\nThe blues're banished when I see thy smile,\nWhich makes the steepest mountains worth the mile.\n\nThy touches of your softness calm the sea,\nAn ocean vast where I just wanna be.\nThou art the apple of my eye, it's clear,\nDispelling every doubt & every fear.\nThere ain't no would, nor could, nor should imply,\nThat I would leave thee 'neath the open sky.\nThy vibrance shines thru yellows & the grey,\nTurning the darkest night to bright of day.\n\nSo grant me, love, yet one distinct embrace,\nTo hold forever in this sacred space.\nLet nature sing in rhythm with my plea,\nFor thou art all the world, and more, to me.\nNo longer need I gaze on stars afar,\nFor thou, my lovely Chica, art the star.",
     "type": "Romantic Ballad",
     "mood": "Passionate, Adoring",
@@ -1273,10 +1751,18 @@
       "star"
     ],
     "imagery": "Silver watch of stars, hazelnut mocha hair, citrus pheromones, ocean vast",
-    "language": "English"
+    "language": "English",
+    "structure": "Ballad (Quatrains)",
+    "literary_devices": [
+      "Archaic Diction",
+      "Simile",
+      "Sensory Imagery",
+      "Rhyme",
+      "Hyperbole"
+    ]
   },
   {
-    "id": 88,
+    "id": 86,
     "content": "Hark, what audacity the moon doth show,\nOn this lonely, starry, hazy night, y'know?\nIt hangeth there, a ghostly, silver gleam,\nJust watchin' o'en this wild and fleeting dream.\n\nThis whole mishmash of life, this fated game,\nIt sees the love, the beauty, and the flame.\nForsooth, 'tis nature's law, a grand design,\nA witness to it all, a silent sign.\n\nSo one looks up, a soul beneath the vast,\nThinkin' on the die that has been cast.\nIt's kinda beautiful, this cosmic stuff,\nAnd for this moment, 'tis more than enough.",
     "type": "Poem",
     "mood": "Contemplative, Awestruck",
@@ -1288,12 +1774,19 @@
       "life"
     ],
     "imagery": "Ghostly silver gleam, cosmic stuff",
-    "language": "English"
+    "language": "English",
+    "structure": "Rhymed Quatrains",
+    "literary_devices": [
+      "Archaic Diction",
+      "Personification",
+      "Imagery",
+      "Rhyme"
+    ]
   },
   {
-    "id": 89,
+    "id": 87,
     "content": "तुम्हारी वो पहली झलक, जैसे नए दिन का आग़ाज़ हो तुम\nतुम्हारी वो पहली मुलाकात, जैसे खुशियों का साज़ हो तुम\nतुम्हारी वो पहली हंसी, बहारों की जीत हो तुम\nप्रेम की वो पहली बौछार में, जीवन की नई रीत हो तुम\n\nजीवन की राहों में हसरतों का सफर हो तुम\nबिखरी ज़िंदगी में उम्मीदों का असर हो तुम\nमुस्कुराहटों की लहरों में खुशी का इज़हार हो तुम\nख्वाबों के आलम में हक़ीक़त-ए-हयात हो तुम\n\nइन ज़ुल्फ़ों की छाँव में दिल का आशियाना हो तुम\nरात की गहराई में चाँद की रोशनी हो तुम\nदिल की हर धड़कन में प्यार की सरगम हो तुम\nदर्द की गहराई में आहट का एहसास हो तुम\n\nहर सूफ़ियाना राग में प्रेम की बात हो तुम\nशोर भरी दुनिया में सुकून का लम्हा हो तुम\nज़िंदगी के पेचीदगियों में सादगी की सौगात हो तुम\nजीवन के महकते फूलों में खुशबू की बरसात हो तुम\n\nजीवन की इस धारा में, ख्वाबों की कश्ती हो तुम\nअनगिनत यादों के झरोखे से, बीते पलों की हस्ती हो तुम\nबारिश की बूँदों में छुपी, धरती की प्यास हो तुम\nसूरज की पहली किरण में, नई सुबह की आस हो तुम\n\nगुलशन की नाजुक डालियों में, फूलों की मुस्कान हो तुम\nचाँदनी रातों में तारों की, चमकती जुबान हो तुम\nदिल के जज़्बातों में बसी, प्रेम की गहरी धार हो तुम\nज़िंदगी के हर मोड़ पर, मेरे साथ की राहबर हो तुम\n\nसंगीत के हर सुर में, गीतों की रवानी हो तुम\nशोर की इस दुनिया में, दिल की खामोशी हो तुम\nउलझनों के चक्रव्यूह में, समझ की सरलता हो तुम\nजीवन के सूने पलों में, यादों की बरसात हो तुम\n\nहर दुख में, हर सुख में, साथ आबाद हो तुम\nजीवन के हर मोड़ पर, वफ़ा का साया हो तुम\nचाहे जो भी हो बाधा, अनंत काल तक साथ का वादा हो तुम",
-    "type": "Nazm (Ode)",
+    "type": "Nazm",
     "mood": "Worshipping, Romantic",
     "theme": "You are Everything",
     "tags": [
@@ -1304,10 +1797,19 @@
       "nature"
     ],
     "imagery": "First glimpse like new day, shelter of hair, moonlight in depth of night, boat of dreams",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Quatrains)",
+    "literary_devices": [
+      "Anaphora",
+      "Metaphor",
+      "Simile",
+      "Hyperbole",
+      "Imagery",
+      "Rhyme"
+    ]
   },
   {
-    "id": 90,
+    "id": 88,
     "content": "शब्दों में ढली वो खामोशियाँ,\nजो दिल में बसी थीं सालों से।\nये अल्फ़ाज़ मेरे, ये जज़्बात मेरे,\nजो बुने हैं रातों की तन्हाइयों से।",
     "type": "Quote",
     "mood": "Contemplative, Personal",
@@ -1319,10 +1821,15 @@
       "words"
     ],
     "imagery": "Silence turning into words, nights used for weaving emotions",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Personification",
+      "Metaphor"
+    ]
   },
   {
-    "id": 91,
+    "id": 89,
     "content": "रात की तन्हाई में जब चाँद निकलता है,\nतुम्हारी याद का एक दरिया सा बहता है।\n\nये दिल के टुकड़े, ये बिखरी हुई यादें,\nइन्हीं से अब तो मेरा ये जहाँ चलता है।",
     "type": "Ghazal",
     "mood": "Lonely, Nostalgic",
@@ -1334,10 +1841,16 @@
       "longing"
     ],
     "imagery": "Moon rising in loneliness, river of memories",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Metaphor",
+      "Imagery",
+      "Personification"
+    ]
   },
   {
-    "id": 92,
+    "id": 90,
     "content": "Between the fading light and rising stars,\nlies a moment that belongs to us alone.\nWhere silence speaks louder than words,\nand hearts find their way back home.\n\nThe evening hums a lullaby so sweet,\nas shadows dance upon the wall.",
     "type": "Poem",
     "mood": "Serene, Romantic",
@@ -1349,10 +1862,16 @@
       "evening"
     ],
     "imagery": "Fading light, rising stars, shadows dancing",
-    "language": "English"
+    "language": "English",
+    "structure": "Quatrain + Couplet",
+    "literary_devices": [
+      "Personification",
+      "Imagery",
+      "Metaphor"
+    ]
   },
   {
-    "id": 93,
+    "id": 91,
     "content": "कुछ लम्हे ऐसे होते हैं,\nजो शब्दों में नहीं ढलते।\nबस दिल में ही रह जाते हैं,\nऔर खामोशी में पलते।",
     "type": "Quote",
     "mood": "Silent, Deep",
@@ -1364,10 +1883,15 @@
       "unspoken"
     ],
     "imagery": "Moments living in silence",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Personification",
+      "Rhyme"
+    ]
   },
   {
-    "id": 94,
+    "id": 92,
     "content": "I wrote you letters that never left my drawer,\nwords that trembled on the edge of being said.\nEach page a garden of unspoken truths,\nblooming in the silence of my head.",
     "type": "Poem",
     "mood": "Hesitant, Romantic",
@@ -1379,10 +1903,16 @@
       "love"
     ],
     "imagery": "Letters in drawer, garden of unspoken truths",
-    "language": "English"
+    "language": "English",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Metaphor",
+      "Personification",
+      "Imagery"
+    ]
   },
   {
-    "id": 95,
+    "id": 93,
     "content": "The rain arrived at dawn today,\ngentle as a forgotten song.\nIt washed the world in silver light,\nmaking everything feel less wrong.",
     "type": "Poem",
     "mood": "Serene, Healing",
@@ -1394,10 +1924,16 @@
       "silver light"
     ],
     "imagery": "Rain at dawn, silver light",
-    "language": "English"
+    "language": "English",
+    "structure": "Quatrain",
+    "literary_devices": [
+      "Simile",
+      "Personification",
+      "Imagery"
+    ]
   },
   {
-    "id": 96,
+    "id": 94,
     "content": "आज की रात कुछ अलग है,\nचाँद भी मद्धम सा है।\nदिल में कोई गीत अधूरा,\nऔर आँखों में सफ़र का नाम।\n\nबीती रातों की यादें हैं,\nजो अब भी ताज़ा हैं।\nये अल्फ़ाज़ उन्हीं की परछाइयाँ हैं,\nजो दिल में बस गई हैं।",
     "type": "Poem",
     "mood": "Pensive, Melodic",
@@ -1409,6 +1945,12 @@
       "words"
     ],
     "imagery": "Dim moon, incomplete song, shadows of words",
-    "language": "Hindi"
+    "language": "Hindi",
+    "structure": "Nazm (Quatrains)",
+    "literary_devices": [
+      "Imagery",
+      "Metaphor",
+      "Personification"
+    ]
   }
 ]
