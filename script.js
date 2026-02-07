@@ -23,18 +23,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         article.className = 'poem-card fade-in';
         article.dataset.lang = langAttr;
         article.dataset.type = item.type.toLowerCase().split(' ')[0];
+        article.setAttribute('aria-labelledby', `title-${item.id}`);
 
         // Format common tags to be lowercase for style
         const displayTag = (item.tags[0] || item.mood).toLowerCase();
 
+        // Prepare literary devices HTML (limit to 3)
         let devicesHtml = '';
         if (item.literary_devices && Array.isArray(item.literary_devices) && item.literary_devices.length > 0) {
             devicesHtml = item.literary_devices.slice(0, 5).map(d => `<span class="device-tag">${d}</span>`).join('');
         }
 
         article.innerHTML = `
-            <header class="card-header art-head" id="n${item.id}">
-                <h3 class="card-title ${langClass}">#${item.id}</h3>
+            <header class="card-header art-head">
+                <h3 class="card-title ${langClass}" id="title-${item.id}">#${item.id}</h3>
                 <div class="card-meta">
                     <span class="meta-type">${item.type}</span>
                     ${item.structure ? `<span class="meta-separator">•</span><span class="meta-structure">${item.structure}</span>` : ''}
@@ -168,9 +170,20 @@ document.addEventListener('DOMContentLoaded', async () => {
             this.createFilterSection(filterBody, 'Literary Devices', this.metadata.devices, 'devices');
             this.createFilterSection(filterBody, 'Tags', this.metadata.tags, 'tags');
 
-            document.getElementById('toggleFilters')?.addEventListener('click', () => {
+            document.getElementById('toggleFilters')?.addEventListener('click', (e) => {
                 const body = document.getElementById('filterBody');
-                body.classList.toggle('hidden');
+                const btn = e.currentTarget;
+                const isHidden = body.classList.contains('hidden');
+
+                if (isHidden) {
+                    body.classList.remove('hidden');
+                    body.setAttribute('aria-hidden', 'false');
+                    btn.setAttribute('aria-expanded', 'true');
+                } else {
+                    body.classList.add('hidden');
+                    body.setAttribute('aria-hidden', 'true');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
             });
 
             document.getElementById('resetFilters')?.addEventListener('click', () => {

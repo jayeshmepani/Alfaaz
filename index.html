@@ -4,7 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfaaz • अल्फ़ाज़ — A Poetry Collection</title>
+    <title>Alfaaz • अल्फ़ाज़ — Poetry by Jayesh Mepani</title>
+    <meta name="description"
+        content="A personal collection of poetry, ghazals, and lyrical thoughts by Jayesh Mepani — words born from quiet moments and restless nights.">
+    <meta name="keywords"
+        content="Poetry, Ghazal, Jayesh Mepani, Hindi Poetry, English Poetry, Alfaaz, Literature, Shayart">
+    <meta name="author" content="Jayesh Mepani">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jayeshmepani.github.io/Alfaaz/">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alfaaz • अल्फ़ाज़ — Poetry by Jayesh Mepani">
+    <meta property="og:description"
+        content="A personal collection of poetry, ghazals, and lyrical thoughts by Jayesh Mepani.">
+    <meta property="og:url" content="https://jayeshmepani.github.io/Alfaaz/">
+    <meta property="og:image" content="https://jayeshmepani.github.io/Alfaaz/assets/img/og-image.png">
+    <!-- Placeholder or existing -->
+
+    <meta name="theme-color" content="#1a1614">
 
     <!-- Elegant Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +34,44 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "name": "Jayesh Mepani",
+          "alternateName": "Jayesh Mepani",
+          "url": "https://jayeshmepani.github.io/Portfolio/",
+          "jobTitle": "Full-Stack Developer",
+          "sameAs": [
+            "https://github.com/jayeshmepani",
+            "https://www.linkedin.com/in/jayesh-Mepani-1111111j/",
+            "https://www.instagram.com/jayumepani/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Alfaaz • अल्फ़ाज़",
+          "url": "https://jayeshmepani.github.io/Alfaaz/",
+          "author": {
+            "@type": "Person",
+            "name": "Jayesh Mepani"
+          },
+          "description": "A personal collection of poetry, ghazals, and lyrical thoughts."
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container header-inner">
-            <a href="#" class="brand">
-                <span class="brand-title">Kalam-e-Sukhan<span>.</span></span>
+            <a href="#" class="brand" aria-label="Alfaaz - Return to Home">
+                <h1 class="brand-title">Alfaaz<span>.</span></h1>
                 <span class="brand-subtitle">A Personal Poetry Collection</span>
             </a>
 
@@ -45,7 +94,7 @@
     </header>
 
     <section class="hero" id="home">
-        <div class="hero-content">
+        <figure class="hero-content">
             <blockquote class="hero-quote" lang="hi" id="heroQuote">
                 शब्दों में ढली वो खामोशियाँ,<br>
                 जो दिल में बसी थीं सालों से।<br>
@@ -53,10 +102,10 @@
                 जो बुने हैं रातों की तन्हाइयों से।
             </blockquote>
 
-            <div class="hero-divider"><span>✦</span></div>
+            <div class="hero-divider" aria-hidden="true"><span>✦</span></div>
 
-            <p class="hero-attribution" id="heroAttribution">~ &nbsp; Jay</p>
-        </div>
+            <figcaption class="hero-attribution" id="heroAttribution">~ &nbsp; Jayesh Mepani</figcaption>
+        </figure>
     </section>
 
     <section id="collection">
@@ -68,17 +117,18 @@
             </div>
 
             <!-- Advanced Filter Container -->
-            <div id="filterControls" class="filter-controls">
+            <section id="filterControls" class="filter-controls" aria-labelledby="filterHeading">
                 <div class="filter-header">
-                    <h3>Refine Collection</h3>
-                    <button id="resetFilters" class="filter-reset-btn">Reset All</button>
-                    <button id="toggleFilters" class="filter-toggle-btn">Filters <span>▼</span></button>
+                    <h3 id="filterHeading">Refine Collection</h3>
+                    <button id="resetFilters" class="filter-reset-btn" aria-label="Reset all filters">Reset All</button>
+                    <button id="toggleFilters" class="filter-toggle-btn" aria-expanded="false"
+                        aria-controls="filterBody">Filters <span>▼</span></button>
                 </div>
-                <div class="filter-body hidden" id="filterBody">
+                <div class="filter-body hidden" id="filterBody" aria-hidden="true">
                 </div>
-            </div>
+            </section>
 
-            <div class="poems-grid" id="poemsGrid">
+            <div class="poems-grid" id="poemsGrid" role="region" aria-live="polite" aria-label="Poetry Collection Grid">
             </div>
         </div>
     </section>
@@ -122,7 +172,7 @@
             <div class="footer-brand">Alfaaz</div>
             <p class="footer-tagline">"Words that linger, like petrichor after rain."</p>
             <p class="footer-copy">
-                Crafted with <span class="heart">♥</span> • A personal poetry collection
+                Crafted with <span class="heart">♥</span> by Jayesh Mepani • A personal poetry collection
             </p>
         </div>
     </footer>
