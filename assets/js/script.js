@@ -84,11 +84,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const gridItems = writings.filter(w => w.id !== featuredItem.id);
 
-    if (poemsGrid) {
-        gridItems.forEach(item => {
-            poemsGrid.appendChild(createPoemCard(item));
-        });
-    }
+    // Initial render is handled by AdvancedFilterSystem below to avoid double-rendering
+
 
     class AdvancedFilterSystem {
         constructor(data) {

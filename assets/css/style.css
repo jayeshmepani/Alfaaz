@@ -21,11 +21,8 @@
     --font-display: 'Cormorant Garamond', serif;
     --font-script: 'Great Vibes', cursive;
     --font-script-alt: 'Pinyon Script', cursive;
-    --font-devanagari: 'Noto Serif Devanagari', serif;
     --font-hi-display: 'Rozha One', serif;
-    --font-hi-brush: 'Yatra One', system-ui;
     --font-hi-elegant: 'Gotu', sans-serif;
-    --font-hi-serif: 'Sahitya', serif;
     --font-ui: 'Inter', sans-serif;
 
     --ease-elegant: cubic-bezier(0.4, 0, 0.2, 1);
