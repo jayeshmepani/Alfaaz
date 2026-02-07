@@ -93,79 +93,81 @@
         </div>
     </header>
 
-    <section class="hero" id="home">
-        <figure class="hero-content">
-            <blockquote class="hero-quote" lang="hi" id="heroQuote">
-                शब्दों में ढली वो खामोशियाँ,<br>
-                जो दिल में बसी थीं सालों से।<br>
-                ये अल्फ़ाज़ मेरे, ये जज़्बात मेरे,<br>
-                जो बुने हैं रातों की तन्हाइयों से।
-            </blockquote>
+    <main id="main-content">
+        <section class="hero" id="home">
+            <figure class="hero-content">
+                <blockquote class="hero-quote" lang="hi" id="heroQuote">
+                    शब्दों में ढली वो खामोशियाँ,<br>
+                    जो दिल में बसी थीं सालों से।<br>
+                    ये अल्फ़ाज़ मेरे, ये जज़्बात मेरे,<br>
+                    जो बुने हैं रातों की तन्हाइयों से।
+                </blockquote>
 
-            <div class="hero-divider" aria-hidden="true"><span>✦</span></div>
+                <div class="hero-divider" aria-hidden="true"><span>✦</span></div>
 
-            <figcaption class="hero-attribution" id="heroAttribution">~ &nbsp; J</figcaption>
-        </figure>
-    </section>
+                <figcaption class="hero-attribution" id="heroAttribution">~ &nbsp; J</figcaption>
+            </figure>
+        </section>
 
-    <section id="collection">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">The Collection</h2>
-                <div class="elegant-divider"></div>
-                <p class="section-subtitle">Words woven with soul</p>
-            </div>
-
-            <!-- Advanced Filter Container -->
-            <section id="filterControls" class="filter-controls" aria-labelledby="filterHeading">
-                <div class="filter-header">
-                    <h3 id="filterHeading">Refine Collection</h3>
-                    <button id="resetFilters" class="filter-reset-btn" aria-label="Reset all filters">Reset All</button>
-                    <button id="toggleFilters" class="filter-toggle-btn" aria-expanded="false"
-                        aria-controls="filterBody">Filters <span>▼</span></button>
+        <section id="collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Collection</h2>
+                    <div class="elegant-divider"></div>
+                    <p class="section-subtitle">Words woven with soul</p>
                 </div>
-                <div class="filter-body hidden" id="filterBody" aria-hidden="true">
+
+                <!-- Advanced Filter Container -->
+                <section id="filterControls" class="filter-controls" aria-labelledby="filterHeading">
+                    <div class="filter-header">
+                        <h3 id="filterHeading">Refine Collection</h3>
+                        <button id="resetFilters" class="filter-reset-btn" aria-label="Reset all filters">Reset
+                            All</button>
+                        <button id="toggleFilters" class="filter-toggle-btn" aria-expanded="false"
+                            aria-controls="filterBody">Filters <span>▼</span></button>
+                    </div>
+                    <div class="filter-body hidden" id="filterBody" aria-hidden="true">
+                    </div>
+                </section>
+
+                <div class="poems-grid" id="poemsGrid" role="region" aria-live="polite"
+                    aria-label="Poetry Collection Grid">
                 </div>
-            </section>
-
-            <div class="poems-grid" id="poemsGrid" role="region" aria-live="polite" aria-label="Poetry Collection Grid">
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="featured-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Piece</h2>
-                <div class="elegant-divider"></div>
+        <section class="featured-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Piece</h2>
+                    <div class="elegant-divider"></div>
+                </div>
+
+                <div class="featured-poem fade-in" id="featuredPoem">
+                </div>
             </div>
+        </section>
 
-            <div class="featured-poem fade-in" id="featuredPoem">
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About</h2>
+                    <div class="elegant-divider"></div>
+                </div>
+
+                <div class="about-content">
+                    <p class="about-text">
+                        This is a personal collection of poetry, ghazals, and lyrical thoughts —
+                        words born from quiet moments and restless nights.
+                        Written in both Hindi and English, these verses are
+                        expressions of love, loss, wonder, and everything in between.
+                        <br><br>
+                        A quiet space for those who find solace in words.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Archive Section Removed as per request -->
-
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About</h2>
-                <div class="elegant-divider"></div>
-            </div>
-
-            <div class="about-content">
-                <p class="about-text">
-                    This is a personal collection of poetry, ghazals, and lyrical thoughts —
-                    words born from quiet moments and restless nights.
-                    Written in both Hindi and English, these verses are
-                    expressions of love, loss, wonder, and everything in between.
-                    <br><br>
-                    A quiet space for those who find solace in words.
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -177,7 +179,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
 </body>
 
 </html>
