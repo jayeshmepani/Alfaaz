@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: 'Amita_Regular';
-    src: url('assets/fonts/Amita-Regular.ttf') format('truetype');
+    src: url('../fonts/Amita-Regular.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -140,7 +140,7 @@ header {
     }
 
     &:is(.art-head) {
-        padding-block: 1.5rem;
+        padding-block: 1.25rem;
     }
 }
 
@@ -160,6 +160,7 @@ header {
 
     @media (min-width: 900px) {
         position: relative;
+        display: flex;
     }
 }
 
@@ -367,6 +368,7 @@ nav {
         font-family: var(--font-script-alt);
         font-size: 2rem;
         color: var(--accent-gold);
+        text-box: cap alphabetic trim-both;
     }
 
 }
@@ -406,6 +408,7 @@ nav {
 
 section {
     padding: 5rem 0;
+    scroll-margin: 3rem;
 }
 
 .section-header {
@@ -444,14 +447,16 @@ section {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: 12px;
-    padding: 2.5rem 2rem;
+    padding: 0 2rem;
     position: relative;
     overflow: hidden;
     transition: var(--transition-smooth);
     cursor: pointer;
-    margin: 1rem;
+    margin: 0.75rem;
     break-inside: avoid;
     display: inline-block;
+    width: stretch;
+    width: -moz-available;
     width: -webkit-fill-available;
 
     &::before {
@@ -461,6 +466,7 @@ section {
         left: 0;
         width: 100%;
         height: 3px;
+        z-index: 999;
         background: linear-gradient(90deg, var(--accent-gold), var(--accent-rose), var(--accent-sage));
         transform: scaleX(0);
         transform-origin: left;
@@ -492,10 +498,8 @@ section {
 
 .card-title {
     font-family: var(--font-hi-elegant);
-    /* Changed to Gotu for elegance */
     font-size: 1.6rem;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
     line-height: 1.4;
 
     &.en {
@@ -542,6 +546,7 @@ section {
     &.en {
         font-family: var(--font-display);
         font-style: italic;
+        font-weight: bold;
     }
 }
 
@@ -756,7 +761,6 @@ footer {
 }
 
 
-/* Mobile menu backdrop overlay */
 .mobile-menu-backdrop {
     position: fixed;
     inset: 0;
@@ -816,7 +820,6 @@ footer {
         transform: translateX(0);
     }
 
-    /* Mobile nav header with brand and close button */
     .mobile-nav-header {
         display: flex;
         align-items: center;

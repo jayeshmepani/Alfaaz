@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     let writings = [];
     try {
-        const response = await fetch('writings.json');
+        const response = await fetch('assets/data/writings.json');
         if (!response.ok) throw new Error('Failed to load writings');
         writings = await response.json();
     } catch (error) {
