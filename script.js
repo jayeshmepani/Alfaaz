@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         mobileNavHeader.className = 'mobile-nav-header';
         mobileNavHeader.innerHTML = `
             <span class="mobile-nav-brand">Kalam</span>
-            <button class="mobile-nav-close" aria-label="Close menu">‹</button>
+            <button class="mobile-nav-close" aria-label="Close menu"><span>‹</span></button>
         `;
         nav.insertBefore(mobileNavHeader, nav.firstChild);
     }
