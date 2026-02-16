@@ -325,16 +325,17 @@ Some poets and analysts look for the Divine Proportion ($\phi \approx 1.618$) in
   - **Maqta (مقطع):** Final couplet containing the poet's pen name (takhallus).
   - **Computational Verification:**
 
-    $$
-    \text{IsGhazal} = \text{Matla}(L_1, L_2) \land (\forall i \in [2..n], \text{End}(L_{2i}) == \text{Radif}) \land (\text{Rhyme}(Q_i, Q_{\text{base}})) \land (|\text{couplets}| \geq 5)
-    $$
+$$
+\text{IsGhazal} = \text{Matla}(L_1, L_2) \land (\forall i \in [2..n], \text{End}(L_{2i}) == \text{Radif}) \land (\text{Rhyme}(Q_i, Q_{\text{base}})) \land (|\text{couplets}| \geq 5)
+$$
 
-  - **Qaafiya Density:** $Q_d = \frac{\text{Valid Qaafiya Pairs}}{\text{Total Couplets}}$ (should be 1.0 for a valid ghazal)
-  - **Hindi/Devanagari Antyanuprasa (End Rhyme) Density:**
+- **Qaafiya Density:** $Q_d = \frac{\text{Valid Qaafiya Pairs}}{\text{Total Couplets}}$ (should be $1.0$ for a valid ghazal)
 
-    $$
-    A_d = \frac{\text{Lines with matching end-syllable patterns}}{\text{Total Lines}}
-    $$
+- **Hindi/Devanagari Antyanuprasa (End Rhyme) Density:**
+
+$$
+A_d = \frac{\text{Lines with matching end-syllable patterns}}{\text{Total Lines}}
+$$
 
 ### **4.4 Perrine's "Sound and Sense" Framework**
 
@@ -694,9 +695,9 @@ Mapping text to the 9 Rasas (Navarasa) using NLP, rooted in Bharata's Natyashast
 
 - **Vector Mapping:**
 
-  $$
-  \vec{P}_{\text{rasa}} = [\text{Shringara}, \text{Hasya}, \text{Karuna}, \text{Raudra}, \text{Veera}, \text{Bhayanaka}, \text{Bibhatsa}, \text{Adbhuta}, \text{Shanta}]
-  $$
+$$
+\vec{P}_{\text{rasa}} = [\text{Shringara}, \text{Hasya}, \text{Karuna}, \text{Raudra}, \text{Veera}, \text{Bhayanaka}, \text{Bibhatsa}, \text{Adbhuta}, \text{Shanta}]
+$$
 
 - **Dominant Rasa:** $\max(\vec{P}_{\text{rasa}})$ determines the primary aesthetic experience.
 - **Rasa Transition Graph:** Plot rasa shifts across couplets to visualize emotional arc in Indic terms (analogous to Western sentiment arc).
