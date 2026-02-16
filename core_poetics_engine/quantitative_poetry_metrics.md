@@ -186,7 +186,10 @@ For Devanagari-script languages (Hindi, Sanskrit, Marathi, etc.), metrics are ba
     - End-of-line short vowel (optionally Guru by convention).
 
 **Computational Formula:**
-$$M(w) = \sum_{i=1}^{n} v(s_i) + C(c_i)$$
+
+$$
+M(w) = \sum_{i=1}^{n} v(s_i) + C(c_i)
+$$
 
 Where _v_ is vowel weight (1 or 2) and _C_ is context adjustment (conjunct precedence).
 
@@ -222,7 +225,10 @@ This system encodes all $2^3 = 8$ binary combinations and is the foundation for 
 | **बरवै (Barvai)**            | अर्धसम मात्रिक                | 4 charan                   | 12 + 7 per line                    | Even charan ends with जगण (\|S\|)                                         |
 
 **Verification Formula:**
-$$ \text{IsValidChhand}(C) = \left(\sum_{i=1}^{n} M(\text{charan}_i) == \text{Target}_C\right) \land \text{EndRule}(C) $$
+
+$$
+\text{IsValidChhand}(C) = \left(\sum_{i=1}^{n} M(\text{charan}_i) == \text{Target}_C\right) \land \text{EndRule}(C)
+$$
 
 ### **4.1.2 Urdu Aruz (Prosody System)**
 
@@ -278,24 +284,25 @@ Gujarati poetry shares the Devanagari matra system (via Sanskrit heritage) but h
 
 ### **4.2 The Golden Ratio & Fibonacci Structural Formulas**
 
-Some poets and analysts look for the Divine Proportion (φ ≈ 1.618) in poem structures. They measure the "turn" (volta) of a poem to see if it occurs at the golden ratio mark of the total line count, which is argued to be the most aesthetically pleasing point for a shift in logic.
+Some poets and analysts look for the Divine Proportion ($\phi \approx 1.618$) in poem structures. They measure the "turn" (volta) of a poem to see if it occurs at the golden ratio mark of the total line count, which is argued to be the most aesthetically pleasing point for a shift in logic.
 
 **Golden Ratio in Poetry:**
 
-- Golden Ratio appears in volta placement (often at line ~0.618 of total line count).
+- Golden Ratio appears in volta placement (often at line $\approx 0.618$ of total line count).
+
 - Used as a structural formula for poem proportions.
 
 **Fibonacci Poetry:**
 
 - Syllables per line follow the Fibonacci sequence: 1, 1, 2, 3, 5, 8, 13… (minimum 6 lines).
 
-**Golden Ratio (φ) Poetry:**
+**Golden Ratio ($\phi$) Poetry:**
 
-- Lines follow φ decimals: 1 | 6 | 1 | 8 | 0 | 3 | 3 | 9… or ratios 3:5:8, 5:8:13.
+- Lines follow $\phi$ decimals: 1 | 6 | 1 | 8 | 0 | 3 | 3 | 9… or ratios 3:5:8, 5:8:13.
 
 **Modulor Poems:**
 
-- Tile text on φ-derived rectangles (Le Corbusier system); read horizontally/vertically for sub-poems.
+- Tile text on $\phi$-derived rectangles (Le Corbusier system); read horizontally/vertically for sub-poems.
 
 **Example — "Inspiration Comes" (Fibonacci syllables):**
 
@@ -317,10 +324,17 @@ Some poets and analysts look for the Divine Proportion (φ ≈ 1.618) in poem st
   - **Matla (مطلع):** Opening couplet where both lines end with Radif+Qaafiya.
   - **Maqta (مقطع):** Final couplet containing the poet's pen name (takhallus).
   - **Computational Verification:**
-    $$ \text{IsGhazal} = \text{Matla}(L_1, L_2) \land (\forall i \in [2..n], \text{End}(L_{2i}) == \text{Radif}) \land (\text{Rhyme}(Q_i, Q_{\text{base}})) \land (|\text{couplets}| \geq 5) $$
+
+    $$
+    \text{IsGhazal} = \text{Matla}(L_1, L_2) \land (\forall i \in [2..n], \text{End}(L_{2i}) == \text{Radif}) \land (\text{Rhyme}(Q_i, Q_{\text{base}})) \land (|\text{couplets}| \geq 5)
+    $$
+
   - **Qaafiya Density:** $Q_d = \frac{\text{Valid Qaafiya Pairs}}{\text{Total Couplets}}$ (should be 1.0 for a valid ghazal)
   - **Hindi/Devanagari Antyanuprasa (End Rhyme) Density:**
-    $$ A_d = \frac{\text{Lines with matching end-syllable patterns}}{\text{Total Lines}} $$
+
+    $$
+    A_d = \frac{\text{Lines with matching end-syllable patterns}}{\text{Total Lines}}
+    $$
 
 ### **4.4 Perrine's "Sound and Sense" Framework**
 
@@ -548,13 +562,15 @@ The Oulipo embraced constraints to generate creative possibilities and uncover l
 
 $$L_d = \frac{\text{Content Words}}{\text{Total Words}} \times 100$$
 
-Also known as Ure's Lexical Density: _L_<sub>d</sub> = (Lexical Items / Total Words) × 100
+Also known as Ure's Lexical Density: $L_d = (\text{Lexical Items} / \text{Total Words}) \times 100$
 
 A higher density often correlates with "weighty" or "difficult" poetry.
 
 ### **8.2 Type-Token Ratio (TTR)**
 
-$$TTR = \frac{\text{Unique Words (Types)}}{\text{Total Words (Tokens)}}$$
+$$
+TTR = \frac{\text{Unique Words (Types)}}{\text{Total Words (Tokens)}}
+$$
 
 Measures vocabulary diversity and richness. Note: sensitive to text length.
 
@@ -569,35 +585,47 @@ Standard formulas for measuring text complexity and accessibility. While designe
 
 **Flesch-Kincaid Grade Level:**
 
-$$FKGL = 0.39 \left(\frac{\text{Total Words}}{\text{Total Sentences}}\right) + 11.8 \left(\frac{\text{Total Syllables}}{\text{Total Words}}\right) - 15.59$$
+$$
+FKGL = 0.39 \left(\frac{\text{Total Words}}{\text{Total Sentences}}\right) + 11.8 \left(\frac{\text{Total Syllables}}{\text{Total Words}}\right) - 15.59
+$$
 
 Estimates the U.S. school grade level needed to understand the text. Lower = easier.
 
 **Flesch Reading Ease:**
 
-$$FRE = 206.835 - 1.015 \left(\frac{\text{Total Words}}{\text{Total Sentences}}\right) - 84.6 \left(\frac{\text{Total Syllables}}{\text{Total Words}}\right)$$
+$$
+FRE = 206.835 - 1.015 \left(\frac{\text{Total Words}}{\text{Total Sentences}}\right) - 84.6 \left(\frac{\text{Total Syllables}}{\text{Total Words}}\right)
+$$
 
 Score 0–100. Higher = easier to read. Most poetry falls in the 30–70 range.
 
 **Gunning Fog Index:**
 
-$$GFI = 0.4 \left[\left(\frac{\text{Words}}{\text{Sentences}}\right) + 100 \left(\frac{\text{Complex Words}}{\text{Words}}\right)\right]$$
+$$
+GFI = 0.4 \left[\left(\frac{\text{Words}}{\text{Sentences}}\right) + 100 \left(\frac{\text{Complex Words}}{\text{Words}}\right)\right]
+$$
 
 Where "complex words" = words with 3+ syllables (excluding proper nouns, compounds, and common suffixes). Estimates years of formal education needed.
 
 **Coleman-Liau Index:**
 
-$$CLI = 0.0588L - 0.296S - 15.8$$
+$$
+CLI = 0.0588L - 0.296S - 15.8
+$$
 
 Where _L_ = average number of letters per 100 words, _S_ = average number of sentences per 100 words.
 
 **Automated Readability Index (ARI):**
 
-$$ARI = 4.71 \left(\frac{\text{Characters}}{\text{Words}}\right) + 0.5 \left(\frac{\text{Words}}{\text{Sentences}}\right) - 21.43$$
+$$
+ARI = 4.71 \left(\frac{\text{Characters}}{\text{Words}}\right) + 0.5 \left(\frac{\text{Words}}{\text{Sentences}}\right) - 21.43
+$$
 
 **SMOG Index (Simple Measure of Gobbledygook):**
 
-$$SMOG = 3 + \sqrt{\text{Number of polysyllabic words in 30 sentences}}$$
+$$
+SMOG = 3 + \sqrt{\text{Number of polysyllabic words in 30 sentences}}
+$$
 
 **Application to Poetry:** These metrics can be misleading for poetry due to short lines, enjambment, and unconventional sentence structures. Use them as rough indicators of vocabulary and syntactic complexity rather than absolute readability scores. Best applied to compare poems within a corpus rather than to judge individual works.
 
@@ -607,11 +635,15 @@ Standard English readability formulas produce out-of-range results for Hindi (Fl
 
 **Readability Hindi-1 (RH1):**
 
-$$RH1 = -2.34 + 2.14(AWL) + 0.01(JUK)$$
+$$
+RH1 = -2.34 + 2.14(AWL) + 0.01(JUK)
+$$
 
 **Readability Hindi-2 (RH2):**
 
-$$RH2 = -0.82 + 1.83(AWL) + 0.09(PSW)$$
+$$
+RH2 = -0.82 + 1.83(AWL) + 0.09(PSW)
+$$
 
 Where:
 
@@ -621,7 +653,9 @@ Where:
 
 **Matra Complexity Index (proposed):**
 
-$$MCI = \frac{\text{Total Guru syllables}}{\text{Total syllables}} \times 100$$
+$$
+MCI = \frac{\text{Total Guru syllables}}{\text{Total syllables}} \times 100
+$$
 
 Higher MCI indicates heavier, more sonorous text. Useful for comparing tonal weight across poems.
 
@@ -659,7 +693,11 @@ Mapping text to the 9 Rasas (Navarasa) using NLP, rooted in Bharata's Natyashast
 | **Shanta** (शांत)        | Peace/Serenity    | शम       | White-Blue  |
 
 - **Vector Mapping:**
-  $$ \vec{P}_{\text{rasa}} = [\text{Shringara}, \text{Hasya}, \text{Karuna}, \text{Raudra}, \text{Veera}, \text{Bhayanaka}, \text{Bibhatsa}, \text{Adbhuta}, \text{Shanta}] $$
+
+  $$
+  \vec{P}_{\text{rasa}} = [\text{Shringara}, \text{Hasya}, \text{Karuna}, \text{Raudra}, \text{Veera}, \text{Bhayanaka}, \text{Bibhatsa}, \text{Adbhuta}, \text{Shanta}]
+  $$
+
 - **Dominant Rasa:** $\max(\vec{P}_{\text{rasa}})$ determines the primary aesthetic experience.
 - **Rasa Transition Graph:** Plot rasa shifts across couplets to visualize emotional arc in Indic terms (analogous to Western sentiment arc).
 
@@ -718,17 +756,19 @@ Research shows both rhyme and regular meter led to enhanced aesthetic appreciati
 
 This is _not authoritative_ — it's a reproducible, composite score to compare poems in a controlled corpus.
 
-$$G_{\text{comp}} = w_1 \cdot \hat{L}_d + w_2 \cdot \widehat{MTLD} + w_3 \cdot (1 - \hat{PPL}) + w_4 \cdot \hat{N}_{\text{emb}} + w_5 \cdot \hat{R}_d$$
+$$
+G_{\text{comp}} = w_1 \cdot \hat{L}_d + w_2 \cdot \widehat{MTLD} + w_3 \cdot (1 - \hat{PPL}) + w_4 \cdot \hat{N}_{\text{emb}} + w_5 \cdot \hat{R}_d
+$$
 
 Where:
 
-- _G_<sub>comp</sub> = Computational Greatness score
-- _w_<sub>1</sub>…_w_<sub>5</sub> = user-chosen weights (e.g., 0.15, 0.20, 0.25, 0.25, 0.15)
-- _L̂_<sub>d</sub> = normalized lexical density
-- _MTLD̂_ = normalized MTLD
-- _P̂PL_ = normalized perplexity
-- _N̂_<sub>emb</sub> = normalized embedding novelty
-- _R̂_<sub>d</sub> = normalized rhyme density
+- $G_{\text{comp}}$ = Computational Greatness score
+- $w_1 \dots w_5$ = user-chosen weights (e.g., 0.15, 0.20, 0.25, 0.25, 0.15)
+- $\hat{L}_d$ = normalized lexical density
+- $\widehat{MTLD}$ = normalized MTLD
+- $\hat{PPL}$ = normalized perplexity
+- $\hat{N}_{\text{emb}}$ = normalized embedding novelty
+- $\hat{R}_d$ = normalized rhyme density
 
 Choose weights w1..w5 to reflect your values (e.g., w1=0.15, w2=0.20, w3=0.25, w4=0.25, w5=0.15). Normalize each metric to [0,1] across your comparison set.
 
@@ -1018,33 +1058,43 @@ Methods for objective analysis of poetic language include rhythm measurement, se
 
 ### **14.1 Lexical Density**
 
-Given a set of tokens _T_ = {*t*₁, *t*₂, …, _t_<sub>n</sub>} and a subset _T_<sub>lex</sub> ⊆ _T_ where each _t_ ∈ _T_<sub>lex</sub> is a content word:
+Given a set of tokens $T = \{t_1, t_2, \dots, t_n\}$ and a subset $T_{\text{lex}} \subseteq T$ where each $t \in T_{\text{lex}}$ is a content word:
 
-$$L_d = \frac{|T_{\text{lex}}|}{|T|}$$
+$$
+L_d = \frac{|T_{\text{lex}}|}{|T|}
+$$
 
 ### **14.2 Type-Token Ratio (TTR)**
 
-Given a token sequence _T_ of length _N_, and the set of unique types _V_ = {unique elements of _T_}:
+Given a token sequence $T$ of length $N$, and the set of unique types $V = \{\text{unique elements of } T\}$:
 
-$$TTR = \frac{|V|}{N}$$
+$$
+TTR = \frac{|V|}{N}
+$$
 
 ### **14.3 Simple Rhyme Density (End-Word Rhyme)**
 
-Given _n_ lines with end-words _E_ = {*e*₁, *e*₂, …, _e_<sub>n</sub>}, let _R_ = number of pairs (_e_<sub>i</sub>, _e_<sub>j</sub>) where _i_ < _j_ and rhyme(_e_<sub>i</sub>, _e_<sub>j</sub>) = true:
+Given $n$ lines with end-words $E = \{e_1, e_2, \dots, e_n\}$, let $R = \text{number of pairs } (e_i, e_j) \text{ where } i < j \text{ and } \text{rhyme}(e_i, e_j) = \text{true}$:
 
-$$R_d = \frac{R}{\binom{n}{2}} = \frac{R}{\frac{n(n-1)}{2}}$$
+$$
+R_d = \frac{R}{\binom{n}{2}} = \frac{R}{\frac{n(n-1)}{2}}
+$$
 
 ### **14.4 Metrical Regularity (Heuristic)**
 
-Given _N_ lines, a target metrical pattern _P_, and a stress pattern function _σ_(_line_<sub>i</sub>):
+Given $N$ lines, a target metrical pattern $P$, and a stress pattern function $\sigma(\text{line}_i)$:
 
-For each line _i_, compute a match score:
+For each line $i$, compute a match score:
 
-$$s_i = \text{match}(\sigma(\text{line}_i),\; P) \in \{0, 1\}$$
+$$
+s_i = \text{match}(\sigma(\text{line}_i),\; P) \in \{0, 1\}
+$$
 
 Then the metrical regularity is:
 
-$$M_r = \frac{1}{N} \sum_{i=1}^{N} s_i$$
+$$
+M_r = \frac{1}{N} \sum_{i=1}^{N} s_i
+$$
 
 ---
 
@@ -1097,7 +1147,7 @@ $$M_r = \frac{1}{N} \sum_{i=1}^{N} s_i$$
 | **Arnold's Touchstone**                 | Historical      | No                   | Comparison to Masters     | 1880               |
 | **I. A. Richards' Practical Criticism** | Historical      | No                   | Blind Close Reading       | 1920s              |
 | **Prosody/Scansion**                    | Technical       | Yes (Meter Patterns) | Rhythm, Stress Patterns   | Ancient            |
-| **Golden Ratio**                        | Mathematical    | Yes (φ = 1.618)      | Structural Proportions    | Modern Application |
+| **Golden Ratio**                        | Mathematical    | Yes ($\phi = 1.618$) | Structural Proportions    | Modern Application |
 | **Fibonacci Poetry**                    | Mathematical    | Yes (Sequence)       | Syllable Patterns         | Modern Application |
 | **New Criticism**                       | Theoretical     | No                   | Internal Text Analysis    | 1920s-1960s        |
 | **Reader-Response**                     | Theoretical     | No                   | Reader Experience         | 1970s              |
