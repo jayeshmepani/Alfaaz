@@ -1952,5 +1952,49 @@
       "Metaphor",
       "Personification"
     ]
+  },
+  {
+    "id": 95,
+    "content": "अज़ल की मख़मली शब में, सितारा नहीं मिलता,\nमेरे दिल के अँधेरों को उजियारा नहीं मिलता।\n\nसमंदर ने निगल ली है मेरी हर एक पुकार ऐसे,\nतड़पते-टूटते दिल को सहारा नहीं मिलता।\n\nये चाँद अपनी ही मंज़िल पे बेपरवाह चलता है,\nमुझे उस नूर के मर्कज़ में गुज़ारा नहीं मिलता।\n\nअजब है कीमियागरी! रगों में तपिश जगती है,\nसुलगती रूह है लेकिन, शरारा नहीं मिलता।\n\nख़यालों के तिलिस्मों में तुझे हवा से तराशा था,\nजो इन साँसों से ढल जाए, दोबारा नहीं मिलता।\n\nक़यामत है कि ये वीरानियाँ भी ख़ूबसूरत हैं,\nजिसे ये शब निगल ले, वो नज़ारा नहीं मिलता।\n\nकहा इस दिल ने ऐ यारों, कि पूछें चाँद से जाकर,\nवो ज़ालिम मुस्कुराता है, इशारा नहीं मिलता।",
+    "type": "Ghazal",
+    "mood": "Melancholic, Despair",
+    "theme": "Night, Heartbreak",
+    "tags": [
+      "night",
+      "moon",
+      "loneliness",
+      "heartbreak",
+      "soul"
+    ],
+    "imagery": "Velvet night, swallowing sea, careless moon, burning soul",
+    "language": "Hindi",
+    "structure": "Ghazal",
+    "literary_devices": [
+      "Metaphor",
+      "Personification",
+      "Imagery"
+    ]
+  },
+  {
+    "id": 96,
+    "content": "न माहताब है, न आफ़ताब का साया है इस पल,\nबस एक सुकून है जो रूह में समाया है इस पल।\n\nशाम की चादर में इक हिलाल-ए-नूर झिलमिलाया,\nऔर एक तारा भी जैसे तेरे नाम पर मुस्कुराया।\n\nख़ामोश शाख़ों ने हवा से कुछ दुआ-सी माँग ली,\nआज मौसम ने भी हुस्न का अपना सबक दोहराया।\n\nरंग ढलते रहे फ़िज़ा में तेरी यादों की तरह,\nऔर हर लम्हा किसी गहरी उदासी में नहाया।\n\nचाँद निकला तो लगा तूने मुझे आवाज़ दी,\nइस सुकून में भी कहीं तेरा ही अंदाज़ समाया।\n\nरात की आँखों में जैसे कोई ख़्वाब उतर आया हो,\nयूँ लगा फलक ने आज अपना दिल आज़माया हो।",
+    "type": "Nazm",
+    "mood": "Peaceful, Melancholic, Romantic",
+    "theme": "Night, Memories, Nature",
+    "tags": [
+      "night",
+      "peace",
+      "memories",
+      "nature",
+      "moon"
+    ],
+    "imagery": "Evening blanket, crescent light, silent branches, dreaming night",
+    "language": "Hindi",
+    "structure": "Nazm",
+    "literary_devices": [
+      "Personification",
+      "Metaphor",
+      "Imagery"
+    ]
   }
 ]
