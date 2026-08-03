@@ -55,7 +55,7 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
+    min-height: 100dvh;
 
     &::before {
         content: "";
@@ -900,7 +900,7 @@ footer {
         justify-content: center;
         width: 40px;
         height: 40px;
-        border-radius: 100vh;
+        border-radius: 100dvh;
         corner-shape: squircle;
         background: transparent;
         border: 1px solid var(--border-subtle);
@@ -1205,4 +1205,44 @@ footer {
         border: 1px solid #ddd;
         page-break-inside: avoid;
     }
+}
+
+.splash-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background: #14100e;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    cursor: pointer;
+
+    &.splash-fade-out {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+
+.splash-container {
+    width: 100%;
+    max-width: 900px;
+    aspect-ratio: 16 / 8;
+    position: relative;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+        rotate: -19deg;
+        translate: 2rem -1rem;
+        scale: 1.3;
+    }
+
 }

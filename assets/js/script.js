@@ -414,4 +414,163 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
     }
 
+    /* ====================================================
+       SPLASH SCREEN HANDWRITING REVEAL ENGINE
+       ==================================================== */
+    class SplashParticleFXEngine {
+        constructor(container) {
+            this.container = container;
+            this.particles = [];
+            this.maxParticles = 140; // Maximum allowed particles on screen at once
+            this.density = 0.3;      // Density Multiplier (e.g., 0.3 = subtle, 1.0 = normal, 2.0 = heavy burst)
+        }
+
+        emit(x, y) {
+            if (this.density <= 0) return;
+            const count = Math.round((Math.floor(Math.random() * 3) + 2) * this.density);
+            for (let i = 0; i < count; i++) {
+
+                if (this.particles.length >= this.maxParticles) {
+                    const old = this.particles.shift();
+                    if (old && old.el && old.el.parentNode) old.el.parentNode.removeChild(old.el);
+                }
+
+                let p = {
+                    x: x + (Math.random() - 0.5) * 18,
+                    y: y + (Math.random() - 0.5) * 18,
+                    vx: (Math.random() - 0.5) * 2.8,
+                    vy: (Math.random() - 0.5) * 2.8,
+                    size: Math.random() * 4.5 + 2,
+                    life: 0,
+                    maxLife: Math.random() * 25 + 20,
+                    color: this.getParticleColor()
+                };
+
+                const el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                el.setAttribute('r', p.size.toFixed(1));
+                el.setAttribute('fill', p.color);
+                this.container.appendChild(el);
+                p.el = el;
+
+                this.particles.push(p);
+            }
+        }
+
+        getParticleColor() {
+            const colors = ['#ffe57f', '#c4a87c', '#ffffff', '#ffd000', '#fff3b0'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        update() {
+            for (let i = this.particles.length - 1; i >= 0; i--) {
+                let p = this.particles[i];
+                p.life++;
+                p.x += p.vx;
+                p.y += p.vy;
+
+                const progress = p.life / p.maxLife;
+                const alpha = Math.max(0, 1 - progress);
+                const scale = Math.max(0, 1 - progress * 0.5);
+
+                p.el.setAttribute('cx', p.x.toFixed(1));
+                p.el.setAttribute('cy', p.y.toFixed(1));
+                p.el.setAttribute('opacity', alpha.toFixed(2));
+                p.el.setAttribute('transform', `scale(${scale.toFixed(2)})`);
+
+                if (p.life >= p.maxLife) {
+                    if (p.el.parentNode) p.el.parentNode.removeChild(p.el);
+                    this.particles.splice(i, 1);
+                }
+            }
+        }
+    }
+
+    const splashScreen = document.getElementById('splashScreen');
+    const splashMaskPath = document.getElementById('splashMaskPath');
+    const splashSparklesGroup = document.getElementById('splashSparklesGroup');
+
+    let splashFxEngine = null;
+    let isSplashPlaying = false;
+    let splashAnimFrameId = null;
+
+    // Splash Audio Integration
+    const splashAudio = new Audio('assets/audio/splash.wav');
+    splashAudio.volume = 1;
+
+    if (splashSparklesGroup) {
+        splashFxEngine = new SplashParticleFXEngine(splashSparklesGroup);
+    }
+
+    function dismissSplashScreen() {
+        if (!splashScreen) return;
+        isSplashPlaying = false;
+        if (splashAnimFrameId) cancelAnimationFrame(splashAnimFrameId);
+        
+        // Stop audio smoothly when leaving splash
+        splashAudio.pause();
+        splashAudio.currentTime = 0;
+
+        splashScreen.classList.add('splash-fade-out');
+    }
+
+    function playSplashRevealAnimation() {
+        if (!splashMaskPath || !splashScreen) return;
+
+        isSplashPlaying = true;
+        const totalLen = parseFloat(splashMaskPath.dataset.len || splashMaskPath.getTotalLength() || 3361);
+        const totalDuration = 5500; // 5.5 seconds reveal duration
+
+        // Try playing splash music if available
+        splashAudio.currentTime = 0;
+        splashAudio.play().catch(() => {});
+
+        splashMaskPath.style.strokeDasharray = totalLen;
+        splashMaskPath.style.strokeDashoffset = totalLen;
+
+        let startTime = null;
+
+        function renderSplash(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const elapsed = timestamp - startTime;
+            const progress = Math.min(1, elapsed / totalDuration);
+
+            // Smooth cubic-bezier easing for handwriting stroke reveal
+            const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+            const curDist = eased * totalLen;
+
+            splashMaskPath.style.strokeDashoffset = totalLen - curDist;
+
+            // Emit sparkle FX at active position
+            try {
+                const pt = splashMaskPath.getPointAtLength(curDist);
+                if (splashFxEngine && pt) {
+                    splashFxEngine.emit(pt.x, pt.y);
+                }
+            } catch (err) {}
+
+            if (splashFxEngine) splashFxEngine.update();
+
+            if (progress < 1 && isSplashPlaying) {
+                splashAnimFrameId = requestAnimationFrame(renderSplash);
+            } else {
+                // Hold brief moment then auto-fade out to reveal the site
+                setTimeout(dismissSplashScreen, 600);
+            }
+        }
+
+        splashAnimFrameId = requestAnimationFrame(renderSplash);
+    }
+
+    // Tap/Click splash screen anywhere to skip directly to site
+    if (splashScreen) {
+        splashScreen.addEventListener('click', dismissSplashScreen);
+    }
+
+    // Start splash screen reveal on initial visit/load
+    if (splashScreen) {
+        setTimeout(playSplashRevealAnimation, 200);
+    }
+
 });
+
+

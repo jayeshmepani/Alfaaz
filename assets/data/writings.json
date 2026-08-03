@@ -1996,5 +1996,82 @@
       "Metaphor",
       "Imagery"
     ]
+  },
+  {
+    "id": 97,
+    "content": "रात की इस भीगी छत पर,\nकोई ख़्वाब-सा ठहरा लगता है… \nइन बुझती-बुझती आँखों में,\nकोई तारा जलता लगता है…\n\nये जो दूर कहकशाँ फैली,\nसरगोशी में कुछ कहती है… \nदिल की सूनी वीरानी में,\nइक मद्धम लौ-सी रहती है… \n\nमैं इस स्याह-सी गहराई में, \nबस अपना ही अक्स ढूँढ रहा हूँ… \nइन अनगिनत सी रौशनियों में,\nएक सितारा ढूँढ रहा हूँ…\nदिल-ए-आवारा ढूँढ रहा हूँ…\n\nये शब है बहुत ख़ामोश सही, \nपर ज़ख़्म पुराना जागता है… \nहर टूटा लम्हा तारों बन,\nअश्कों में आकर चमकता है… \n\nकुछ ख़्वाब अभी भी ज़िंदा हैं,\nजो पलकों के दर पे बैठे हैं… \nकुछ नक़्श फ़लक की मिट्टी पर, \nसदियों से लिखे ही रहते हैं… \n\nमैं वक़्त की सूनी राहों में,\nकोई किनारा ढूँढ रहा हूँ…\nइन अनगिनत सी रौशनियों में,\nएक सितारा ढूँढ रहा हूँ…\nदिल-ए-सैयारा ढूँढ रहा हूँ…\n\nये धुँधली-सी जो रौशनी है,\nशायद कोई वफ़ा बाकी है… \nइस इतने बड़े वीराने में,\nबस एक सदा बाकी है… \n\nजो रूह को छूकर गुज़र सके, \nवो लफ़्ज़ दुबारा ढूँढ रहा हूँ…\nइन अनगिनत सी रौशनियों में,\nएक सितारा ढूँढ रहा हूँ…\nदिल-ए-सैयारा ढूँढ रहा हूँ…",
+    "type": "Nazm",
+    "mood": "Searching, Melancholic, Hopeful",
+    "theme": "Loneliness, Self-Search, Stars",
+    "tags": [
+      "night",
+      "stars",
+      "searching",
+      "soul",
+      "loneliness",
+      "dreams",
+      "galaxy"
+    ],
+    "imagery": "Dew-soaked rooftop, fading eyes, galaxy whispering, broken moments shining as stars in tears",
+    "language": "Hindi",
+    "structure": "Nazm (Refrains)",
+    "literary_devices": [
+      "Refrain",
+      "Personification",
+      "Imagery",
+      "Metaphor",
+      "Anaphora"
+    ]
+  },
+  {
+    "id": 98,
+    "content": "I sought for solace in yon lonely light,\nfor which my weary soul\nhad yearnèd all its days—\n\nyet found I none.\n\nPerchance 'twas ne'er salvation,\nbut a will-o'-the-wisp—\nthe last fair lie of light,\n\na trembling veil\ndrawn o'er the endless dark,\n\ndeeper than hope,\nmore ancient than thought,\n\nwhere e'en the boldest mind\ndareth not trespass through the night.",
+    "type": "Poem",
+    "mood": "Despairing, Gothic, Searching",
+    "theme": "Illusion of Hope, Darkness",
+    "tags": [
+      "light",
+      "darkness",
+      "solace",
+      "will-o-wisp",
+      "night",
+      "soul"
+    ],
+    "imagery": "Lonely light, will-o'-the-wisp, trembling veil over endless dark",
+    "language": "English",
+    "structure": "Free Verse",
+    "literary_devices": [
+      "Archaic Diction",
+      "Metaphor",
+      "Personification",
+      "Enjambment",
+      "Imagery"
+    ]
+  },
+  {
+    "id": 99,
+    "content": "ना मंज़िल का पता मुझको, ना हूँ आरामगाह का मुसाफ़िर,\nमैं अपने दर्द में ठहरा, फ़क़त इक आह का मुसाफ़िर।\n\nहर एक मोड़ पे लिखी मिलती है दास्तान-ए-हिज्राँ,\nना पूछो मेरी सिम्त, मैं तो बस तबाह का मुसाफ़िर।\n\nना रहगुज़र पे हमसफ़र थे, ना क़ाफ़िला कोई मिला,\nमैं बेख़बर चला तनहा, अपनी निगाह का मुसाफ़िर।\n\nअँधेरी रात में तारों से पूछता हूँ पता घर का,\nजगा हूँ रात-भर तनहा, मैं इक पनाह का मुसाफ़िर।\n\nशजर से गिरते पत्तों-सी हुई ये आवारगी अपनी,\nथके हुए हैं पैर फिर भी, हूँ दिल की चाह का मुसाफ़िर।\n\nज़माना कह रहा रुक जा, मगर दिल कह रहा चल दे,\nसज़ा है उम्र-भर चलना, हूँ इसी गुनाह का मुसाफ़िर।",
+    "type": "Ghazal",
+    "mood": "Wandering, Resigned, Aching",
+    "theme": "Journey, Separation, Restlessness",
+    "tags": [
+      "journey",
+      "wanderer",
+      "separation",
+      "pain",
+      "night",
+      "stars",
+      "loneliness"
+    ],
+    "imagery": "Traveller of a sigh, leaves falling from trees, asking stars for directions home",
+    "language": "Hindi",
+    "structure": "Ghazal (Couplets)",
+    "literary_devices": [
+      "Radif (Refrain)",
+      "Metaphor",
+      "Simile",
+      "Imagery",
+      "Personification"
+    ]
   }
 ]
