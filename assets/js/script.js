@@ -1,4 +1,266 @@
 document.addEventListener('DOMContentLoaded', async () => {
+    /* ====================================================
+       SPLASH SCREEN HANDWRITING REVEAL ENGINE
+       Must init before any await so first tap can unlock audio.
+       Browsers block autoplay until a user gesture.
+       ==================================================== */
+    class SplashParticleFXEngine {
+        constructor(container) {
+            this.container = container;
+            this.particles = [];
+            this.maxParticles = 140; // Maximum allowed particles on screen at once
+            this.density = 0.3;      // Density Multiplier (e.g., 0.3 = subtle, 1.0 = normal, 2.0 = heavy burst)
+        }
+
+        emit(x, y) {
+            if (this.density <= 0) return;
+            const count = Math.round((Math.floor(Math.random() * 3) + 2) * this.density);
+            for (let i = 0; i < count; i++) {
+
+                if (this.particles.length >= this.maxParticles) {
+                    const old = this.particles.shift();
+                    if (old && old.el && old.el.parentNode) old.el.parentNode.removeChild(old.el);
+                }
+
+                let p = {
+                    x: x + (Math.random() - 0.5) * 18,
+                    y: y + (Math.random() - 0.5) * 18,
+                    vx: (Math.random() - 0.5) * 2.8,
+                    vy: (Math.random() - 0.5) * 2.8,
+                    size: Math.random() * 4.5 + 2,
+                    life: 0,
+                    maxLife: Math.random() * 25 + 20,
+                    color: this.getParticleColor()
+                };
+
+                const el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                el.setAttribute('r', p.size.toFixed(1));
+                el.setAttribute('fill', p.color);
+                this.container.appendChild(el);
+                p.el = el;
+
+                this.particles.push(p);
+            }
+        }
+
+        getParticleColor() {
+            const colors = ['#ffe57f', '#c4a87c', '#ffffff', '#ffd000', '#fff3b0'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        update() {
+            for (let i = this.particles.length - 1; i >= 0; i--) {
+                let p = this.particles[i];
+                p.life++;
+                p.x += p.vx;
+                p.y += p.vy;
+
+                const progress = p.life / p.maxLife;
+                const alpha = Math.max(0, 1 - progress);
+                const scale = Math.max(0, 1 - progress * 0.5);
+
+                p.el.setAttribute('cx', p.x.toFixed(1));
+                p.el.setAttribute('cy', p.y.toFixed(1));
+                p.el.setAttribute('opacity', alpha.toFixed(2));
+                p.el.setAttribute('transform', `scale(${scale.toFixed(2)})`);
+
+                if (p.life >= p.maxLife) {
+                    if (p.el.parentNode) p.el.parentNode.removeChild(p.el);
+                    this.particles.splice(i, 1);
+                }
+            }
+        }
+    }
+
+    const splashScreen = document.getElementById('splashScreen');
+    const splashMaskPath = document.getElementById('splashMaskPath');
+    const splashSparklesGroup = document.getElementById('splashSparklesGroup');
+
+    let splashFxEngine = null;
+    let isSplashPlaying = false;
+    let splashHasStarted = false;
+    let splashAnimFrameId = null;
+    let splashDismissed = false;
+
+    // Splash audio — browsers block autoplay without a user gesture.
+    // Audio must start inside the same tap/click handler as the animation.
+    const splashAudioUrl = new URL('assets/audio/splash.wav', document.baseURI || window.location.href).href;
+    const splashAudio = new Audio();
+    splashAudio.preload = 'auto';
+    splashAudio.volume = 1;
+    // iOS/Safari: keep element in DOM + playsinline so gesture unlock is reliable
+    splashAudio.setAttribute('playsinline', '');
+    splashAudio.setAttribute('webkit-playsinline', '');
+    splashAudio.playsInline = true;
+    splashAudio.style.display = 'none';
+    splashAudio.src = splashAudioUrl;
+    document.body.appendChild(splashAudio);
+    try { splashAudio.load(); } catch (_) {}
+
+    if (splashSparklesGroup) {
+        splashFxEngine = new SplashParticleFXEngine(splashSparklesGroup);
+    }
+
+    function prepareSplashMask() {
+        if (!splashMaskPath) return;
+        const totalLen = parseFloat(splashMaskPath.dataset.len || splashMaskPath.getTotalLength() || 3361);
+        splashMaskPath.style.strokeDasharray = totalLen;
+        splashMaskPath.style.strokeDashoffset = totalLen;
+        splashMaskPath.dataset.len = String(totalLen);
+    }
+
+    function ensureSplashHint() {
+        if (!splashScreen || splashScreen.querySelector('.splash-tap-hint')) return;
+        const hint = document.createElement('div');
+        hint.className = 'splash-tap-hint';
+        hint.setAttribute('aria-hidden', 'true');
+        hint.innerHTML = '<span class="splash-tap-hint-text">Tap to enter</span>';
+        splashScreen.appendChild(hint);
+    }
+
+    function setSplashHintVisible(visible) {
+        const hint = splashScreen && splashScreen.querySelector('.splash-tap-hint');
+        if (!hint) return;
+        hint.classList.toggle('is-hidden', !visible);
+    }
+
+    function fadeOutAndStopSplashAudio() {
+        if (splashAudio.paused) {
+            splashAudio.currentTime = 0;
+            return;
+        }
+
+        const startVol = splashAudio.volume;
+        const fadeMs = 350;
+        const startedAt = performance.now();
+
+        function step(now) {
+            const t = Math.min(1, (now - startedAt) / fadeMs);
+            splashAudio.volume = startVol * (1 - t);
+            if (t < 1) {
+                requestAnimationFrame(step);
+            } else {
+                splashAudio.pause();
+                splashAudio.currentTime = 0;
+                splashAudio.volume = startVol;
+            }
+        }
+
+        requestAnimationFrame(step);
+    }
+
+    function dismissSplashScreen() {
+        if (!splashScreen || splashDismissed) return;
+        splashDismissed = true;
+        isSplashPlaying = false;
+        if (splashAnimFrameId) cancelAnimationFrame(splashAnimFrameId);
+
+        fadeOutAndStopSplashAudio();
+        setSplashHintVisible(false);
+        splashScreen.classList.add('splash-fade-out');
+    }
+
+    function playSplashAudioFromGesture() {
+        // Must run synchronously inside the user-gesture call stack (no setTimeout).
+        try {
+            splashAudio.currentTime = 0;
+        } catch (_) {}
+
+        const playPromise = splashAudio.play();
+        if (playPromise && typeof playPromise.catch === 'function') {
+            playPromise.catch((err) => {
+                console.warn('Splash audio could not play:', err);
+            });
+        }
+    }
+
+    function playSplashRevealAnimation() {
+        if (!splashMaskPath || !splashScreen || splashHasStarted || splashDismissed) return;
+
+        splashHasStarted = true;
+        isSplashPlaying = true;
+        setSplashHintVisible(false);
+
+        const totalLen = parseFloat(splashMaskPath.dataset.len || splashMaskPath.getTotalLength() || 3361);
+        const totalDuration = 5500; // 5.5 seconds reveal duration
+
+        // Start audio in the same gesture that started the splash (required by browsers).
+        playSplashAudioFromGesture();
+
+        splashMaskPath.style.strokeDasharray = totalLen;
+        splashMaskPath.style.strokeDashoffset = totalLen;
+
+        let startTime = null;
+
+        function renderSplash(timestamp) {
+            if (!startTime) startTime = timestamp;
+            const elapsed = timestamp - startTime;
+            const progress = Math.min(1, elapsed / totalDuration);
+
+            // Smooth cubic-bezier easing for handwriting stroke reveal
+            const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+            const curDist = eased * totalLen;
+
+            splashMaskPath.style.strokeDashoffset = totalLen - curDist;
+
+            // Emit sparkle FX at active position
+            try {
+                const pt = splashMaskPath.getPointAtLength(curDist);
+                if (splashFxEngine && pt) {
+                    splashFxEngine.emit(pt.x, pt.y);
+                }
+            } catch (err) {}
+
+            if (splashFxEngine) splashFxEngine.update();
+
+            if (progress < 1 && isSplashPlaying) {
+                splashAnimFrameId = requestAnimationFrame(renderSplash);
+            } else if (isSplashPlaying) {
+                // Hold brief moment then auto-fade out to reveal the site
+                setTimeout(dismissSplashScreen, 600);
+            }
+        }
+
+        splashAnimFrameId = requestAnimationFrame(renderSplash);
+    }
+
+    function handleSplashActivate(event) {
+        if (splashDismissed) return;
+
+        // First interaction: start animation + audio together (unlocks autoplay).
+        if (!splashHasStarted) {
+            if (event) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            playSplashRevealAnimation();
+            return;
+        }
+
+        // Second interaction: skip splash
+        dismissSplashScreen();
+    }
+
+    if (splashScreen) {
+        prepareSplashMask();
+        ensureSplashHint();
+        setSplashHintVisible(true);
+
+        // click works as a trusted user gesture on desktop + mobile.
+        splashScreen.addEventListener('click', handleSplashActivate);
+
+        // Keyboard: Enter / Space to start or skip
+        splashScreen.setAttribute('tabindex', '0');
+        splashScreen.setAttribute('role', 'dialog');
+        splashScreen.setAttribute('aria-label', 'Welcome animation. Press Enter to begin, or again to skip.');
+        splashScreen.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                handleSplashActivate(event);
+            }
+        });
+    }
+
     let writings = [];
     try {
         const response = await fetch('assets/data/writings.json');
@@ -412,163 +674,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 closeMobileMenu();
             }
         });
-    }
-
-    /* ====================================================
-       SPLASH SCREEN HANDWRITING REVEAL ENGINE
-       ==================================================== */
-    class SplashParticleFXEngine {
-        constructor(container) {
-            this.container = container;
-            this.particles = [];
-            this.maxParticles = 140; // Maximum allowed particles on screen at once
-            this.density = 0.3;      // Density Multiplier (e.g., 0.3 = subtle, 1.0 = normal, 2.0 = heavy burst)
-        }
-
-        emit(x, y) {
-            if (this.density <= 0) return;
-            const count = Math.round((Math.floor(Math.random() * 3) + 2) * this.density);
-            for (let i = 0; i < count; i++) {
-
-                if (this.particles.length >= this.maxParticles) {
-                    const old = this.particles.shift();
-                    if (old && old.el && old.el.parentNode) old.el.parentNode.removeChild(old.el);
-                }
-
-                let p = {
-                    x: x + (Math.random() - 0.5) * 18,
-                    y: y + (Math.random() - 0.5) * 18,
-                    vx: (Math.random() - 0.5) * 2.8,
-                    vy: (Math.random() - 0.5) * 2.8,
-                    size: Math.random() * 4.5 + 2,
-                    life: 0,
-                    maxLife: Math.random() * 25 + 20,
-                    color: this.getParticleColor()
-                };
-
-                const el = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-                el.setAttribute('r', p.size.toFixed(1));
-                el.setAttribute('fill', p.color);
-                this.container.appendChild(el);
-                p.el = el;
-
-                this.particles.push(p);
-            }
-        }
-
-        getParticleColor() {
-            const colors = ['#ffe57f', '#c4a87c', '#ffffff', '#ffd000', '#fff3b0'];
-            return colors[Math.floor(Math.random() * colors.length)];
-        }
-
-        update() {
-            for (let i = this.particles.length - 1; i >= 0; i--) {
-                let p = this.particles[i];
-                p.life++;
-                p.x += p.vx;
-                p.y += p.vy;
-
-                const progress = p.life / p.maxLife;
-                const alpha = Math.max(0, 1 - progress);
-                const scale = Math.max(0, 1 - progress * 0.5);
-
-                p.el.setAttribute('cx', p.x.toFixed(1));
-                p.el.setAttribute('cy', p.y.toFixed(1));
-                p.el.setAttribute('opacity', alpha.toFixed(2));
-                p.el.setAttribute('transform', `scale(${scale.toFixed(2)})`);
-
-                if (p.life >= p.maxLife) {
-                    if (p.el.parentNode) p.el.parentNode.removeChild(p.el);
-                    this.particles.splice(i, 1);
-                }
-            }
-        }
-    }
-
-    const splashScreen = document.getElementById('splashScreen');
-    const splashMaskPath = document.getElementById('splashMaskPath');
-    const splashSparklesGroup = document.getElementById('splashSparklesGroup');
-
-    let splashFxEngine = null;
-    let isSplashPlaying = false;
-    let splashAnimFrameId = null;
-
-    // Splash Audio Integration
-    const splashAudio = new Audio('assets/audio/splash.wav');
-    splashAudio.volume = 1;
-
-    if (splashSparklesGroup) {
-        splashFxEngine = new SplashParticleFXEngine(splashSparklesGroup);
-    }
-
-    function dismissSplashScreen() {
-        if (!splashScreen) return;
-        isSplashPlaying = false;
-        if (splashAnimFrameId) cancelAnimationFrame(splashAnimFrameId);
-        
-        // Stop audio smoothly when leaving splash
-        splashAudio.pause();
-        splashAudio.currentTime = 0;
-
-        splashScreen.classList.add('splash-fade-out');
-    }
-
-    function playSplashRevealAnimation() {
-        if (!splashMaskPath || !splashScreen) return;
-
-        isSplashPlaying = true;
-        const totalLen = parseFloat(splashMaskPath.dataset.len || splashMaskPath.getTotalLength() || 3361);
-        const totalDuration = 5500; // 5.5 seconds reveal duration
-
-        // Try playing splash music if available
-        splashAudio.currentTime = 0;
-        splashAudio.play().catch(() => {});
-
-        splashMaskPath.style.strokeDasharray = totalLen;
-        splashMaskPath.style.strokeDashoffset = totalLen;
-
-        let startTime = null;
-
-        function renderSplash(timestamp) {
-            if (!startTime) startTime = timestamp;
-            const elapsed = timestamp - startTime;
-            const progress = Math.min(1, elapsed / totalDuration);
-
-            // Smooth cubic-bezier easing for handwriting stroke reveal
-            const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-            const curDist = eased * totalLen;
-
-            splashMaskPath.style.strokeDashoffset = totalLen - curDist;
-
-            // Emit sparkle FX at active position
-            try {
-                const pt = splashMaskPath.getPointAtLength(curDist);
-                if (splashFxEngine && pt) {
-                    splashFxEngine.emit(pt.x, pt.y);
-                }
-            } catch (err) {}
-
-            if (splashFxEngine) splashFxEngine.update();
-
-            if (progress < 1 && isSplashPlaying) {
-                splashAnimFrameId = requestAnimationFrame(renderSplash);
-            } else {
-                // Hold brief moment then auto-fade out to reveal the site
-                setTimeout(dismissSplashScreen, 600);
-            }
-        }
-
-        splashAnimFrameId = requestAnimationFrame(renderSplash);
-    }
-
-    // Tap/Click splash screen anywhere to skip directly to site
-    if (splashScreen) {
-        splashScreen.addEventListener('click', dismissSplashScreen);
-    }
-
-    // Start splash screen reveal on initial visit/load
-    if (splashScreen) {
-        setTimeout(playSplashRevealAnimation, 200);
     }
 
 });
