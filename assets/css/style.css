@@ -438,6 +438,14 @@ section {
 .poems-grid {
     columns: 360px;
     gap: 0;
+
+    @supports (display: grid-lanes) {
+        display: grid-lanes;
+        grid-template-rows:
+            repeat(4, auto);
+        flow-tolerance: 1em;
+        gap: 1ch;
+    }
 }
 
 .poem-card {
@@ -1279,6 +1287,7 @@ footer {
 }
 
 @keyframes splash-hint-pulse {
+
     0%,
     100% {
         opacity: 0.72;
