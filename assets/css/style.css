@@ -367,7 +367,6 @@ nav {
         color: var(--accent-gold);
         text-box: cap alphabetic trim-both;
     }
-
 }
 
 .scroll-indicator {
@@ -386,7 +385,6 @@ nav {
 }
 
 @keyframes bobble {
-
     0%,
     100% {
         transform: translateX(-50%) translateY(0);
@@ -441,8 +439,7 @@ section {
 
     @supports (display: grid-lanes) {
         display: grid-lanes;
-        grid-template-rows:
-            repeat(4, auto);
+        grid-template-rows: repeat(4, auto);
         flow-tolerance: 1em;
         gap: 1ch;
     }
@@ -545,7 +542,7 @@ section {
     &.hi {
         font-family: var(--font-hi-display);
         font-style: italic;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     &.en {
@@ -692,8 +689,6 @@ section {
         }
     }
 }
-
-
 
 .about-section {
     background: linear-gradient(180deg, var(--bg-deep), var(--bg-elevated));
