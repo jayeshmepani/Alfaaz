@@ -545,7 +545,7 @@ section {
     &.hi {
         font-family: var(--font-hi-display);
         font-style: italic;
-        font-weight: 100;
+        font-weight: 300;
     }
 
     &.en {
@@ -675,6 +675,7 @@ section {
     .poem-text {
         font-style: italic;
         font-size: 1.3rem;
+        font-weight: 300;
         line-height: 2;
         color: var(--text-secondary);
 
