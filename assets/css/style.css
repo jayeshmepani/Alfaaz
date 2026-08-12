@@ -54,8 +54,12 @@ body {
     font-size: 18px;
     line-height: 1.7;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
     min-height: 100dvh;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-optical-sizing: auto;
 
     &::before {
         content: "";
