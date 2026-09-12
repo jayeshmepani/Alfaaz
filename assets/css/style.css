@@ -443,9 +443,8 @@ section {
 
     @supports (display: grid-lanes) {
         display: grid-lanes;
-        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(3, auto);
         flow-tolerance: 1em;
-        gap: 1ch;
     }
 }
 
