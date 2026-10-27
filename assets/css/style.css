@@ -1653,11 +1653,13 @@ footer {
                 box-shadow: var(--shadow-elevated);
                 opacity: 0;
                 translate: 0 -6px;
+                position-area: block-end;
+                position-try-fallbacks: none;
+            }
 
-                &:popover-open {
-                    opacity: 1;
-                    translate: 0 0;
-                }
+            &:open::picker(select) {
+                opacity: 1;
+                translate: 0 0;
             }
         }
 
