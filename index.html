@@ -5,25 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Alfaaz • अल्फ़ाज़ — Poetry by Jayesh Mepani</title>
         <meta name="description" content="A personal collection of poetry, ghazals, and lyrical thoughts by Jayesh Mepani — words born from quiet moments and restless nights." />
-        <meta name="keywords" content="Poetry, Ghazal, Jayesh Mepani, Hindi Poetry, Gujarati Poetry, English Poetry, Alfaaz, Literature, Shayart" />
         <meta name="author" content="Jayesh Mepani" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://jayeshmepani.github.io/Alfaaz/" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#1a1614" />
+        <link rel="canonical" href="https://writingsbyjay.art/" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Alfaaz • अल्फ़ाज़ — Poetry by Jayesh Mepani" />
         <meta property="og:description" content="A personal collection of poetry, ghazals, and lyrical thoughts by Jayesh Mepani." />
-        <meta property="og:url" content="https://jayeshmepani.github.io/Alfaaz/" />
-        <meta property="og:image" content="https://jayeshmepani.github.io/Alfaaz/assets/img/og-image.png" />
-
-        <meta name="theme-color" content="#1a1614" />
+        <meta property="og:url" content="https://writingsbyjay.art/" />
+        <meta property="og:image" content="https://writingsbyjay.art/assets/img/og-image.png" />
+        <meta property="og:image:alt" content="Alfaaz, a candlelit poetry collection by Jayesh Mepani" />
+        <meta property="og:image:width" content="640" />
+        <meta property="og:image:height" content="640" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Alfaaz • अल्फ़ाज़ — Poetry by Jayesh Mepani" />
+        <meta name="twitter:description" content="A personal collection of poetry, ghazals, and lyrical thoughts by Jayesh Mepani." />
+        <meta name="twitter:image" content="https://writingsbyjay.art/assets/img/og-image.png" />
+        <meta name="twitter:image:alt" content="Alfaaz, a candlelit poetry collection by Jayesh Mepani" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="preload" href="assets/fonts/Amita-Regular.ttf" as="font" type="font/ttf" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wdth,wght@62.5..100,100..900&family=Noto+Serif+Gujarati:wght@400;600&family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Pinyon+Script&family=Rozha+One&family=Gotu&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+        <link rel="preload" href="assets/fonts/Amita-Regular.woff2" as="font" type="font/woff2" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Gotu&family=Great+Vibes&family=Inter:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;600&family=Noto+Serif+Gujarati:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
 
-        <link rel="icon" href="assets/img/favico.png" type="image/png" />
+        <link rel="icon" href="assets/img/favico.png" type="image/png" sizes="64x64" />
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
         <link rel="stylesheet" href="assets/css/style.css" />
 
         <script type="application/ld+json">
@@ -32,6 +40,7 @@
                 "@graph": [
                     {
                         "@type": "Person",
+                        "@id": "https://writingsbyjay.art/#jayesh",
                         "name": "Jayesh Mepani",
                         "alternateName": "Jayesh Patel",
                         "url": "https://jayeshmepani.github.io/Portfolio/",
@@ -40,13 +49,22 @@
                     },
                     {
                         "@type": "WebSite",
+                        "@id": "https://writingsbyjay.art/#website",
                         "name": "Alfaaz • अल्फ़ाज़",
-                        "url": "https://jayeshmepani.github.io/Alfaaz/",
-                        "author": {
-                            "@type": "Person",
-                            "name": "Jayesh Mepani"
-                        },
-                        "description": "A personal collection of poetry, ghazals, and lyrical thoughts."
+                        "url": "https://writingsbyjay.art/",
+                        "inLanguage": ["hi", "gu", "en"],
+                        "description": "A personal collection of poetry, ghazals, and lyrical thoughts.",
+                        "author": { "@id": "https://writingsbyjay.art/#jayesh" }
+                    },
+                    {
+                        "@type": "CollectionPage",
+                        "@id": "https://writingsbyjay.art/#webpage",
+                        "url": "https://writingsbyjay.art/",
+                        "name": "Alfaaz • अल्फ़ाज़ — Poetry by Jayesh Mepani",
+                        "description": "Poetry, ghazals, and lyrical writing in Hindi, Gujarati, and English.",
+                        "inLanguage": ["hi", "gu", "en"],
+                        "isPartOf": { "@id": "https://writingsbyjay.art/#website" },
+                        "author": { "@id": "https://writingsbyjay.art/#jayesh" }
                     }
                 ]
             }
@@ -56,7 +74,7 @@
     <body>
         <div id="splashScreen" class="splash-overlay">
             <div class="splash-container">
-                <svg id="splashSvg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+                <svg id="splashSvg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
                     <defs>
                         <linearGradient id="gradGoldFoil" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stop-color="#ffe57f" />
@@ -98,9 +116,14 @@
             </div>
         </div>
 
+        <div class="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <span id="readingProgress"></span>
+        </div>
+
         <header>
+            <a class="skip-link" href="#main-content">Skip to content</a>
             <div class="container header-inner">
-                <a href="#" class="brand" aria-label="Alfaaz - Return to Home">
+                <a href="#home" class="brand">
                     <h1 class="brand-title">
                         Alfaaz
                         <span>.</span>
@@ -108,28 +131,29 @@
                     <span class="brand-subtitle">A Personal Poetry Collection</span>
                 </a>
 
-                <nav>
+                <nav id="site-nav" aria-label="Primary">
                     <div class="nav-links">
-                        <a href="#home" class="active">Home</a>
+                        <a href="#home" class="active" aria-current="true">Home</a>
                         <a href="#collection">Collection</a>
                         <a href="#about">About</a>
                     </div>
 
-                    <div class="lang-switcher">
-                        <button class="lang-btn active" data-lang="all">All</button>
-                        <button class="lang-btn" data-lang="devanagari">देवनागरी</button>
-                        <button class="lang-btn" data-lang="gujarati" lang="gu">ગુજરાતી</button>
-                        <button class="lang-btn" data-lang="english">English</button>
+                    <div class="lang-switcher" role="group" aria-label="Language">
+                        <button type="button" class="lang-btn active" data-lang="all" aria-pressed="true">All</button>
+                        <button type="button" class="lang-btn" data-lang="devanagari" lang="hi" aria-pressed="false">देवनागरी</button>
+                        <button type="button" class="lang-btn" data-lang="gujarati" lang="gu" aria-pressed="false">ગુજરાતી</button>
+                        <button type="button" class="lang-btn" data-lang="english" lang="en" aria-pressed="false">English</button>
                     </div>
                 </nav>
 
-                <button class="menu-toggle" aria-label="Toggle menu"><span>☰</span></button>
+                <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span aria-hidden="true">☰</span></button>
             </div>
         </header>
 
-        <main id="main-content">
+        <main id="main-content" tabindex="-1">
             <section class="hero" id="home">
-                <figure class="hero-content">
+                <canvas id="dustCanvas" class="dust-canvas" aria-hidden="true"></canvas>
+                <figure class="hero-content manuscript-frame">
                     <blockquote class="hero-quote" lang="hi" id="heroQuote">
                         शब्दों में ढली वो खामोशियाँ,
                         <br />
@@ -143,7 +167,13 @@
                     <div class="hero-divider" aria-hidden="true"><span>✦</span></div>
 
                     <figcaption class="hero-attribution" id="heroAttribution">~ &nbsp; J</figcaption>
+                    <button type="button" id="shuffleVerse" class="verse-shuffle">
+                        New Couplet
+                        <span aria-hidden="true">✦</span>
+                        <span class="verse-shuffle-name">Shuffle Verse</span>
+                    </button>
                 </figure>
+                <a class="scroll-indicator" href="#collection">Explore Collection</a>
             </section>
 
             <section id="collection">
@@ -154,19 +184,47 @@
                         <p class="section-subtitle">Words woven with soul</p>
                     </div>
 
+                    <div class="discovery-bar">
+                        <label class="discovery-search" for="collectionSearch">
+                            <span class="visually-hidden">Search the collection</span>
+                            <input id="collectionSearch" type="search" placeholder="Search verse, #id, mood, theme, tag, imagery" autocomplete="off" />
+                        </label>
+                        <div class="discovery-actions">
+                            <label class="discovery-sort">
+                                Sort
+                                <select id="collectionSort">
+                                    <button type="button">
+                                        <selectedcontent></selectedcontent>
+                                    </button>
+                                    <option value="default" selected>Default</option>
+                                    <option value="shortest">Shortest</option>
+                                    <option value="longest">Longest</option>
+                                </select>
+                            </label>
+                            <button type="button" id="shuffleCollection" class="text-btn">Shuffle</button>
+                            <button type="button" id="savedOnly" class="text-btn" aria-pressed="false">Saved Bookmarks</button>
+                            <div class="view-toggle" role="group" aria-label="Collection layout">
+                                <button type="button" data-view="grid" class="active" aria-pressed="true">Grid</button>
+                                <button type="button" data-view="single" aria-pressed="false">Single-Column</button>
+                            </div>
+                        </div>
+                        <p id="resultCount" class="result-count" aria-live="polite">Showing 0 of 0 works</p>
+                        <div id="activeFilters" class="active-filters" role="group" aria-label="Active filters" hidden></div>
+                    </div>
+
                     <section id="filterControls" class="filter-controls" aria-labelledby="filterHeading">
                         <div class="filter-header">
                             <h3 id="filterHeading">Refine Collection</h3>
                             <button id="resetFilters" class="filter-reset-btn" aria-label="Reset all filters">Reset All</button>
                             <button id="toggleFilters" class="filter-toggle-btn" aria-expanded="false" aria-controls="filterBody">
                                 Filters
-                                <span>▼</span>
+                                <span class="filter-chevron" aria-hidden="true"></span>
                             </button>
                         </div>
                         <div class="filter-body hidden" id="filterBody" aria-hidden="true"></div>
                     </section>
 
-                    <div class="poems-grid" id="poemsGrid" role="region" aria-live="polite" aria-label="Poetry Collection Grid"></div>
+                    <div class="poems-grid" id="poemsGrid"></div>
                 </div>
             </section>
 
@@ -178,6 +236,9 @@
                     </div>
 
                     <div class="featured-poem fade-in" id="featuredPoem"></div>
+                    <div class="featured-actions">
+                        <button type="button" id="unveilGem" class="text-btn">Unveil Another Gem</button>
+                    </div>
                 </div>
             </section>
 
@@ -211,6 +272,26 @@
                 </p>
             </div>
         </footer>
+
+        <dialog id="readingModal" class="reading-modal" aria-labelledby="modalTitle">
+            <div class="reading-panel">
+                <button type="button" class="reading-close" id="readingClose">Close</button>
+                <p class="reading-kicker" id="modalKicker"></p>
+                <h2 class="reading-title" id="modalTitle"></h2>
+                <div class="reading-verse" id="modalVerse"></div>
+                <dl class="reading-meta" id="modalMeta"></dl>
+                <div class="reading-actions">
+                    <button type="button" id="modalPrev">Previous</button>
+                    <button type="button" id="modalCopy" class="text-btn">Copy Verse</button>
+                    <button type="button" id="modalSave" class="text-btn" data-save-id="" aria-pressed="false">
+                        <span class="save-label">Save to Favorites</span>
+                        <span aria-hidden="true">♥</span>
+                    </button>
+                    <button type="button" id="modalNext">Next</button>
+                </div>
+            </div>
+        </dialog>
+        <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
         <script src="assets/js/script.js" defer></script>
     </body>
